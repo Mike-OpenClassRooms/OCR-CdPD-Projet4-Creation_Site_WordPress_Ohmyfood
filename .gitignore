@@ -29,3 +29,6 @@ WP-OhMyFood/app/public/.htaccess
 WP-OhMyFood/app/public/wp-cron.php
 /WP-OhMyFood/app/public/wp-content/plugins/all-in-one-wp-migration
 /WP-OhMyFood/app/public/wp-content/ai1wm-backups
+/WP-OhMyFood/app/public/wp-content/plugins/wordpress-seo
+/WP-OhMyFood/app/public/wp-content/plugins/contact-form-7
+/WP-OhMyFood/app/public/wp-content/uploads/wpcf7_uploads
