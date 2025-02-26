@@ -1,8 +1,7 @@
 /*
-Theme Name: Oh My Food
-Description: Child theme for twentytwentyone. You can now safely customize it and not risk losing your customizations.
-Author: Eric - Oh My Food
-Author URI: https://oh-my-food.fr
+Theme Name: OhMyFood
+Description: Thème enfant développé pour le site de réservation de restaurants OhMyFood.
+Author URI: https://omegastudio.tech
 Template: twentytwentyone
 Version: 1.0
 */
@@ -11,5 +10,6 @@ Version: 1.0
 /* Newsletter */
 
 .newsletter-box {
-    display: none; /* Cache newsletter box */
+    display: none;
+    /* Cache newsletter box */
 }
