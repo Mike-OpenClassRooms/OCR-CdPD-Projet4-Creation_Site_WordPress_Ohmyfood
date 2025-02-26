@@ -1,5 +1,6 @@
 /* Import des polices */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 /* 🌍 Styles généraux */
 body {
@@ -11,13 +12,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 /* 🏠 Conteneur principal */
 .container {
-    max-width: 600px;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
     background: white;
     border-radius: 20px;
@@ -26,30 +29,93 @@ body {
 
 /* 📌 Logo */
 .logo-container img {
-    max-width: 150px;
-    margin-bottom: 20px;
+    max-width: 85%;
+    margin-bottom: 0.2em;
 }
 
 /* 🖋️ Titres et texte */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-size: 22px;
     color: #D4AF37;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     color: #1C1C1C;
+}
+
+strong {
+    font-weight: bold;
+    /* Assure que c'est bien en gras */
 }
 
 /* 📌 Footer */
 footer {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 footer a {
     color: #7D2A2A;
     text-decoration: none;
+}
+
+footer a:hover {
+    color: #7D2A2A;
+    text-decoration: underline;
+}
+
+footer p:last-child {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* 🔥 RESPONSIVE DESIGN */
+
+/* Tablettes */
+@media screen and (min-width: 600px) {
+    .container {
+        max-width: 500px;
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+    .logo-container img {
+        max-width: 85%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 600px;
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    .logo-container img {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
