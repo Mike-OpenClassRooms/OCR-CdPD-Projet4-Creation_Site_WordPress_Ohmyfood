@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.jsp$
+Disallow: /*.asp$
+Disallow: /*.aspx$
+Disallow: /*.cfm$
+Disallow: /css/
+
+Sitemap: https://ohmyfood.tech/sitemap.xml
