@@ -94,17 +94,7 @@
 			}
 			?>
 
-			<div class="powered-by">
-				<?php
-				// Affiche le message "Proudly powered by WordPress" avec un lien vers wordpress.org.
-				// La chaîne est traduisible grâce à la fonction esc_html__ et au domaine de texte 'twentytwentyone'.
-				printf(
-					/* translators: %s: WordPress. */
-					esc_html__( 'Proudly powered by %s.', 'twentytwentyone' ),
-					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
-				);
-				?>
-			</div><!-- .powered-by -->
+		
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
