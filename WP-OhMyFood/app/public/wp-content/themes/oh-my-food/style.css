@@ -15,6 +15,41 @@ Version: 1.0
     --color-text: #B0B0B0;
 }
 
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--color-header-footer);
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+button {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+}
+
 /* Header */
 
 /* Logo */
