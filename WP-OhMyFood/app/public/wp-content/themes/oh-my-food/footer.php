@@ -93,9 +93,11 @@
 				the_privacy_policy_link( '<div class="privacy-policy">', '</div>' );
 			}
 			?>
-
+			</div><!-- .site-info -->
+			<div class="site-copyright">
+			  © 2025 OhMyFood • <a href="#">Confidentialité</a> • <a href="#">Conditions générales</a> • <a href="#">Plan du site</a> • <a href="#">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a>
+			</div>
 		
-		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page : Fin du conteneur principal de la page -->

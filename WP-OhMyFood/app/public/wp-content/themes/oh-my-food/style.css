@@ -13,3 +13,23 @@ Version: 1.0
     display: none;
     /* Cache newsletter box */
 }
+
+
+/* Header */
+
+
+/* Logo */
+
+
+/* Navigation */
+
+
+/* Footer */
+.site-copyright {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
