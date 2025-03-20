@@ -32,7 +32,7 @@
 		get_template_part( 'template-parts/footer/footer-widgets' ); 
 	?>
 
-	<footer id="colophon" class="site-footer">
+	<footer>
 		
 
 		<div class="site-info">
