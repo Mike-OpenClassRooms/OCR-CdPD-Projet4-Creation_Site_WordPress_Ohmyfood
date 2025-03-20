@@ -37,6 +37,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-primary);
     color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Colors */
@@ -63,6 +65,8 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
