@@ -15,12 +15,31 @@ Version: 1.0
     --color-text: #B0B0B0;
 }
 
-body {
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    font-family: 'Poppins', sans-serif;
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+/* Colors */
 header,
 footer {
     background-color: var(--color-header-footer);
