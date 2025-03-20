@@ -6,6 +6,14 @@ Template: twentytwentyone
 Version: 1.0
 */
 
+:root {
+    --color-primary: #1C1C1C;
+    --color-secondary: #D4AF37;
+    --color-background-light: #FAF3E0;
+    --color-header-footer: #0D1B2A;
+    --color-accent: #7D2A2A;
+    --color-text: #B0B0B0;
+}
 
 /* Header */
 
