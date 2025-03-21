@@ -63,18 +63,35 @@
 					);
 					?>
 				</nav>
+				<nav class="mobile-navigation">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'secondary',
+							'menu_class' => 'mobile-menu-wrapper',
+							'container_class' => 'secondary-menu-container',
+							'items_wrap' => '<ul id="mobile-menu-list" class="%2$s">%3$s</ul>',
+							'fallback_cb' => false,
+						)
+					);
+					?>
+				</nav>
 				<div class="header-profile">
 					<button class="hamburger-menu" aria-label="Menu">
-						<span></span>
-						<span></span>
-						<span></span>
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/Menu.svg" alt="Menu" class="menu-icon">
 					</button>
 					<a href="#" class="profile-link">
-						<img src="/path/to/avatar.png" alt="Profil" class="profile-avatar">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/Profile.svg" alt="Profil" class="profile-avatar">
 					</a>
 				</div>
-			</div>
 
+				<div class="hamburger-mobile">
+					<button class="hamburger-menu" aria-label="Menu">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/Menu.svg" alt="Menu" class="menu-icon">
+					</button>
+				</div>
+
+			</div>
 			<!-- Partie recherche du header -->
 			<div class="header-bottom">
 				<div class="search-bar">
