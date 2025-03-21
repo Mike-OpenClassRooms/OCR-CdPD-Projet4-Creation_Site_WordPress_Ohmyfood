@@ -47,6 +47,12 @@ get_header();
 		</div>
 	</div>
 
+	<div class="back-zone">
+		<div class="back-home">
+			<a class="btn" href="<?php echo esc_url(home_url('/')); ?>">Retour à l'accueil</a>
+		</div>
+	</div>
+
 </div><!-- .entry-content -->
 
 <?php
