@@ -34,11 +34,37 @@ get_template_part('template-parts/footer/footer-widgets');
 ?>
 
 <footer>
+	<div class="infos-footer">
+		<div class="social-follow" aria-label="Suivez-nous sur les réseaux sociaux">
+			<div class="social-icons">
+				<a href="#" class="social-icon" aria-label="Instagram">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="#" class="social-icon" aria-label="Threads">
+					<i class="fa-brands fa-threads"></i>
+				</a>
+				<a href="#" class="social-icon" aria-label="Facebook">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a href="#" class="social-icon" aria-label="Bluesky">
+					<i class="fa-brands fa-bluesky"></i>
+				</a>
+				<a href="#" class="social-icon" aria-label="TikTok">
+					<i class="fa-brands fa-tiktok"></i>
+				</a>
+				<a href="#" class="social-icon" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+				<!-- Ajoute les autres icônes ici de la même manière -->
+			</div>
+		</div>
 
-	<div class="site-copyright">
-		© 2025 OhMyFood • <a href="#">Confidentialité</a> • <a href="#">Conditions générales</a> • <a href="#">Plan du site</a> • <a href="#">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a>
+		<div class="footer-divider"></div>
+
+		<div class="copyright">
+			© 2025 OhMyFood • <a href="/confidentialite">Confidentialité</a> • <a href="/conditions-generales">Conditions générales</a> • <a href="/sitemaps">Plan du site</a> • <a href="/faq">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a>
+		</div>
 	</div>
-
 </footer>
 
 </div><!-- #page : Fin du conteneur principal de la page -->
