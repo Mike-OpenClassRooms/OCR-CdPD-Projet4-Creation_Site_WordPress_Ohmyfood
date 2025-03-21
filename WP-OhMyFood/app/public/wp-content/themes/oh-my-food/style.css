@@ -81,7 +81,6 @@ footer {
     padding: 42px 12.5%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 16px;
     background-color: var(--color-header-footer);
     color: var(--color-text);

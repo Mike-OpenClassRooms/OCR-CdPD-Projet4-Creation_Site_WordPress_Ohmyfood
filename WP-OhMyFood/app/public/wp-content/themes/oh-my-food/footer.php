@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,49 +12,42 @@
  * @since Twenty Twenty-One 1.0
  */
 ?>
-			</main><!-- #main : Fin de la zone principale de contenu -->
-		</div><!-- #primary : Fin de la zone principale (contenu) -->
-	</div><!-- #content : Fin du conteneur global du contenu -->
+</main><!-- #main : Fin de la zone principale de contenu -->
+</div><!-- #primary : Fin de la zone principale (contenu) -->
+</div><!-- #content : Fin du conteneur global du contenu -->
 
-	<!-- Newsletters -->
-	<div class="newsletter-box">
-		<p class="newsletter-title">TITRE</p>
-		<p class="newsletter-text">
-			TEXTE
-		</p>
-		<!-- Appel via un short code a contact form 7, attention ça doit correspondre a votre newsletter -->
-		<?php echo do_shortcode( '[contact-form-7 id="8cccb11" title="Formulaire newsletters"]' ); ?>
+<!-- Newsletters -->
+<div class="newsletter-box">
+	<p class="newsletter-title">TITRE</p>
+	<p class="newsletter-text">
+		TEXTE
+	</p>
+	<!-- Appel via un short code a contact form 7, attention ça doit correspondre a votre newsletter -->
+	<?php echo do_shortcode('[contact-form-7 id="8cccb11" title="Formulaire newsletters"]'); ?>
+</div>
+<?php
+// Inclusion d'un template part pour les widgets du footer.
+// Le fichier 'footer-widgets.php' situé dans le dossier template-parts/footer/
+// contient le code qui affiche les zones de widgets du pied de page.
+// ce contenu est modifiable dans l'administration de WordPress, dans Apparence > Widgets.
+get_template_part('template-parts/footer/footer-widgets');
+?>
+
+<footer>
+
+	<div class="site-copyright">
+		© 2025 OhMyFood • <a href="#">Confidentialité</a> • <a href="#">Conditions générales</a> • <a href="#">Plan du site</a> • <a href="#">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a>
 	</div>
-	<?php 
-		// Inclusion d'un template part pour les widgets du footer.
-		// Le fichier 'footer-widgets.php' situé dans le dossier template-parts/footer/
-		// contient le code qui affiche les zones de widgets du pied de page.
-		// ce contenu est modifiable dans l'administration de WordPress, dans Apparence > Widgets.
-		get_template_part( 'template-parts/footer/footer-widgets' ); 
-	?>
 
-	<footer>
-		
-
-		<div class="site-info">
-			<div class="site-name">
-				
-			</div><!-- .site-name -->
-
-			
-	
-			<div class="site-copyright">
-			  © 2025 OhMyFood • <a href="#">Confidentialité</a> • <a href="#">Conditions générales</a> • <a href="#">Plan du site</a> • <a href="#">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a>
-			</div>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+</footer>
 
 </div><!-- #page : Fin du conteneur principal de la page -->
 
-<?php 
+<?php
 // Permet à WordPress et aux plugins d'insérer du code avant la fermeture de la balise </body> (scripts, etc.)
-wp_footer(); 
+wp_footer();
 ?>
 
 </body>
+
 </html>
