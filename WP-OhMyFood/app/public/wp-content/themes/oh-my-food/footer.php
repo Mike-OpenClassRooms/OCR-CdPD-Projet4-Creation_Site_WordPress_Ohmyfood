@@ -62,9 +62,11 @@ get_template_part('template-parts/footer/footer-widgets');
 		<div class="footer-divider"></div>
 
 		<div class="copyright">
-			© 2025 OhMyFood • <a href="/confidentialite">Confidentialité</a> • <a href="/conditions-generales">Conditions générales</a> • <a href="/sitemaps">Plan du site</a> • <a href="/faq">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a>
+			<p class="copyright-text"><span class="copyright-name">© 2025 OhMyFood</span>
+				<span class="copyright-dot">•</span>
+				<span class="copyright-links"><a href="/confidentialite">Confidentialité</a> • <a href="/conditions-generales">Conditions générales</a> • <a href="/sitemaps">Plan du site</a> • <a href="/faq">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a></span>
+			</p>
 		</div>
-	</div>
 </footer>
 
 </div><!-- #page : Fin du conteneur principal de la page -->
