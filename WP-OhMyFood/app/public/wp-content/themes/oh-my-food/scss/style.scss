@@ -6,16 +6,33 @@ Template: twentytwentyone
 Version: 1.0
 */
 
-/*--------------------------------------------------------------
->>> TABLE DES MATIÈRES :
-----------------------------------------------------------------
-1. Variables globales
-2. Reset & bases typographiques
-3. Layout général
-4. Header
-5. Navigation
-6. Composants (boutons, cartes, etc)
-7. Footer
-8. Pages spécifiques
-9. Media Queries (min-width: 768px, 1024px...)
---------------------------------------------------------------*/
+// 1. Abstracts
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/functions' as *;
+
+// 2. Base
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/base';
+
+// 3. Layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/navigation';
+@use 'layout/grid';
+
+// 4. Components
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+@use 'components/search';
+
+// 5. Pages
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/restaurant';
+
+// 6. Utils
+@use 'utils/breakpoints';
+@use 'utils/helpers';

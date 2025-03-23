@@ -6,16 +6,9 @@ Author URI: https://omegastudio.tech
 Template: twentytwentyone
 Version: 1.0
 */
-/*--------------------------------------------------------------
->>> TABLE DES MATIÈRES :
-----------------------------------------------------------------
-1. Variables globales
-2. Reset & bases typographiques
-3. Layout général
-4. Header
-5. Navigation
-6. Composants (boutons, cartes, etc)
-7. Footer
-8. Pages spécifiques
-9. Media Queries (min-width: 768px, 1024px...)
---------------------------------------------------------------*/
+/* ==========================================================================
+   Breakpoints pour design responsive
+   Basés sur les tailles d’écrans les plus courantes
+   ========================================================================== */
+/* Variables */
+/* Mixin responsive */
