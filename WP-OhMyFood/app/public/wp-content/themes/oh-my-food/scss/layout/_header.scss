@@ -7,11 +7,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
     gap: 2px;
-    background-color: $color-white;
-    box-shadow: $shadow-light;
-    width: 100%;
+    background-color: $color-white !important;
+    box-shadow: $shadow-light !important;
+    width: 100% !important;
 
     @include respond(md) {
         padding-bottom: 24px;
@@ -20,12 +20,12 @@ header {
 
 /* Partie haute du header */
 .header-top {
-    display: flex;
-    height: 80px;
-    padding: 15px 23px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: flex !important;
+    height: 80px !important;
+    padding: 15px 23px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
 
     @include respond(md) {
         height: 90px;
@@ -35,7 +35,7 @@ header {
 
 /* Logo */
 .logo-container img {
-    height: 27px;
+    height: 27px !important;
 
     @include respond(md) {
         height: 35px;
@@ -50,10 +50,10 @@ header {
 
 /* Navigation principale */
 .main-navigation {
-    display: none;
+    display: none !important;
 
     @include respond(md) {
-        display: flex;
+        display: flex !important;
         align-items: center;
         gap: 32px;
 
@@ -83,29 +83,29 @@ header {
 
 /* Profil */
 .header-profile {
-    display: none;
+    display: none !important;
 
     @include respond(md) {
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
         gap: $spacing-sm;
-        padding: 8px 12px;
+        padding: 8px 12px !important;
         border-radius: $radius-xlarge;
-        border: 1px solid #DDD;
-        background: $color-white;
+        border: 1px solid #DDD !important;
+        background: $color-white !important;
     }
 }
 
 /* Menu hamburger */
 .hamburger-menu {
-    display: block;
-    background: none;
-    border: none;
+    display: block !important;
+    background: none !important;
+    border: none !important;
     cursor: pointer;
-    color: $color-primary;
-    box-shadow: none;
-    padding: 0;
+    color: $color-primary !important;
+    box-shadow: none !important;
+    padding: 0 !important;
 }
 
 .menu-icon {
@@ -125,10 +125,10 @@ header {
 
 /* Menu mobile */
 .hamburger-mobile {
-    display: block;
-    padding: 9px;
-    border-radius: $radius-medium;
-    background: rgba(250, 243, 224, 0.5);
+    display: block !important;
+    padding: 9px !important;
+    border-radius: $radius-medium !important;
+    background: rgba(250, 243, 224, 0.5) !important;
 
     img {
         width: 32px;
@@ -142,14 +142,14 @@ header {
 
 /* Menu mobile */
 .mobile-navigation {
-    display: none;
-    position: absolute;
+    display: none !important;
+    position: absolute !important;
     top: 80px;
     right: 0;
-    background-color: var(--color-white);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    padding: 20px;
+    background-color: var(--color-white) !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    width: 250px !important;
+    padding: 20px !important;
 }
 
 .mobile-menu-wrapper {
@@ -176,26 +176,26 @@ header {
 
 /* Partie basse : barre de recherche */
 .header-bottom {
-    display: none;
-    display: flex;
+    display: none !important;
+    display: flex !important;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 100% !important;
 }
 
 .search-bar {
     display: flex;
     flex-direction: column;
-    background-color: $color-white;
-    border-radius: $radius-full;
-    padding: 12px;
-    box-shadow: $shadow-light;
+    background-color: $color-white !important;
+    border-radius: $radius-full !important;
+    padding: 12px !important;
+    box-shadow: $shadow-light !important;
     align-items: center;
     gap: 8px;
 
     @include respond(md) {
         flex-direction: row;
-        padding: 16px 24px;
+        padding: 16px 24px !important;
         gap: $spacing-sm;
     }
 }
@@ -212,17 +212,17 @@ header {
     input {
         border: none;
         outline: none;
-        font-size: 1.6rem;
+        font-size: 1.6rem !important;
         padding: 5px;
         width: 100%;
     }
 }
 
 .search-button {
-    background-color: $color-secondary;
+    background-color: $color-secondary !important;
     border: none;
-    padding: 10px;
-    border-radius: $radius-full;
+    padding: 10px !important;
+    border-radius: $radius-full !important;
     cursor: pointer;
 
     svg {
