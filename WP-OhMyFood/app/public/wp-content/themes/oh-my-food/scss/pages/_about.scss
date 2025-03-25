@@ -60,20 +60,22 @@
     }
 }
 
+/*
 .back-home {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    width: 202.182px !important;
-    height: 64px !important;
+    width: 139px !important;
+    height: 44px !important;
+
     padding: 0 $spacing-sm !important;
     background: $color-secondary !important;
     border-radius: $radius-medium !important;
     box-shadow: $shadow-medium !important;
 
     @include respond(md) {
-        width: 139px !important;
-        height: 44px !important;
+        width: 202.182px !important;
+        height: 64px !important;
     }
 
     a {
@@ -89,4 +91,4 @@
             font-size: $font-size-xs !important;
         }
     }
-}
+}*/

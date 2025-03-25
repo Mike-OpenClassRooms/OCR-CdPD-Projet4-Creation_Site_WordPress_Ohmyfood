@@ -33,6 +33,7 @@ main {
 }
 
 .entry-content {
+    font-family: $font-body !important;
     padding: 0 5.85% !important;
     max-width: none !important;
 
@@ -48,6 +49,7 @@ main {
     .entry-content>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
     *[class*=inner-container]>*:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
     .default-max-width {
+        font-family: $font-body !important;
         max-width: none !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -60,7 +62,6 @@ video,
 svg {
     max-width: 100% !important;
     height: auto !important;
-    display: block !important;
 }
 
 /* Liens */

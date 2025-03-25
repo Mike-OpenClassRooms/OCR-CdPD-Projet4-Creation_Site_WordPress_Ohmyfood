@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-title;
+    font-family: $font-title !important;
     line-height: 1.2;
     color: $color-primary;
 }
@@ -72,6 +72,7 @@ p,
 ul,
 ol,
 li {
+    font-family: $font-body !important;
     font-size: $font-size-body !important;
     color: $color-primary !important;
     font-weight: $font-weight-regular !important;

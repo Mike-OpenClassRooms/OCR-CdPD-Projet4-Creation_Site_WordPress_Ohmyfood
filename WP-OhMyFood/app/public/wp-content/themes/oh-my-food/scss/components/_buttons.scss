@@ -3,8 +3,7 @@
 
 // BOUTONS 
 
-button,
-.btn {
+button {
     background-color: $color-secondary !important;
     color: $color-primary !important;
     border: none !important;
@@ -45,7 +44,7 @@ button,
         text-align: center !important;
     }
 
-    @include respond(sm) {
+    @include respond(md) {
         width: 202.182px !important;
         height: 64px !important;
 
