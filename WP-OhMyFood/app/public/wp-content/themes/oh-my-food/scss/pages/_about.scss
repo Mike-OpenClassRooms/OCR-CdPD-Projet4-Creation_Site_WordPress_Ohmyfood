@@ -1,0 +1,93 @@
+@use '../abstracts/variables' as *;
+@use '../utils/breakpoints' as *;
+
+// À PROPOS
+
+.about-title {
+    padding: 20px 0;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $spacing-lg;
+}
+
+.image-about {
+    width: 281px;
+    height: auto;
+    border-radius: $radius-large;
+    margin: auto;
+
+    @include respond(md) {
+        width: 800px;
+    }
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    padding: $spacing-lg 0;
+
+    strong {
+        font-weight: $font-weight-medium;
+    }
+}
+
+/* Blocs thématiques */
+.bloc-about-section {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+
+    }
+}
+
+/* Bouton retour */
+.back-zone {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+    @include respond(md) {
+        padding: $spacing-xl 0;
+    }
+}
+
+.back-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 202.182px;
+    height: 64px;
+    padding: 0 $spacing-sm;
+    background: $color-secondary;
+    border-radius: $radius-medium;
+    box-shadow: $shadow-medium;
+
+    @include respond(md) {
+        width: 139px;
+        height: 44px;
+    }
+
+    a {
+        color: $color-accent-blue;
+        text-decoration: none;
+        font-family: $font-body;
+        font-size: $font-size-body;
+        font-weight: $font-weight-bold;
+        line-height: 18px;
+        text-align: center;
+
+        @include respond(md) {
+            font-size: $font-size-xs;
+        }
+    }
+}
