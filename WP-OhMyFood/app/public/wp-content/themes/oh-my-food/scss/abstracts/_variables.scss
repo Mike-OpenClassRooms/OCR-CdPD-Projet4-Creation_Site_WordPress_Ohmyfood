@@ -1,0 +1,58 @@
+/* ==========================================================================
+    Variables 
+   ========================================================================== */
+
+// Palette de couleurs
+$color-primary: #1C1C1C;
+$color-secondary: #D4AF37;
+$color-background-light: #FAF3E0;
+$color-accent-blue: #0D1B2A;
+$color-accent-red: #7D2A2A;
+$color-text-grey: #B0B0B0;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+// Typography
+$font-title: 'Playfair Display', serif;
+$font-body: 'Poppins', sans-serif;
+
+// Font sizes
+$font-size-h1: 32px;
+$font-size-h1-xl: 36px;
+$font-size-h2: 20px;
+$font-size-h2-xl: 24px;
+$font-size-h3: 18px;
+$font-size-h3-xl: 20px;
+$font-size-body: 16px;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+$font-size-html: 10px;
+
+// Font weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// Spacing
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+
+// Border radius
+$radius-small: 5px;
+$radius-medium: 10px;
+$radius-large: 20px;
+$radius-xlarge: 40px;
+$radius-xxlarge: 50px;
+$radius-full: 50%;
+
+// Box shadow
+$shadow-light: 0 2px 10px rgba(0, 0, 0, 0.05);
+$shadow-medium: 0 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-button: 2px 2px 5px rgba(0, 0, 0, 0.2);
+$shadow-mobile-nav: 0px 4px 10px rgba(0, 0, 0, 0.1);
