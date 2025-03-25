@@ -17,14 +17,14 @@
 </div><!-- #content : Fin du conteneur global du contenu -->
 
 <!-- Newsletters -->
-<div class="newsletter-box">
+<section class="newsletter-box">
 	<p class="newsletter-title">TITRE</p>
 	<p class="newsletter-text">
 		TEXTE
 	</p>
 	<!-- Appel via un short code a contact form 7, attention ça doit correspondre a votre newsletter -->
 	<?php echo do_shortcode('[contact-form-7 id="8cccb11" title="Formulaire newsletters"]'); ?>
-</div>
+</section>
 <?php
 // Inclusion d'un template part pour les widgets du footer.
 // Le fichier 'footer-widgets.php' situé dans le dossier template-parts/footer/
@@ -35,7 +35,7 @@ get_template_part('template-parts/footer/footer-widgets');
 
 <footer>
 	<div class="infos-footer">
-		<div class="social-follow" aria-label="Suivez-nous sur les réseaux sociaux">
+		<section class="social-follow" aria-label="Suivez-nous sur les réseaux sociaux">
 			<div class="social-icons">
 				<a href="#" class="social-icon" aria-label="Instagram">
 					<i class="fa-brands fa-instagram"></i>
@@ -55,18 +55,18 @@ get_template_part('template-parts/footer/footer-widgets');
 				<a href="#" class="social-icon" aria-label="LinkedIn">
 					<i class="fa-brands fa-linkedin-in"></i>
 				</a>
-				<!-- Ajoute les autres icônes ici de la même manière -->
 			</div>
-		</div>
+		</section>
 
 		<div class="footer-divider"></div>
 
-		<div class="copyright">
+		<section class="copyright">
 			<p class="copyright-text"><span class="copyright-name">© 2025 OhMyFood</span>
 				<span class="copyright-dot">•</span>
 				<span class="copyright-links"><a href="/confidentialite">Confidentialité</a> • <a href="/conditions-generales">Conditions générales</a> • <a href="/sitemaps">Plan du site</a> • <a href="/faq">FAQ</a> • <a href="/contact">Contact</a> • <a href="/a-propos">À propos de nous</a></span>
 			</p>
-		</div>
+		</section>
+	</div>
 </footer>
 
 </div><!-- #page : Fin du conteneur principal de la page -->
