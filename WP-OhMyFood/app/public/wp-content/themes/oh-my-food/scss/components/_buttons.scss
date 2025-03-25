@@ -5,52 +5,52 @@
 
 button,
 .btn {
-    background-color: $color-secondary;
-    color: $color-primary;
-    border: none;
+    background-color: $color-secondary !important;
+    color: $color-primary !important;
+    border: none !important;
     padding: 10px 20px !important;
-    font-weight: $font-weight-bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: $radius-small;
-    box-shadow: $shadow-button;
-    font-family: $font-body;
-    font-size: $font-size-xs;
-    transition: background-color 0.3s ease;
+    font-weight: $font-weight-bold !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    border-radius: $radius-small !important;
+    box-shadow: $shadow-button !important;
+    font-family: $font-body !important;
+    font-size: $font-size-xs !important;
+    transition: background-color 0.3s ease !important;
 
     &:hover {
-        background-color: $color-accent-red;
+        background-color: $color-accent-red !important;
     }
 }
 
 /* Bouton retour page d’accueil */
 .back-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 139px;
-    height: 44px;
-    padding: 0 $spacing-sm;
-    background: $color-secondary;
-    border-radius: $radius-medium;
-    box-shadow: $shadow-medium;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 139px !important;
+    height: 44px !important;
+    padding: 0 $spacing-sm !important;
+    background: $color-secondary !important;
+    border-radius: $radius-medium !important;
+    box-shadow: $shadow-medium !important;
 
     a {
-        color: $color-accent-blue;
-        text-decoration: none;
-        font-family: $font-body;
-        font-size: $font-size-xs;
-        font-weight: $font-weight-bold;
-        line-height: 18px;
-        text-align: center;
+        color: $color-accent-blue !important;
+        text-decoration: none !important;
+        font-family: $font-body !important;
+        font-size: $font-size-xs !important;
+        font-weight: $font-weight-bold !important;
+        line-height: 18px !important;
+        text-align: center !important;
     }
 
     @include respond(sm) {
-        width: 202.182px;
-        height: 64px;
+        width: 202.182px !important;
+        height: 64px !important;
 
         a {
-            font-size: $font-size-body;
+            font-size: $font-size-body !important;
         }
     }
 }

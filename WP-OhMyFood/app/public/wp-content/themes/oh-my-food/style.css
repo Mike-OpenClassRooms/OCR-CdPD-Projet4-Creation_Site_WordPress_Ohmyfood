@@ -550,52 +550,52 @@ footer a {
 
 button,
 .btn {
-  background-color: #D4AF37;
-  color: #1C1C1C;
-  border: none;
+  background-color: #D4AF37 !important;
+  color: #1C1C1C !important;
+  border: none !important;
   padding: 10px 20px !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  transition: background-color 0.3s ease;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  transition: background-color 0.3s ease !important;
 }
 button:hover,
 .btn:hover {
-  background-color: #7D2A2A;
+  background-color: #7D2A2A !important;
 }
 
 /* Bouton retour page d’accueil */
 .back-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 139px;
-  height: 44px;
-  padding: 0 16px;
-  background: #D4AF37;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 139px !important;
+  height: 44px !important;
+  padding: 0 16px !important;
+  background: #D4AF37 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
 }
 .back-home a {
-  color: #0D1B2A;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 18px;
-  text-align: center;
+  color: #0D1B2A !important;
+  text-decoration: none !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 18px !important;
+  text-align: center !important;
 }
 @media (min-width: 600px) {
   .back-home {
-    width: 202.182px;
-    height: 64px;
+    width: 202.182px !important;
+    height: 64px !important;
   }
   .back-home a {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
