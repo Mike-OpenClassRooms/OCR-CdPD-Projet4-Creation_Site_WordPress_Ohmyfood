@@ -4,7 +4,7 @@
 // À PROPOS
 
 .about-title {
-    padding: 20px 0;
+    padding: 20px 0 !important;
 }
 
 .image-wrapper {
@@ -14,13 +14,13 @@
 }
 
 .image-about {
-    width: 281px;
+    width: 281px !important;
     height: auto;
-    border-radius: $radius-large;
-    margin: auto;
+    border-radius: $radius-large !important;
+    margin: auto !important;
 
     @include respond(md) {
-        width: 800px;
+        width: 800px !important;
     }
 }
 
@@ -31,63 +31,62 @@
     padding: $spacing-lg 0;
 
     strong {
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-medium !important;
     }
 }
 
 /* Blocs thématiques */
 .bloc-about-section {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-xs;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: $spacing-xs !important;
 
     ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: $spacing-sm;
-
+        list-style: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: $spacing-sm !important;
     }
 }
 
 /* Bouton retour */
 .back-zone {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 40px 0 !important;
 
     @include respond(md) {
-        padding: $spacing-xl 0;
+        padding: $spacing-xl 0 !important;
     }
 }
 
 .back-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 202.182px;
-    height: 64px;
-    padding: 0 $spacing-sm;
-    background: $color-secondary;
-    border-radius: $radius-medium;
-    box-shadow: $shadow-medium;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 202.182px !important;
+    height: 64px !important;
+    padding: 0 $spacing-sm !important;
+    background: $color-secondary !important;
+    border-radius: $radius-medium !important;
+    box-shadow: $shadow-medium !important;
 
     @include respond(md) {
-        width: 139px;
-        height: 44px;
+        width: 139px !important;
+        height: 44px !important;
     }
 
     a {
-        color: $color-accent-blue;
-        text-decoration: none;
-        font-family: $font-body;
-        font-size: $font-size-body;
-        font-weight: $font-weight-bold;
-        line-height: 18px;
-        text-align: center;
+        color: $color-accent-blue !important;
+        text-decoration: none !important;
+        font-family: $font-body !important;
+        font-size: $font-size-body !important;
+        font-weight: $font-weight-bold !important;
+        line-height: 18px !important;
+        text-align: center !important;
 
         @include respond(md) {
-            font-size: $font-size-xs;
+            font-size: $font-size-xs !important;
         }
     }
 }

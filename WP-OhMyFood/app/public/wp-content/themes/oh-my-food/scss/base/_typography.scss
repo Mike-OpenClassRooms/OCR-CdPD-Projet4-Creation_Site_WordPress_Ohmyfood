@@ -9,8 +9,8 @@
 
 // Base
 html {
-    font-family: $font-body;
-    font-size: $font-size-html;
+    font-family: $font-body !important;
+    font-size: $font-size-html !important;
 }
 
 // Titres
@@ -26,45 +26,45 @@ h6 {
 }
 
 h1 {
-    font-size: $font-size-h1;
-    font-weight: $font-weight-extra-bold;
+    font-size: $font-size-h1 !important;
+    font-weight: $font-weight-extra-bold !important;
 
     @include respond(md) {
-        font-size: $font-size-h1-xl;
+        font-size: $font-size-h1-xl !important;
     }
 }
 
 h2 {
-    font-size: $font-size-h2;
-    font-weight: $font-weight-bold;
+    font-size: $font-size-h2 !important;
+    font-weight: $font-weight-bold !important;
 
     @include respond(md) {
-        font-size: $font-size-h2-xl;
+        font-size: $font-size-h2-xl !important;
     }
 }
 
 h3 {
-    font-size: $font-size-h3;
-    font-weight: $font-weight-bold;
+    font-size: $font-size-h3 !important;
+    font-weight: $font-weight-bold !important;
 
     @include respond(md) {
-        font-size: $font-size-h3-xl;
+        font-size: $font-size-h3-xl !important;
     }
 }
 
 h4,
 h5,
 h6 {
-    font-size: $font-size-body;
-    font-weight: $font-weight-medium;
+    font-size: $font-size-body !important;
+    font-weight: $font-weight-medium !important;
 }
 
 // Corps de texte
 
 body {
-    font-family: $font-body;
-    font-size: $font-size-body;
-    line-height: 1.6;
+    font-family: $font-body !important;
+    font-size: $font-size-body !important;
+    line-height: 1.6 !important;
 }
 
 // Paragraphes et listes
@@ -72,12 +72,12 @@ p,
 ul,
 ol,
 li {
-    font-size: $font-size-body;
-    color: $color-primary;
-    font-weight: $font-weight-regular;
+    font-size: $font-size-body !important;
+    color: $color-primary !important;
+    font-weight: $font-weight-regular !important;
 
     @include respond(md) {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 }
 
@@ -89,11 +89,11 @@ ol {
 
 // Liens
 a {
-    font-family: $font-body;
-    color: $color-secondary;
-    text-decoration: none;
+    font-family: $font-body !important;
+    color: $color-secondary !important;
+    text-decoration: none !important;
 
     &:hover {
-        color: $color-accent-red;
+        color: $color-accent-red !important;
     }
 }
