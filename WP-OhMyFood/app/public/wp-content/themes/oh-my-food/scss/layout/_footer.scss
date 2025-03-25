@@ -4,132 +4,132 @@
 // FOOTER
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 29px 5.85%;
-    gap: 1rem;
-    background-color: $color-accent-blue;
-    color: $color-white;
-    font-size: $font-size-sm;
-    max-width: none;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 29px 5.85% !important;
+    gap: 1rem !important;
+    background-color: $color-accent-blue !important;
+    color: $color-white !important;
+    font-size: $font-size-sm !important;
+    max-width: none !important;
 
     a {
-        color: $color-white;
-        text-decoration: none;
+        color: $color-white !important;
+        text-decoration: none !important;
     }
 
     @include respond(md) {
-        padding: 42px 12.5%;
-        font-size: $font-size-sm;
+        padding: 42px 12.5% !important;
+        font-size: $font-size-sm !important;
     }
 }
 
 /* Conteneur principal */
 .infos-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2.9rem;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    gap: 2.9rem !important;
 
     @include respond(md) {
-        gap: 3.2rem;
+        gap: 3.2rem !important;
     }
 }
 
 /* Réseaux sociaux */
 .social-follow {
-    display: flex;
-    justify-content: center;
-    padding: 0 5px;
-    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 5px !important;
+    width: 100% !important;
 
     @include respond(md) {
-        padding: 16px 11.1%;
+        padding: 16px 11.1% !important;
     }
 }
 
 .social-icons {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 100% !important;
 
     a {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     i {
-        font-size: 24px;
-        width: auto;
-        color: $color-white;
+        font-size: 24px !important;
+        width: auto !important;
+        color: $color-white !important;
 
         @include respond(md) {
-            font-size: 32px;
+            font-size: 32px !important;
         }
     }
 }
 
 /* Footer Divider */
 .footer-divider {
-    width: 100%;
-    height: 0.1rem;
-    background-color: $color-white;
-    margin: 0 auto;
+    width: 100% !important;
+    height: 0.1rem !important;
+    background-color: $color-white !important;
+    margin: 0 auto !important;
 }
 
 /* Copyright */
 .copyright {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 57%;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1rem;
-    color: $color-white;
-    text-align: center;
-    gap: 5px;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    width: 57% !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    font-size: 1rem !important;
+    color: $color-white !important;
+    text-align: center !important;
+    gap: 5px !important;
 
     @include respond(md) {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: $font-size-sm;
-        width: auto;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        font-size: $font-size-sm !important;
+        width: auto !important;
     }
 
     a {
-        display: inline-block;
+        display: inline-block !important;
     }
 }
 
 .copyright-text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
 }
 
 .copyright-links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0.32rem 0;
-    gap: 0.5rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    margin: 0.32rem 0 !important;
+    gap: 0.5rem !important;
 }
 
 .copyright-name {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-bold !important;
 }
 
 .copyright-dot {
-    display: none;
+    display: none !important;
 
     @include respond(md) {
-        display: inline;
+        display: inline !important;
     }
 }
 
 /* Newsletter */
 .newsletter-box {
-    display: none;
+    display: none !important;
 }

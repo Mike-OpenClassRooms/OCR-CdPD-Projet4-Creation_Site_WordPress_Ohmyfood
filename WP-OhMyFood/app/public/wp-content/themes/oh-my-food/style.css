@@ -416,136 +416,136 @@ header {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 29px 5.85%;
-  gap: 1rem;
-  background-color: #0D1B2A;
-  color: #FFFFFF;
-  font-size: 14px;
-  max-width: none;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 29px 5.85% !important;
+  gap: 1rem !important;
+  background-color: #0D1B2A !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  max-width: none !important;
 }
 footer a {
-  color: #FFFFFF;
-  text-decoration: none;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
 }
 @media (min-width: 900px) {
   footer {
-    padding: 42px 12.5%;
-    font-size: 14px;
+    padding: 42px 12.5% !important;
+    font-size: 14px !important;
   }
 }
 
 /* Conteneur principal */
 .infos-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2.9rem;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 2.9rem !important;
 }
 @media (min-width: 900px) {
   .infos-footer {
-    gap: 3.2rem;
+    gap: 3.2rem !important;
   }
 }
 
 /* Réseaux sociaux */
 .social-follow {
-  display: flex;
-  justify-content: center;
-  padding: 0 5px;
-  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 5px !important;
+  width: 100% !important;
 }
 @media (min-width: 900px) {
   .social-follow {
-    padding: 16px 11.1%;
+    padding: 16px 11.1% !important;
   }
 }
 
 .social-icons {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+  display: flex !important;
+  justify-content: space-around !important;
+  width: 100% !important;
 }
 .social-icons a {
-  display: inline-block;
+  display: inline-block !important;
 }
 .social-icons i {
-  font-size: 24px;
-  width: auto;
-  color: #FFFFFF;
+  font-size: 24px !important;
+  width: auto !important;
+  color: #FFFFFF !important;
 }
 @media (min-width: 900px) {
   .social-icons i {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
 
 /* Footer Divider */
 .footer-divider {
-  width: 100%;
-  height: 0.1rem;
-  background-color: #FFFFFF;
-  margin: 0 auto;
+  width: 100% !important;
+  height: 0.1rem !important;
+  background-color: #FFFFFF !important;
+  margin: 0 auto !important;
 }
 
 /* Copyright */
 .copyright {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 57%;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 1rem;
-  color: #FFFFFF;
-  text-align: center;
-  gap: 5px;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  width: 57% !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  font-size: 1rem !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+  gap: 5px !important;
 }
 @media (min-width: 900px) {
   .copyright {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 14px;
-    width: auto;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    font-size: 14px !important;
+    width: auto !important;
   }
 }
 .copyright a {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .copyright-text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
 }
 
 .copyright-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0.32rem 0;
-  gap: 0.5rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  margin: 0.32rem 0 !important;
+  gap: 0.5rem !important;
 }
 
 .copyright-name {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .copyright-dot {
-  display: none;
+  display: none !important;
 }
 @media (min-width: 900px) {
   .copyright-dot {
-    display: inline;
+    display: inline !important;
   }
 }
 
 /* Newsletter */
 .newsletter-box {
-  display: none;
+  display: none !important;
 }
 
 button,
