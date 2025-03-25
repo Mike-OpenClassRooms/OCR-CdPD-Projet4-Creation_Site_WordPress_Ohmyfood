@@ -254,7 +254,7 @@ header {
     padding: 0;
   }
   .main-navigation li {
-    font-size: 16px;
+    font-size: 2rem;
     font-weight: 500;
   }
   .main-navigation a {
