@@ -130,6 +130,11 @@ main {
   padding: 0 5.85% !important;
   max-width: none !important;
 }
+@media (min-width: 900px) {
+  .entry-content {
+    padding: 0 11.1% !important;
+  }
+}
 
 @media (min-width: 900px) {
   .post-thumbnail,

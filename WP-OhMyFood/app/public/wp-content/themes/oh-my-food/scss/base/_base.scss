@@ -35,6 +35,10 @@ main {
 .entry-content {
     padding: 0 5.85% !important;
     max-width: none !important;
+
+    @include respond(md) {
+        padding: 0 11.1% !important;
+    }
 }
 
 @include respond(md) {
