@@ -1,15 +1,12 @@
-/* ==========================================================================
-   Breakpoints pour design responsive
-   Basés sur les tailles d’écrans les plus courantes
-   ========================================================================== */
+// Breakpoints pour design responsive
 
-/* Variables */
+// Variables breakpoints
 $breakpoint-sm: 600px; // Smartphones
 $breakpoint-md: 900px; // Tablettes
 $breakpoint-lg: 1280px; // Petits laptops
 $breakpoint-xl: 1440px; // Grands écrans
 
-/* Mixin responsive */
+// Mixin responsive
 @mixin respond($breakpoint) {
     @if $breakpoint ==sm {
         @media (min-width: $breakpoint-sm) {
