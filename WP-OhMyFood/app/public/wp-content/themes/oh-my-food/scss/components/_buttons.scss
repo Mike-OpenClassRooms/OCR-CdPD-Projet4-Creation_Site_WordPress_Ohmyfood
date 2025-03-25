@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as *;
+@use '../utils/breakpoints' as *;
+
+// BOUTONS 
+
+button,
+.btn {
+    background-color: $color-secondary;
+    color: $color-primary;
+    border: none;
+    padding: 10px 20px !important;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: $radius-small;
+    box-shadow: $shadow-button;
+    font-family: $font-body;
+    font-size: $font-size-xs;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-accent-red;
+    }
+}
+
+/* Bouton retour page d’accueil */
+.back-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 139px;
+    height: 44px;
+    padding: 0 $spacing-sm;
+    background: $color-secondary;
+    border-radius: $radius-medium;
+    box-shadow: $shadow-medium;
+
+    a {
+        color: $color-accent-blue;
+        text-decoration: none;
+        font-family: $font-body;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-bold;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    @include respond(sm) {
+        width: 202.182px;
+        height: 64px;
+
+        a {
+            font-size: $font-size-body;
+        }
+    }
+}
+
+/* Styles supplémentaires pour les boutons spécifiques 
+.btn-primary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-accent-blue;
+    }
+}
+
+.btn-secondary {
+    background-color: $color-secondary-light;
+    color: $color-dark;
+
+    &:hover {
+        background-color: $color-secondary-dark;
+    }
+}
+
+.btn-danger {
+    background-color: $color-danger;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-danger-dark;
+    }
+}*/

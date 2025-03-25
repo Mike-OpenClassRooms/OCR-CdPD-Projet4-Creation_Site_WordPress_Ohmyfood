@@ -1,0 +1,135 @@
+@use '../abstracts/variables' as *;
+@use '../utils/breakpoints' as *;
+
+// FOOTER
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 29px 5.85%;
+    gap: 1rem;
+    background-color: $color-accent-blue;
+    color: $color-white;
+    font-size: $font-size-sm;
+    max-width: none;
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    @include respond(md) {
+        padding: 42px 12.5%;
+        font-size: $font-size-sm;
+    }
+}
+
+/* Conteneur principal */
+.infos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.9rem;
+
+    @include respond(md) {
+        gap: 3.2rem;
+    }
+}
+
+/* Réseaux sociaux */
+.social-follow {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+    width: 100%;
+
+    @include respond(md) {
+        padding: 16px 11.1%;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    a {
+        display: inline-block;
+    }
+
+    i {
+        font-size: 24px;
+        width: auto;
+        color: $color-white;
+
+        @include respond(md) {
+            font-size: 32px;
+        }
+    }
+}
+
+/* Footer Divider */
+.footer-divider {
+    width: 100%;
+    height: 0.1rem;
+    background-color: $color-white;
+    margin: 0 auto;
+}
+
+/* Copyright */
+.copyright {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 57%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    color: $color-white;
+    text-align: center;
+    gap: 5px;
+
+    @include respond(md) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: $font-size-sm;
+        width: auto;
+    }
+
+    a {
+        display: inline-block;
+    }
+}
+
+.copyright-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.copyright-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.32rem 0;
+    gap: 0.5rem;
+}
+
+.copyright-name {
+    font-weight: $font-weight-bold;
+}
+
+.copyright-dot {
+    display: none;
+
+    @include respond(md) {
+        display: inline;
+    }
+}
+
+/* Newsletter */
+.newsletter-box {
+    display: none;
+}

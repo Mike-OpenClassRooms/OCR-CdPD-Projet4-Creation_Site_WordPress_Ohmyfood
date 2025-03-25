@@ -409,3 +409,215 @@ header {
   height: 20px;
   fill: #FFFFFF;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 29px 5.85%;
+  gap: 1rem;
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+  font-size: 14px;
+  max-width: none;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media (min-width: 900px) {
+  footer {
+    padding: 42px 12.5%;
+    font-size: 14px;
+  }
+}
+
+/* Conteneur principal */
+.infos-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.9rem;
+}
+@media (min-width: 900px) {
+  .infos-footer {
+    gap: 3.2rem;
+  }
+}
+
+/* Réseaux sociaux */
+.social-follow {
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .social-follow {
+    padding: 16px 11.1%;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons i {
+  font-size: 24px;
+  width: auto;
+  color: #FFFFFF;
+}
+@media (min-width: 900px) {
+  .social-icons i {
+    font-size: 32px;
+  }
+}
+
+/* Footer Divider */
+.footer-divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+/* Copyright */
+.copyright {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 57%;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+  gap: 5px;
+}
+@media (min-width: 900px) {
+  .copyright {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    width: auto;
+  }
+}
+.copyright a {
+  display: inline-block;
+}
+
+.copyright-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.copyright-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.32rem 0;
+  gap: 0.5rem;
+}
+
+.copyright-name {
+  font-weight: 700;
+}
+
+.copyright-dot {
+  display: none;
+}
+@media (min-width: 900px) {
+  .copyright-dot {
+    display: inline;
+  }
+}
+
+/* Newsletter */
+.newsletter-box {
+  display: none;
+}
+
+button,
+.btn {
+  background-color: #D4AF37;
+  color: #1C1C1C;
+  border: none;
+  padding: 10px 20px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+button:hover,
+.btn:hover {
+  background-color: #7D2A2A;
+}
+
+/* Bouton retour page d’accueil */
+.back-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 44px;
+  padding: 0 16px;
+  background: #D4AF37;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.back-home a {
+  color: #0D1B2A;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .back-home {
+    width: 202.182px;
+    height: 64px;
+  }
+  .back-home a {
+    font-size: 16px;
+  }
+}
+
+/* Styles supplémentaires pour les boutons spécifiques 
+.btn-primary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-accent-blue;
+    }
+}
+
+.btn-secondary {
+    background-color: $color-secondary-light;
+    color: $color-dark;
+
+    &:hover {
+        background-color: $color-secondary-dark;
+    }
+}
+
+.btn-danger {
+    background-color: $color-danger;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-danger-dark;
+    }
+}*/
