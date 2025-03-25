@@ -12,7 +12,7 @@
 
 /* HTML */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 /* Body */
@@ -58,36 +58,36 @@ main {
 img,
 video,
 svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
 }
 
 /* Liens */
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 /* Listes */
 ul,
 ol {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
 }
 
 /* Boutons */
 button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: inherit;
+    border: none !important;
+    background: none !important;
+    cursor: pointer !important;
+    font-family: inherit !important;
 }
 
 /* Sections générales */
 section {
-    padding: $spacing-lg 0;
+    padding: $spacing-lg 0 !important;
 }
 
 /* Utilitaires */
