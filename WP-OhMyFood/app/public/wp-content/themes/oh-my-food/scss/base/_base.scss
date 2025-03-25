@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as *;
+@use '../utils/breakpoints' as *;
+
+// Styles de base communs à tout le site
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-white;
+    color: $color-primary;
+}
+
+/* Images et médias */
+img,
+video,
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Listes */
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Boutons */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Sections générales */
+section {
+    padding: $spacing-lg 0;
+}
+
+/* Utilitaires */
+.hidden {
+    display: none !important;
+}
