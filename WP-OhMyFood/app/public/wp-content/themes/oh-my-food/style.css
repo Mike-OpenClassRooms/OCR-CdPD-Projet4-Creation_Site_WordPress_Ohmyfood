@@ -111,19 +111,19 @@ html {
 
 /* Body */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #FFFFFF;
-  color: #1C1C1C;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #FFFFFF !important;
+  color: #1C1C1C !important;
 }
 
 /* Main */
 main {
-  display: block;
+  display: block !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .entry-content {
@@ -143,8 +143,8 @@ main {
   *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
   .default-max-width {
     max-width: none !important;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 /* Images et médias */
