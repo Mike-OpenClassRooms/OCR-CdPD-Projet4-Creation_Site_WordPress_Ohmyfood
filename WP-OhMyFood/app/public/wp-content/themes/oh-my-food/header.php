@@ -46,7 +46,7 @@
 		<!-- Nouveau header -->
 		<header>
 			<!-- Partie logo & menu du header -->
-			<div class="header-top">
+			<section class="header-top">
 				<div class="logo-container">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/logo-ohmyfood-header.svg" alt="Logo OhMyFood" class="site-logo">
 				</div>
@@ -91,9 +91,9 @@
 					</button>
 				</div>
 
-			</div>
+			</section>
 			<!-- Partie recherche du header -->
-			<div class="header-bottom">
+			<section class="header-bottom">
 				<div class="search-bar">
 					<div class="search-field">
 						<span>Où ?</span>
@@ -117,7 +117,7 @@
 						</svg>
 					</button>
 				</div>
-			</div>
+			</section>
 		</header>
 
 		<!-- Conteneur principal du contenu du site -->
