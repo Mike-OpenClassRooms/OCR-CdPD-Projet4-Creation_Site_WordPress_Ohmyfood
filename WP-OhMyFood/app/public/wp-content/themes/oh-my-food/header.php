@@ -48,7 +48,9 @@
 			<!-- Partie logo & menu du header -->
 			<section class="header-top">
 				<div class="logo-container">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/logo-ohmyfood-header.svg" alt="Logo OhMyFood" class="site-logo">
+					<a href="<?php echo esc_url(home_url('/')); ?>">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/logo-ohmyfood-header.svg" alt="Logo OhMyFood" class="site-logo">
+					</a>
 				</div>
 				<nav class="main-navigation">
 					<?php
