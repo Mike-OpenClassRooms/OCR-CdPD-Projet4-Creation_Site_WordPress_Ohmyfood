@@ -1154,3 +1154,275 @@ button:hover {
         }
     }
 }*/
+.card-restaurant {
+  width: 100%;
+  height: 347px;
+  flex-shrink: 0;
+  position: relative;
+}
+.card-restaurant__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-restaurant__top-bar {
+  position: absolute;
+  top: 15px;
+  left: 23px;
+  right: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-restaurant__btn-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card-restaurant__btn-group .circle-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.card-restaurant__counter {
+  position: absolute;
+  bottom: 12px;
+  right: 21px;
+  width: 40px;
+  height: 28px;
+  border-radius: 5px;
+  background: rgba(34, 34, 34, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  text-align: center;
+}
+
+.section-chef {
+  padding: 20px 23px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.section-chef__avatar {
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  border: 4px solid #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+.section-chef__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.section-chef__text .name {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+.section-chef__text .bio {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 275;
+  color: #000000;
+}
+.section-chef__text .read-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+.section-presentation {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.section-presentation .text {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}
+.section-presentation .text .highlight {
+  font-weight: 500;
+}
+.section-presentation .read-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 22px;
+}
+
+.section-buttons {
+  width: 100%;
+  padding: 24px 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-buttons .btn {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: #D4AF37;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0D1B2A;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-advantages {
+  padding: 0 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section-advantages h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+.section-advantages .advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-advantages .advantage .item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+.section-advantages .advantage .item svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.section-map {
+  padding: 0 23px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section-map .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section-map .info h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.section-map .info .address,
+.section-map .info .transport-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: #000000;
+}
+.section-map .info .transports {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section-map .info .transports .transport {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.section-map .info .transports .transport .icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.section-map .map-container {
+  height: 345px;
+  position: relative;
+  background-color: #FAF3E0;
+  margin-top: 16px;
+}
+.section-map .map-container .marker {
+  width: 138px;
+  height: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 90px;
+  top: 68px;
+  border-radius: 50%;
+  background: rgba(13, 27, 42, 0.25);
+}
+.section-map .map-container .marker svg {
+  width: 33px;
+  height: 52px;
+}
+
+.section-reservation {
+  width: 100%;
+  padding: 25px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.section-reservation h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  align-self: stretch;
+}
+.section-reservation .calendar {
+  padding: 23px;
+  border-radius: 40px;
+  border: 1px solid #DDD;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
