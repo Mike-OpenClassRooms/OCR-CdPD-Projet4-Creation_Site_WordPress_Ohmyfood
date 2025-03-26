@@ -106,7 +106,7 @@ a:hover {
   right: 0 !important;
   z-index: 99999 !important;
   width: 100% !important;
-  height: 32px !important;
+  height: auto !important;
   background-color: #23282d !important;
   color: #fff !important;
   font-size: 13px !important;
@@ -146,8 +146,13 @@ main {
 
 .entry-content {
   font-family: "Poppins", sans-serif !important;
-  padding-inline: clamp(2rem, 5.85vw, 3.2rem) !important;
+  padding-inline: clamp(2rem, 5.85vw, 2.3rem) !important;
   max-width: none !important;
+}
+@media (max-width: 393px) {
+  .entry-content {
+    padding-inline: clamp(2.3rem, 5.85vw, 3.2rem) !important;
+  }
 }
 @media (min-width: 600px) {
   .entry-content {
@@ -170,18 +175,19 @@ main {
   }
 }
 
-@media (min-width: 900px) {
-  .post-thumbnail,
-  .entry-content .wp-audio-shortcode,
-  .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
-  *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
-  .default-max-width {
-    font-family: "Poppins", sans-serif !important;
-    max-width: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+.post-thumbnail,
+.entry-content .wp-audio-shortcode,
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
+*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
+.default-max-width {
+  font-family: "Poppins", sans-serif !important;
+  max-width: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
+
 /* Images et médias */
 img,
 video,
@@ -455,12 +461,37 @@ footer {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  padding: 29px 5.85% !important;
+  padding-block: clamp(2rem, 5.85vw, 2.9rem) !important;
+  padding-inline: clamp(2rem, 5.85vw, 2.3rem) !important;
   gap: 1rem !important;
   background-color: #0D1B2A !important;
   color: #FFFFFF !important;
   font-size: 12px !important;
   max-width: none !important;
+}
+@media (max-width: 393px) {
+  footer {
+    padding-inline: clamp(2.3rem, 5.85vw, 3.2rem) !important;
+    padding-block: clamp(2.9rem, 5.85vw, 3.2rem) !important;
+  }
+}
+@media (min-width: 900px) {
+  footer {
+    padding-inline: clamp(3.5rem, 8vw, 7.3rem) !important;
+    padding-block: clamp(3.5rem, 8vw, 4.2rem) !important;
+  }
+}
+@media (min-width: 1280px) {
+  footer {
+    padding-inline: clamp(8rem, 10vw, 13rem) !important;
+    padding-block: clamp(4.2rem, 10vw, 6rem) !important;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    padding-inline: clamp(16rem, 11vw, 18rem) !important;
+    padding-block: clamp(4.2rem, 11vw, 5rem) !important;
+  }
 }
 footer section {
   padding: 0 !important;
@@ -468,12 +499,6 @@ footer section {
 footer a {
   color: #FFFFFF !important;
   text-decoration: none !important;
-}
-@media (min-width: 900px) {
-  footer {
-    padding: 42px 12.5% !important;
-    font-size: 12px !important;
-  }
 }
 
 /* Conteneur principal */
@@ -572,6 +597,7 @@ footer a {
 .copyright-links {
   display: flex !important;
   flex-wrap: wrap !important;
+  justify-content: space-between !important;
   align-items: center !important;
   margin: 0.32rem 0 !important;
   gap: 0.5rem !important;
@@ -674,8 +700,7 @@ button:hover {
 .about-intro {
   display: flex !important;
   flex-direction: column !important;
-  margin-top: 1.2rem !important;
-  gap: 3.5rem !important;
+  gap: 1.5rem !important;
 }
 @media (min-width: 900px) {
   .about-intro {
@@ -691,7 +716,11 @@ button:hover {
 .image-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+}
+@media (min-width: 900px) {
+  .image-wrapper {
+    margin-bottom: 32px;
+  }
 }
 
 .image-about {
@@ -710,7 +739,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 32px 0;
+  padding: 32px 0 0;
 }
 .about-text strong {
   font-weight: 500 !important;

@@ -11,7 +11,7 @@
     right: 0 !important;
     z-index: 99999 !important;
     width: 100% !important;
-    height: 32px !important;
+    height: auto !important;
     background-color: #23282d !important;
     color: #fff !important;
     font-size: 13px !important;
@@ -52,7 +52,12 @@ main {
 
 .entry-content {
     font-family: $font-body !important;
-    padding-inline: clamp(2rem, 5.85vw, 3.2rem) !important;
+    padding-inline: clamp(2rem, 5.85vw, 2.3rem) !important;
+
+    @include respond(xs) {
+        padding-inline: clamp(2.3rem, 5.85vw, 3.2rem) !important;
+    }
+
 
     @include respond(sm) {
         padding-inline: clamp(3.5rem, 8vw, 7.3rem) !important;
@@ -73,18 +78,17 @@ main {
     max-width: none !important;
 }
 
-@include respond(md) {
-
-    .post-thumbnail,
-    .entry-content .wp-audio-shortcode,
-    .entry-content>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
-    *[class*=inner-container]>*:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
-    .default-max-width {
-        font-family: $font-body !important;
-        max-width: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
+.post-thumbnail,
+.entry-content .wp-audio-shortcode,
+.entry-content>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
+*[class*=inner-container]>*:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator),
+.default-max-width {
+    font-family: $font-body !important;
+    max-width: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* Images et médias */
