@@ -22,10 +22,15 @@ header {
 .header-top {
     display: flex !important;
     height: 80px !important;
-    padding: 15px 23px !important;
+    padding-block: 15px !important;
+    padding-inline: clamp(2rem, 5.85vw, 2.3rem) !important;
     justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
+
+    @include respond(xs) {
+        padding-inline: clamp(2.3rem, 5.85vw, 8rem) !important;
+    }
 
     @include respond(md) {
         height: 90px !important;

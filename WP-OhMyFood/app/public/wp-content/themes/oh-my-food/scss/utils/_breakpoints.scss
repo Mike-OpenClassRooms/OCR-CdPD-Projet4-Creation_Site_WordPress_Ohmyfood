@@ -1,40 +1,39 @@
-// Breakpoints pour design responsive
+// Breakpoints pour les médias queries
 
-// Variables breakpoints
-$breakpoint-xs: 393px; // Très petits smartphones
-$breakpoint-sm: 600px; // Smartphones
-$breakpoint-md: 900px; // Tablettes
-$breakpoint-lg: 1280px; // Petits laptops
-$breakpoint-xl: 1440px; // Grands écrans
+// Plages de largeur d'écran
+$breakpoint-xs-min: 393px;
+$breakpoint-sm-min: 768px;
+$breakpoint-md-min: 1024px;
+$breakpoint-lg-min: 1280px;
+$breakpoint-xl-min: 1440px;
 
-// Mixin responsive
 @mixin respond($breakpoint) {
     @if $breakpoint ==xs {
-        @media (max-width: $breakpoint-xs) {
+        @media (min-width: $breakpoint-xs-min) and (max-width: 767.99px) {
             @content;
         }
     }
 
     @else if $breakpoint ==sm {
-        @media (min-width: $breakpoint-sm) {
+        @media (min-width: $breakpoint-sm-min) and (max-width: 1023.99px) {
             @content;
         }
     }
 
     @else if $breakpoint ==md {
-        @media (min-width: $breakpoint-md) {
+        @media (min-width: $breakpoint-md-min) and (max-width: 1279.99px) {
             @content;
         }
     }
 
     @else if $breakpoint ==lg {
-        @media (min-width: $breakpoint-lg) {
+        @media (min-width: $breakpoint-lg-min) and (max-width: 1439.99px) {
             @content;
         }
     }
 
     @else if $breakpoint ==xl {
-        @media (min-width: $breakpoint-xl) {
+        @media (min-width: $breakpoint-xl-min) {
             @content;
         }
     }

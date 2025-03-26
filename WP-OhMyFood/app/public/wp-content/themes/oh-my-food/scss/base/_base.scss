@@ -52,12 +52,12 @@ main {
 
 .entry-content {
     font-family: $font-body !important;
+    max-width: none !important;
     padding-inline: clamp(2rem, 5.85vw, 2.3rem) !important;
 
     @include respond(xs) {
         padding-inline: clamp(2.3rem, 5.85vw, 3.2rem) !important;
     }
-
 
     @include respond(sm) {
         padding-inline: clamp(3.5rem, 8vw, 7.3rem) !important;
@@ -74,8 +74,6 @@ main {
     @include respond(xl) {
         padding-inline: clamp(16rem, 11vw, 18rem) !important;
     }
-
-    max-width: none !important;
 }
 
 .post-thumbnail,

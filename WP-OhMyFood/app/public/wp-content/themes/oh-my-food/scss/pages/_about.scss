@@ -33,6 +33,10 @@
     border-radius: $radius-large !important;
     margin: auto !important;
 
+    @include respond(sm) {
+        width: clamp(281px, 80vw, 800px) !important;
+    }
+
     @include respond(md) {
         width: 800px !important;
     }
