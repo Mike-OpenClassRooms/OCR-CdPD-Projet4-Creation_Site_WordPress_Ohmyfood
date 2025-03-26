@@ -90,15 +90,29 @@
   .home-image-wrapper {
     position: relative;
     width: 100%;
-    height: 32.97rem;
-    border-radius: 2rem;
+    height: 32.97rem !important;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
+    border-radius: 2rem;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include respond(md-up) {
       height: 26rem;
       border-radius: 0.8rem;
+    }
+
+    picture {
+      display: contents;
+    }
+
+    img {
+      width: 100%;
+      height: 100% !important;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .home-heart-icon {
