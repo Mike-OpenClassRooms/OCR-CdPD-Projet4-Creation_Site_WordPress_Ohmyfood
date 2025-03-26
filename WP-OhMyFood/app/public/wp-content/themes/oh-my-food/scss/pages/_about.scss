@@ -8,7 +8,7 @@
     gap: 1.5rem !important;
 
 
-    @include respond(md) {
+    @include respond(md-up) {
         margin-top: 2.8rem !important;
         gap: 2.9rem !important;
     }
@@ -22,22 +22,18 @@
     display: flex;
     justify-content: center;
 
-    @include respond(md) {
+    @include respond(md-up) {
         margin-bottom: $spacing-lg;
     }
 }
 
 .image-about {
-    width: 281px !important;
+    width: clamp(281px, 80vw, 800px) !important;
     height: auto;
     border-radius: $radius-large !important;
     margin: auto !important;
 
-    @include respond(sm) {
-        width: clamp(281px, 80vw, 800px) !important;
-    }
-
-    @include respond(md) {
+    @include respond(md-up) {
         width: 800px !important;
     }
 }
@@ -73,7 +69,7 @@
     justify-content: center !important;
     padding: 40px 0 !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         padding: $spacing-xl 0 !important;
     }
 }

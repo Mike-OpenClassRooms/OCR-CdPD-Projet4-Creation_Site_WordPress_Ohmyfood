@@ -44,7 +44,7 @@ button {
         text-align: center !important;
     }
 
-    @include respond(md) {
+    @include respond(md-up) {
         width: 202.182px !important;
         height: 64px !important;
 

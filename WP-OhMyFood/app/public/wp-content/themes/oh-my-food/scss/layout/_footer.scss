@@ -16,12 +16,12 @@ footer {
     max-width: none !important;
 
     @include respond(xs) {
-        padding-inline: clamp(2.3rem, 5.85vw, 3.2rem) !important;
+        padding-inline: clamp(2.3rem, 5.85vw, 5rem) !important;
         padding-block: clamp(2.9rem, 5.85vw, 3.2rem) !important;
     }
 
     @include respond(sm) {
-        padding-inline: clamp(3rem, 7vw, 6rem) !important;
+        padding-inline: clamp(5rem, 7vw, 6rem) !important;
         padding-block: clamp(3rem, 7vw, 3.6rem) !important;
     }
 
@@ -57,7 +57,7 @@ footer {
     justify-content: space-between !important;
     gap: 2.9rem !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         gap: 3.2rem !important;
     }
 }
@@ -69,8 +69,12 @@ footer {
     padding: 0 5px !important;
     width: 100% !important;
 
-    @include respond(md) {
-        padding-inline: clamp(1rem, 14.82vw, 16rem) !important;
+    @include respond(sm) {
+        padding-inline: clamp(7rem, 8vw, 16rem) !important;
+    }
+
+    @include respond(md-up) {
+        padding-inline: clamp(16rem, 14.82vw, 18rem) !important;
     }
 }
 
@@ -88,7 +92,7 @@ footer {
         width: auto !important;
         color: $color-white !important;
 
-        @include respond(md) {
+        @include respond(md-up) {
             font-size: 32px !important;
         }
     }
@@ -117,12 +121,12 @@ footer {
         font-size: 1rem !important;
         color: $color-white !important;
 
-        @include respond(md) {
+        @include respond(md-up) {
             font-size: $font-size-sm !important;
         }
     }
 
-    @include respond(md) {
+    @include respond(md-up) {
         flex-direction: row !important;
         justify-content: flex-start !important;
         align-items: center !important;
@@ -158,7 +162,7 @@ footer {
 .copyright-dot {
     display: none !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         display: inline !important;
     }
 }

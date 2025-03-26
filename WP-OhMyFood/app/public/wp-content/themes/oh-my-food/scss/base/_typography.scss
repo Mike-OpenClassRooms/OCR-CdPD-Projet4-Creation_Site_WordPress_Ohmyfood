@@ -29,7 +29,7 @@ h1 {
     font-size: $font-size-h1 !important;
     font-weight: $font-weight-extra-bold !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         font-size: $font-size-h1-xl !important;
     }
 }
@@ -38,7 +38,7 @@ h2 {
     font-size: $font-size-h2 !important;
     font-weight: $font-weight-bold !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         font-size: $font-size-h2-xl !important;
     }
 }
@@ -47,7 +47,7 @@ h3 {
     font-size: $font-size-h3 !important;
     font-weight: $font-weight-bold !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         font-size: $font-size-h3-xl !important;
     }
 }
@@ -77,7 +77,7 @@ li {
     color: $color-primary !important;
     font-weight: $font-weight-regular !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         font-size: 2rem !important;
     }
 }

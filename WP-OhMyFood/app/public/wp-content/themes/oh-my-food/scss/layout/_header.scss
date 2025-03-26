@@ -13,7 +13,7 @@ header {
     box-shadow: $shadow-light !important;
     width: 100% !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         padding-bottom: 24px;
     }
 }
@@ -29,12 +29,32 @@ header {
     width: 100% !important;
 
     @include respond(xs) {
-        padding-inline: clamp(2.3rem, 5.85vw, 8rem) !important;
+        padding-inline: clamp(2.3rem, 5.85vw, 3.2rem) !important;
+    }
+
+    @include respond(sm) {
+        padding-inline: clamp(3.2rem, 6vw, 5rem) !important;
+    }
+
+    @include respond(md-up) {
+        height: 90px !important;
+        padding-block: 16px !important;
     }
 
     @include respond(md) {
+        padding-inline: clamp(5rem, 6vw, 7rem) !important;
+    }
+
+    @include respond(lg) {
         height: 90px !important;
-        padding: 16px 80px !important;
+        padding-block: 16px !important;
+        padding-inline: clamp(7rem, 6vw, 8rem) !important;
+    }
+
+    @include respond(xl) {
+        height: 90px !important;
+        padding-block: 16px !important;
+        padding-inline: clamp(8rem, 6vw, 12rem) !important;
     }
 }
 
@@ -42,7 +62,11 @@ header {
 .logo-container img {
     height: 27px !important;
 
-    @include respond(md) {
+    @include respond(lg) {
+        height: 35px !important;
+    }
+
+    @include respond(xl) {
         height: 35px !important;
     }
 }
@@ -57,7 +81,7 @@ header {
 .main-navigation {
     display: none !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         display: flex !important;
         align-items: center;
         gap: 32px;
@@ -71,8 +95,7 @@ header {
         }
 
         li {
-            font-size: 2rem;
-            font-weight: $font-weight-medium;
+            font-weight: $font-weight-medium !important;
         }
 
         a {
@@ -84,13 +107,28 @@ header {
             }
         }
     }
+
+    @include respond(md) {
+
+        li {
+            font-size: 1.5rem !important;
+
+        }
+    }
+
+    @include respond(lg) {
+
+        li {
+            font-size: 2rem !important;
+        }
+    }
 }
 
 /* Profil */
 .header-profile {
     display: none !important;
 
-    @include respond(md) {
+    @include respond(md-up) {
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -140,7 +178,7 @@ header {
         height: 32px;
     }
 
-    @include respond(md) {
+    @include respond(md-up) {
         display: none !important;
     }
 }
@@ -199,7 +237,7 @@ header {
     align-items: center;
     gap: 8px;
 
-    @include respond(md) {
+    @include respond(md-up) {
         flex-direction: row;
         padding: 16px 24px !important;
         gap: $spacing-sm;

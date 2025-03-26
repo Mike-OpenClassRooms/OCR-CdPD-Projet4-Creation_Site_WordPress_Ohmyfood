@@ -37,4 +37,10 @@ $breakpoint-xl-min: 1440px;
             @content;
         }
     }
+
+    @else if $breakpoint ==md-up {
+        @media (min-width: $breakpoint-md-min) {
+            @content;
+        }
+    }
 }
