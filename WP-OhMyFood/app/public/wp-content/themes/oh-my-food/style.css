@@ -475,9 +475,15 @@ footer {
     padding-block: clamp(2.9rem, 5.85vw, 3.2rem) !important;
   }
 }
+@media (min-width: 600px) {
+  footer {
+    padding-inline: clamp(3rem, 7vw, 6rem) !important;
+    padding-block: clamp(3rem, 7vw, 3.6rem) !important;
+  }
+}
 @media (min-width: 900px) {
   footer {
-    padding-inline: clamp(3.5rem, 8vw, 7.3rem) !important;
+    padding-inline: clamp(6rem, 8vw, 7.3rem) !important;
     padding-block: clamp(3.5rem, 8vw, 4.2rem) !important;
   }
 }
