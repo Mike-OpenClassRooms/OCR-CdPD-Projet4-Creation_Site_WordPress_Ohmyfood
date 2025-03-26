@@ -15,7 +15,10 @@ get_header();
 		<h1 class="about-title">À PROPOS DE NOUS</h1>
 
 		<div class="image-wrapper">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/illustration-about.webp" alt="Illustration" class="image-about">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/illustration-about.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/illustration-about.jpg" alt="Illustration" class="image-about" loading="lazy">
+			</picture>
 		</div>
 	</section>
 	<div class="about-text">
