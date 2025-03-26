@@ -14,15 +14,15 @@ get_header();
 		<!-- Champ de recherche visible uniquement en mobile -->
 		<div class="home-search-wrapper">
 			<div class="home-search-bar">
-				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
 					<path d="M11.9196 11.9196L16.5 16.5M7.84821 13.4464C8.58338 13.4464 9.31135 13.3016 9.99056 13.0203C10.6698 12.739 11.2869 12.3266 11.8067 11.8067C12.3266 11.2869 12.739 10.6698 13.0203 9.99056C13.3016 9.31135 13.4464 8.58338 13.4464 7.84821C13.4464 7.11305 13.3016 6.38508 13.0203 5.70587C12.739 5.02666 12.3266 4.40952 11.8067 3.88968C11.2869 3.36984 10.6698 2.95748 9.99056 2.67614C9.31135 2.3948 8.58338 2.25 7.84821 2.25C6.36348 2.25 4.93955 2.83981 3.88968 3.88968C2.83981 4.93955 2.25 6.36348 2.25 7.84821C2.25 9.33295 2.83981 10.7569 3.88968 11.8067C4.93955 12.8566 6.36348 13.4464 7.84821 13.4464Z" stroke="#0A0A0A" stroke-width="2" />
 				</svg>
 				<input type="text" placeholder="Rechercher un restaurant" />
-				<button class="home-filter-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+				<div class="home-filter-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
 						<path d="M16.5 11.9167H8.42308M8.42308 11.9167C8.42308 12.5355 8.17995 13.129 7.74717 13.5666C7.31439 14.0042 6.72742 14.25 6.11538 14.25C5.50335 14.25 4.91638 14.0042 4.4836 13.5666C4.05082 13.129 3.80769 12.5355 3.80769 11.9167C3.80769 11.2978 4.05082 10.7043 4.4836 10.2668C4.91638 9.82917 5.50335 9.58333 6.11538 9.58333C6.72742 9.58333 7.31439 9.82917 7.74717 10.2668C8.17995 10.7043 8.42308 11.2978 8.42308 11.9167ZM9.57692 6.08333H1.5M9.57692 6.08333C9.57692 6.70217 9.82005 7.29566 10.2528 7.73325C10.6856 8.17083 11.2726 8.41667 11.8846 8.41667C12.4967 8.41667 13.0836 8.17083 13.5164 7.73325C13.9492 7.29566 14.1923 6.70217 14.1923 6.08333C14.1923 5.46449 13.9492 4.871 13.5164 4.43342C13.0836 3.99583 12.4967 3.75 11.8846 3.75C11.2726 3.75 10.6856 3.99583 10.2528 4.43342C9.82005 4.871 9.57692 5.46449 9.57692 6.08333Z" stroke="#0A0A0A" stroke-width="2" />
 					</svg>
-				</button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -35,11 +35,11 @@ get_header();
 					<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.webp" type="image/webp">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="L'Ambroisie d'Or" loading="lazy">
 				</picture>
-				<button class="home-heart-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<div class="home-heart-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9932 5.13581C9.9938 2.7984 6.65975 2.16964 4.15469 4.31001C1.64964 6.45038 1.29697 10.029 3.2642 12.5604C4.89982 14.6651 9.84977 19.1041 11.4721 20.5408C11.6536 20.7016 11.7444 20.7819 11.8502 20.8135C11.9426 20.8411 12.0437 20.8411 12.1361 20.8135C12.2419 20.7819 12.3327 20.7016 12.5142 20.5408C14.1365 19.1041 19.0865 14.6651 20.7221 12.5604C22.6893 10.029 22.3797 6.42787 19.8316 4.31001C17.2835 2.19216 13.9925 2.7984 11.9932 5.13581Z" fill="#222222" fill-opacity="0.6" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
-				</button>
+				</div>
 				<div class="home-dots">
 					<span class="home-dot active"></span>
 					<span class="home-dot"></span>
@@ -48,9 +48,9 @@ get_header();
 			</div>
 			<div class="home-info">
 				<div class="home-details">
-					<h3>L’Ambroisie d’Or</h3>
-					<p class="type">Cuisine terroir raffinée</p>
-					<p class="location">Paris, 8e</p>
+					<p class="restaurant-name">L’Ambroisie d’Or</p>
+					<p class="type-cuisine">Cuisine terroir raffinée</p>
+					<p class="location-restaurant">Paris, 8e</p>
 				</div>
 				<div class="home-rating">
 					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
