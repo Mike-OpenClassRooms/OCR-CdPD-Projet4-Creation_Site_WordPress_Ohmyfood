@@ -30,38 +30,40 @@ get_header();
 	<section class="home-section-restaurants">
 		<!-- Cards restaurants -->
 		<!-- Card 1 -->
-		<div class="home-card-restaurant">
-			<div class="home-image-wrapper">
-				<picture>
-					<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.webp" type="image/webp">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="L'Ambroisie d'Or" loading="lazy">
-				</picture>
-				<div class="home-badge">Coup de cœur</div>
-				<div class="home-heart-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9932 5.13581C9.9938 2.7984 6.65975 2.16964 4.15469 4.31001C1.64964 6.45038 1.29697 10.029 3.2642 12.5604C4.89982 14.6651 9.84977 19.1041 11.4721 20.5408C11.6536 20.7016 11.7444 20.7819 11.8502 20.8135C11.9426 20.8411 12.0437 20.8411 12.1361 20.8135C12.2419 20.7819 12.3327 20.7016 12.5142 20.5408C14.1365 19.1041 19.0865 14.6651 20.7221 12.5604C22.6893 10.029 22.3797 6.42787 19.8316 4.31001C17.2835 2.19216 13.9925 2.7984 11.9932 5.13581Z" fill="#222222" fill-opacity="0.6" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-					</svg>
+		<a href="<?php echo get_permalink(get_page_by_path('restaurant')); ?>" class="home-card-link">
+			<div class="home-card-restaurant">
+				<div class="home-image-wrapper">
+					<picture>
+						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.webp" type="image/webp">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="L'Ambroisie d'Or" loading="lazy">
+					</picture>
+					<div class="home-badge">Coup de cœur</div>
+					<div class="home-heart-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9932 5.13581C9.9938 2.7984 6.65975 2.16964 4.15469 4.31001C1.64964 6.45038 1.29697 10.029 3.2642 12.5604C4.89982 14.6651 9.84977 19.1041 11.4721 20.5408C11.6536 20.7016 11.7444 20.7819 11.8502 20.8135C11.9426 20.8411 12.0437 20.8411 12.1361 20.8135C12.2419 20.7819 12.3327 20.7016 12.5142 20.5408C14.1365 19.1041 19.0865 14.6651 20.7221 12.5604C22.6893 10.029 22.3797 6.42787 19.8316 4.31001C17.2835 2.19216 13.9925 2.7984 11.9932 5.13581Z" fill="#222222" fill-opacity="0.6" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="home-dots">
+						<span class="home-dot active"></span>
+						<span class="home-dot"></span>
+						<span class="home-dot"></span>
+					</div>
 				</div>
-				<div class="home-dots">
-					<span class="home-dot active"></span>
-					<span class="home-dot"></span>
-					<span class="home-dot"></span>
+				<div class="home-info">
+					<div class="home-details">
+						<p class="restaurant-name">L’Ambroisie d’Or</p>
+						<p class="type-cuisine">Cuisine terroir raffinée</p>
+						<p class="location-restaurant">Paris, 8e</p>
+					</div>
+					<div class="home-rating">
+						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+							<path d="M10.5 0.700012L12.8574 7.95533H20.4861L14.3143 12.4394L16.6717 19.6947L10.5 15.2107L4.32825 19.6947L6.68565 12.4394L0.513906 7.95533H8.1426L10.5 0.700012Z" fill="black" />
+						</svg>
+						<span>4,9</span>
+					</div>
 				</div>
 			</div>
-			<div class="home-info">
-				<div class="home-details">
-					<p class="restaurant-name">L’Ambroisie d’Or</p>
-					<p class="type-cuisine">Cuisine terroir raffinée</p>
-					<p class="location-restaurant">Paris, 8e</p>
-				</div>
-				<div class="home-rating">
-					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-						<path d="M10.5 0.700012L12.8574 7.95533H20.4861L14.3143 12.4394L16.6717 19.6947L10.5 15.2107L4.32825 19.6947L6.68565 12.4394L0.513906 7.95533H8.1426L10.5 0.700012Z" fill="black" />
-					</svg>
-					<span>4,9</span>
-				</div>
-			</div>
-		</div>
+		</a>
 
 		<!-- Card 2 -->
 		<div class="home-card-restaurant">
