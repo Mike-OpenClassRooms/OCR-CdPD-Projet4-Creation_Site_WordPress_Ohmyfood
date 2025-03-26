@@ -49,13 +49,13 @@ footer {
     width: 100% !important;
 
     @include respond(md) {
-        padding: 16px 11.1% !important;
+        padding-inline: clamp(1rem, 14.82vw, 16rem) !important;
     }
 }
 
 .social-icons {
     display: flex !important;
-    justify-content: space-around !important;
+    justify-content: space-between !important;
     width: 100% !important;
 
     a {

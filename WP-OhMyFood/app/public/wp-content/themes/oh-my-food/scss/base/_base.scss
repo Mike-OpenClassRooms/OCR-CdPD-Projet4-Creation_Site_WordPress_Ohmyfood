@@ -3,6 +3,24 @@
 
 // Styles de base communs à tout le site
 
+/* Réinitialisation pour wp-admin */
+#wpadminbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99999 !important;
+    width: 100% !important;
+    height: 32px !important;
+    background-color: #23282d !important;
+    color: #fff !important;
+    font-size: 13px !important;
+
+    a {
+        color: #fff !important;
+    }
+}
+
 /* Box sizing */
 *,
 *::before,
@@ -34,12 +52,25 @@ main {
 
 .entry-content {
     font-family: $font-body !important;
-    padding: 0 5.85% !important;
-    max-width: none !important;
+    padding-inline: clamp(2rem, 5.85vw, 3.2rem) !important;
+
+    @include respond(sm) {
+        padding-inline: clamp(3.5rem, 8vw, 7.3rem) !important;
+    }
 
     @include respond(md) {
-        padding: 0 11.1% !important;
+        padding-inline: clamp(8rem, 10vw, 13rem) !important;
     }
+
+    @include respond(lg) {
+        padding-inline: clamp(13rem, 10.5vw, 15.2rem) !important;
+    }
+
+    @include respond(xl) {
+        padding-inline: clamp(16rem, 11vw, 18rem) !important;
+    }
+
+    max-width: none !important;
 }
 
 @include respond(md) {
@@ -88,7 +119,8 @@ button {
 
 /* Sections générales */
 section {
-    padding: $spacing-lg 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 /* Utilitaires */
