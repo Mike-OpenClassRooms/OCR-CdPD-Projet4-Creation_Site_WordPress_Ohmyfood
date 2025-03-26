@@ -1,5 +1,8 @@
 // HOME
 
+@use '../abstracts/variables' as *;
+@use '../utils/breakpoints' as *;
+
 // Section recherche mobile
 .recherche-mobile {
   display: flex;
@@ -245,7 +248,7 @@
   }
 }
 
-// Bouton Carte
+// Bouton map
 .cta-carte {
   display: flex;
   justify-content: center;
