@@ -3,9 +3,28 @@
 @use '../abstracts/variables' as *;
 @use '../utils/breakpoints' as *;
 
-// ---------------------
-// CARD RESTAURANT
-// ---------------------
+// Cacher le header uniquement sur la page restaurant
+.page-template-page-restaurant header {
+    display: none;
+}
+
+// Affichage conditionnel des versions mobile/desktop de la section hero
+.hero-mobile {
+    display: block;
+
+    @include respond(md-up) {
+        display: none;
+    }
+}
+
+.hero-desktop {
+    display: none;
+
+    @include respond(md-up) {
+        display: block;
+    }
+}
+
 .card-restaurant {
     width: 100%;
     height: 347px;
@@ -68,7 +87,7 @@
 // SECTION CHEF
 // ---------------------
 .section-chef {
-    padding: 20px 23px;
+    padding-inline: 23px;
     display: flex;
     align-items: center;
     gap: $spacing-md;
@@ -121,6 +140,7 @@
 // SECTION PRÉSENTATION
 // ---------------------
 .section-presentation {
+    padding-inline: 23px;
     width: 100%;
     padding: 24px;
     display: flex;
@@ -159,6 +179,7 @@
 // SECTION BOUTONS
 // ---------------------
 .section-buttons {
+    padding-inline: 23px;
     width: 100%;
     padding: 24px 46px;
     display: flex;
@@ -186,6 +207,7 @@
 // SECTION AVANTAGES
 // ---------------------
 .section-advantages {
+    padding-inline: 23px;
     padding: 0 23px;
     display: flex;
     flex-direction: column;
@@ -224,6 +246,7 @@
 // SECTION MAP & ADRESSE
 // ---------------------
 .section-map {
+    padding-inline: 23px;
     padding: 0 23px 25px;
     display: flex;
     flex-direction: column;
@@ -296,6 +319,7 @@
 // SECTION RÉSERVATION
 // ---------------------
 .section-reservation {
+    padding-inline: 23px;
     width: 100%;
     padding: 25px 23px;
     display: flex;
@@ -323,5 +347,65 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+}
+
+// ---------------------
+// DIVIDER
+// ---------------------
+.divider {
+    width: 342.696px;
+    height: 1px;
+    background: #D8DCE0;
+    margin: 24px auto;
+}
+
+// ---------------------
+// HERO
+// ---------------------
+.hero {
+    position: relative;
+    width: 100%;
+    height: 347px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .back-button,
+    .actions {
+        position: absolute;
+        top: 15px;
+        padding: 0 23px;
+        display: flex;
+        align-items: center;
+    }
+
+    .back-button {
+        left: 0;
+    }
+
+    .actions {
+        right: 0;
+        gap: 15px;
+    }
+
+    .counter {
+        position: absolute;
+        right: 21px;
+        bottom: 12px;
+        width: 40px;
+        height: 28px;
+        background: rgba(34, 34, 34, 0.80);
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Poppins;
     }
 }

@@ -1154,6 +1154,28 @@ button:hover {
         }
     }
 }*/
+.page-template-page-restaurant header {
+  display: none;
+}
+
+.hero-mobile {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .hero-mobile {
+    display: none;
+  }
+}
+
+.hero-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hero-desktop {
+    display: block;
+  }
+}
+
 .card-restaurant {
   width: 100%;
   height: 347px;
@@ -1208,7 +1230,7 @@ button:hover {
 }
 
 .section-chef {
-  padding: 20px 23px;
+  padding-inline: 23px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -1253,6 +1275,7 @@ button:hover {
 }
 
 .section-presentation {
+  padding-inline: 23px;
   width: 100%;
   padding: 24px;
   display: flex;
@@ -1285,6 +1308,7 @@ button:hover {
 }
 
 .section-buttons {
+  padding-inline: 23px;
   width: 100%;
   padding: 24px 46px;
   display: flex;
@@ -1308,6 +1332,7 @@ button:hover {
 }
 
 .section-advantages {
+  padding-inline: 23px;
   padding: 0 23px;
   display: flex;
   flex-direction: column;
@@ -1339,6 +1364,7 @@ button:hover {
 }
 
 .section-map {
+  padding-inline: 23px;
   padding: 0 23px 25px;
   display: flex;
   flex-direction: column;
@@ -1399,6 +1425,7 @@ button:hover {
 }
 
 .section-reservation {
+  padding-inline: 23px;
   width: 100%;
   padding: 25px 23px;
   display: flex;
@@ -1425,4 +1452,53 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.divider {
+  width: 342.696px;
+  height: 1px;
+  background: #D8DCE0;
+  margin: 24px auto;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 347px;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero .back-button,
+.hero .actions {
+  position: absolute;
+  top: 15px;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+}
+.hero .back-button {
+  left: 0;
+}
+.hero .actions {
+  right: 0;
+  gap: 15px;
+}
+.hero .counter {
+  position: absolute;
+  right: 21px;
+  bottom: 12px;
+  width: 40px;
+  height: 28px;
+  background: rgba(34, 34, 34, 0.8);
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
 }

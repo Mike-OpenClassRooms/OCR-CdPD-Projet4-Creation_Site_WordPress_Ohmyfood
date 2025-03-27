@@ -7,61 +7,91 @@
 get_header();
 
 ?>
-<!-- le contenu de la page  -->
 
+<!-- le contenu de la page -->
 <main class="restaurant-page">
-	<!-- Card restaurant -->
-	<section class="restaurant-card">
-		<div class="restaurant-image-container">
-			<img src="path/to/image.jpg" alt="Image du restaurant" class="restaurant-image">
-			<div class="top-buttons">
-				<button class="btn-back">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4571 17.9571C15.8476 17.5666 15.8476 16.9334 15.4571 16.5429L10.6642 11.75L15.4571 6.95711C15.8476 6.56658 15.8476 5.93342 15.4571 5.54289C15.0666 5.15237 14.4334 5.15237 14.0429 5.54289L8.54289 11.0429C8.15237 11.4334 8.15237 12.0666 8.54289 12.4571L14.0429 17.9571C14.4334 18.3476 15.0666 18.3476 15.4571 17.9571Z" fill="#222222" />
-					</svg>
-				</button>
-				<div class="btn-group">
-					<button class="btn-share">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-							<circle cx="16" cy="16" r="15.95" fill="white" stroke="black" stroke-width="0.1" />
-						</svg>
-					</button>
-					<button class="btn-favorite">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-							<circle cx="16" cy="16" r="15.95" fill="white" stroke="black" stroke-width="0.1" />
-						</svg>
-					</button>
-				</div>
-			</div>
-			<div class="image-counter">1/12</div>
-		</div>
-		<div class="restaurant-infos">
-			<h1>L’Ambroisie d’Or</h1>
-			<p class="restaurant-type">Cuisine terroir raffinée</p>
-			<p class="restaurant-location">Paris, 8e</p>
-			<div class="restaurant-rating">
-				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none" class="star-icon">
-					<path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="black" />
+	<!-- Hero / Card Restaurant -->
+	<section class="hero">
+
+		<!-- Version Mobile : Image principale -->
+		<div class="hero-mobile">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="Image du restaurant L’Ambroisie d’Or">
+			</picture>
+			<button class="back-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4571 17.9571C15.8476 17.5666 15.8476 16.9334 15.4571 16.5429L10.6642 11.75L15.4571 6.95711C15.8476 6.56658 15.8476 5.93342 15.4571 5.54289C15.0666 5.15237 14.4334 5.15237 14.0429 5.54289L8.54289 11.0429C8.15237 11.4334 8.15237 12.0666 8.54289 12.4571L14.0429 17.9571C14.4334 18.3476 15.0666 18.3476 15.4571 17.9571Z" fill="#222222" />
 				</svg>
-				<span class="rating-value">4.9</span>
-				<span class="review-divider"></span>
-				<a href="#avis" class="review-link">25 avis</a>
-			</div>
+			</button>
+		</div>
+
+		<!-- Version Desktop : Carousel ou plusieurs images -->
+		<div class="hero-desktop">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
+			</picture>
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
+			</picture>
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
+			</picture>
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
+			</picture>
+		</div>
+
+		<div class="actions">
+			<button class="btn-share">
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+					<circle cx="16" cy="16" r="15.95" fill="white" stroke="black" stroke-width="0.1" />
+				</svg>
+			</button>
+			<button class="btn-favorite">
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+					<circle cx="16" cy="16" r="15.95" fill="white" stroke="black" stroke-width="0.1" />
+				</svg>
+			</button>
+		</div>
+		<div class="counter">1/12</div>
+
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Infos Restaurant -->
+	<section class="restaurant-infos" style="padding-inline: 23px;">
+		<h1>L’Ambroisie d’Or</h1>
+		<p class="restaurant-type">Cuisine terroir raffinée</p>
+		<p class="restaurant-location">Paris, 8e</p>
+		<div class="restaurant-rating">
+			<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none" class="star-icon">
+				<path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="black" />
+			</svg>
+			<span class="rating-value">4.9</span>
+			<span class="review-divider"></span>
+			<a href="#avis" class="review-link">25 avis</a>
 		</div>
 	</section>
 
 	<div class="divider"></div>
 
-	<!-- Section chef -->
-	<section class="chef-section">
+	<!-- Section Chef -->
+	<section class="chef" style="padding-inline: 23px;">
 		<div class="chef-avatar">
-			<img src="path/to/avatar.jpg" alt="Chef">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/avatars/chef-jm-ferrand.webp" type="image/webp">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/avatars/chef-jm-ferrand.jpg" alt="Chef Jean-Michel Ferrand">
+			</picture>
 		</div>
 		<div class="chef-description">
-			<div class="chef-text">
-				<h2>Jean-Michel Ferrand</h2>
-				<p class="chef-bio">Chef étoilé spécialiste d’une cuisine raffinée, fusion subtile entre tradition et modernité.</p>
-			</div>
+			<h2>Jean-Michel Ferrand</h2>
+			<p class="chef-bio">Chef étoilé spécialiste d’une cuisine raffinée, fusion subtile entre tradition et modernité.</p>
 			<div class="read-more">
 				<span>Lire plus</span>
 				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -73,8 +103,8 @@ get_header();
 
 	<div class="divider"></div>
 
-	<!-- Section présentation restaurant -->
-	<section class="restaurant-presentation">
+	<!-- Présentation du restaurant -->
+	<section class="presentation" style="padding-inline: 23px;">
 		<p class="presentation-text">
 			Au cœur du prestigieux 8e arrondissement de Paris, <strong>L’Ambroisie d’Or</strong> propose une expérience culinaire haut de gamme où se rencontrent saveurs traditionnelles et créativité audacieuse. Sa carte, évoluant au rythme des saisons, met à l’honneur des spécialités raffinées telles que ...
 		</p>
@@ -88,16 +118,16 @@ get_header();
 
 	<div class="divider"></div>
 
-	<!-- Section boutons menu et avis -->
-	<section class="restaurant-buttons">
+	<!-- Boutons Menu / Voir les avis -->
+	<section class="actions-buttons" style="padding-inline: 23px;">
 		<button class="btn-menu">Menu</button>
 		<button class="btn-avis">Voir les avis</button>
 	</section>
 
 	<div class="divider"></div>
 
-	<!-- Section avantages -->
-	<section class="restaurant-advantages">
+	<!-- Avantages -->
+	<section class="advantages" style="padding-inline: 23px;">
 		<h2>Les plus</h2>
 		<div class="advantage">
 			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24" fill="none">
@@ -142,40 +172,35 @@ get_header();
 
 	<div class="divider"></div>
 
-	<!-- Section carte et adresse -->
-	<section class="restaurant-map">
+	<!-- Carte et Adresse -->
+	<section class="map" style="padding-inline: 23px;">
 		<div class="address-infos">
 			<h2>Où est situé le restaurant</h2>
 			<p class="address">Adresse :<br>
 				114 rue du Faubourg Saint-Honoré, 75008 Paris</p>
 			<div class="infos-transports">
 				<div class="transport">
-					<!-- SVG -->
 					<p>Miromesnil</p>
 				</div>
 				<div class="transport">
-					<!-- SVG -->
 					<p>Franklin D. Roosevelt</p>
 				</div>
 				<div class="transport">
-					<!-- SVG -->
 					<p>Matignon — Saint-Honoré</p>
 				</div>
 			</div>
 		</div>
 		<div class="map-container">
-			<div class="map-icon">
-				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="52" viewBox="0 0 33 52" fill="none">
-					<path d="M2.125 14.625C2.125 10.8788 3.61317 7.28607 6.26212 4.63712C8.91107 1.98817 12.5038 0.5 16.25 0.5C19.9962 0.5 23.5889 1.98817 26.2379 4.63712C28.8868 7.28607 30.375 10.8788 30.375 14.625C30.375 18.3712 28.8868 21.9639 26.2379 24.6129C23.5889 27.2618 19.9962 28.75 16.25 28.75C12.5038 28.75 8.91107 27.2618 6.26212 24.6129C3.61317 21.9639 2.125 18.3712 2.125 14.625ZM16.25 8.625C17.4199 8.625 18.375 7.66989 18.375 6.5C18.375 5.33011 17.4199 4.375 16.25 4.375C10.591 4.375 6 8.96605 6 14.625C6 15.7949 6.95511 16.75 8.125 16.75C9.29489 16.75 10.25 15.7949 10.25 14.625C10.25 11.316 12.941 8.625 16.25 8.625ZM13.5 48.75V32.7953C14.3988 32.9299 15.3174 33 16.25 33C17.1826 33 18.1012 32.9299 19 32.7953V48.75C19 50.2715 17.7715 51.5 16.25 51.5C14.7285 51.5 13.5 50.2715 13.5 48.75Z" fill="#D4AF37" stroke="#7D2A2A" />
-				</svg>
-			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" width="33" height="52" viewBox="0 0 33 52" fill="none">
+				<path d="M2.125 14.625C2.125 10.8788 3.61317 7.28607 6.26212 4.63712C8.91107 1.98817 12.5038 0.5 16.25 0.5C19.9962 0.5 23.5889 1.98817 26.2379 4.63712C28.8868 7.28607 30.375 10.8788 30.375 14.625C30.375 18.3712 28.8868 21.9639 26.2379 24.6129C23.5889 27.2618 19.9962 28.75 16.25 28.75C12.5038 28.75 8.91107 27.2618 6.26212 24.6129C3.61317 21.9639 2.125 18.3712 2.125 14.625ZM16.25 8.625C17.4199 8.625 18.375 7.66989 18.375 6.5C18.375 5.33011 17.4199 4.375 16.25 4.375C10.591 4.375 6 8.96605 6 14.625C6 15.7949 6.95511 16.75 8.125 16.75C9.29489 16.75 10.25 15.7949 10.25 14.625C10.25 11.316 12.941 8.625 16.25 8.625ZM13.5 48.75V32.7953C14.3988 32.9299 15.3174 33 16.25 33C17.1826 33 18.1012 32.9299 19 32.7953V48.75C19 50.2715 17.7715 51.5 16.25 51.5C14.7285 51.5 13.5 50.2715 13.5 48.75Z" fill="#D4AF37" stroke="#7D2A2A" />
+			</svg>
 		</div>
 	</section>
 
 	<div class="divider"></div>
 
-	<!-- Section réservation -->
-	<section class="restaurant-reservation">
+	<!-- Réservation -->
+	<section class="booking" style="padding-inline: 23px;">
 		<h2>Réservez votre table</h2>
 		<div class="reservation-calendar">
 			<!-- Placeholder calendrier -->
@@ -186,3 +211,4 @@ get_header();
 <?php
 
 get_footer();
+?>
