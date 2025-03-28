@@ -1259,6 +1259,24 @@ button:hover {
   font-weight: 300;
 }
 
+.restaurant-infos-mobile {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .restaurant-infos-mobile {
+    display: none;
+  }
+}
+
+.restaurant-infos-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .restaurant-infos-desktop {
+    display: block;
+  }
+}
+
 .card-restaurant {
   width: 100%;
   height: 347px;

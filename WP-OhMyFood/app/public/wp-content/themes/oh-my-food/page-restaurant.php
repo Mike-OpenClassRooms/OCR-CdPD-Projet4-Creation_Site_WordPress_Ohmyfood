@@ -78,7 +78,28 @@ get_header();
 	</section>
 
 	<!-- Infos Restaurant -->
-	<section class="restaurant-infos">
+
+	<!-- Version Mobile -->
+	<section class="restaurant-infos-mobile">
+		<div class="infos-text-mobile">
+			<h1>L’Ambroisie d’Or</h1>
+			<p class="restaurant-type">Cuisine terroir raffinée</p>
+			<p class="restaurant-location">Paris, 8e</p>
+		</div>
+		<div class="notes-avis-mobile">
+			<div class="restaurant-rating">
+				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none" class="star-icon">
+					<path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="black" />
+				</svg>
+				<span class="rating-value">4.9</span>
+				<span class="review-divider"></span>
+				<a href="#avis" class="review-link">25 avis</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Version Desktop -->
+	<section class="restaurant-infos-desktop">
 		<h1>L’Ambroisie d’Or</h1>
 		<p class="restaurant-type">Cuisine terroir raffinée</p>
 		<p class="restaurant-location">Paris, 8e</p>
