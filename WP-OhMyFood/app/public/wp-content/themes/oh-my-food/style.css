@@ -1158,6 +1158,10 @@ button:hover {
   display: none;
 }
 
+.admin-bar .actions-mobile {
+  top: 46px;
+}
+
 .hero-mobile {
   display: block;
 }
@@ -1174,6 +1178,68 @@ button:hover {
   .hero-desktop {
     display: block;
   }
+}
+
+.hero-card-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-card-mobile picture,
+.hero-card-mobile img {
+  z-index: 0;
+}
+@media (min-width: 1024px) {
+  .hero-card-mobile {
+    display: none;
+  }
+}
+
+.actions-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 2.3rem;
+}
+@media (min-width: 1024px) {
+  .actions-mobile {
+    display: none;
+  }
+}
+.actions-mobile button {
+  border-radius: 50% !important;
+  background-color: #FFFFFF !important;
+  fill: #FFF;
+  stroke-width: 0.1px !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+  aspect-ratio: 1/1;
+  padding: 0.4rem !important;
+}
+.actions-mobile svg {
+  width: 24px !important;
+  height: 24px !important;
+  color: #000000 !important;
+}
+.actions-mobile .actions-btn-right {
+  display: flex;
+  gap: 1.9rem;
+}
+.actions-mobile .btn-mobile-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .card-restaurant {
@@ -1459,46 +1525,4 @@ button:hover {
   height: 1px;
   background: #D8DCE0;
   margin: 24px auto;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 347px;
-}
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero .back-button,
-.hero .actions {
-  position: absolute;
-  top: 15px;
-  padding: 0 23px;
-  display: flex;
-  align-items: center;
-}
-.hero .back-button {
-  left: 0;
-}
-.hero .actions {
-  right: 0;
-  gap: 15px;
-}
-.hero .counter {
-  position: absolute;
-  right: 21px;
-  bottom: 12px;
-  width: 40px;
-  height: 28px;
-  background: rgba(34, 34, 34, 0.8);
-  color: white;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Poppins;
 }

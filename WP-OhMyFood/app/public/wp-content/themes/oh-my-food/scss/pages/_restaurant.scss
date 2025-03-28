@@ -8,6 +8,10 @@
     display: none;
 }
 
+.admin-bar .actions-mobile {
+    top: 46px; // ajuste selon la hauteur de la barre
+}
+
 // Affichage conditionnel des versions mobile/desktop de la section hero
 .hero-mobile {
     display: block;
@@ -22,6 +26,75 @@
 
     @include respond(md-up) {
         display: block;
+    }
+}
+
+// Section Hero Mobile
+.hero-card-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+
+    picture,
+    img {
+        z-index: 0;
+    }
+
+
+    @include respond(md-up) {
+        display: none;
+    }
+}
+
+.actions-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2.3rem;
+
+    @include respond(md-up) {
+        display: none;
+    }
+
+    button {
+        border-radius: $radius-full !important;
+        background-color: $color-white !important;
+        fill: #FFF;
+        stroke-width: 0.1px !important;
+        box-shadow: $shadow-button !important;
+        aspect-ratio: 1/1;
+        padding: 0.4rem !important;
+    }
+
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+        color: $color-black !important;
+
+    }
+
+    .actions-btn-right {
+        display: flex;
+        gap: 1.9rem;
+    }
+
+    .btn-mobile-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.2rem;
+        height: 3.2rem;
+
     }
 }
 
@@ -358,54 +431,4 @@
     height: 1px;
     background: #D8DCE0;
     margin: 24px auto;
-}
-
-// ---------------------
-// HERO
-// ---------------------
-.hero {
-    position: relative;
-    width: 100%;
-    height: 347px;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .back-button,
-    .actions {
-        position: absolute;
-        top: 15px;
-        padding: 0 23px;
-        display: flex;
-        align-items: center;
-    }
-
-    .back-button {
-        left: 0;
-    }
-
-    .actions {
-        right: 0;
-        gap: 15px;
-    }
-
-    .counter {
-        position: absolute;
-        right: 21px;
-        bottom: 12px;
-        width: 40px;
-        height: 28px;
-        background: rgba(34, 34, 34, 0.80);
-        color: white;
-        font-size: 16px;
-        font-weight: 300;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Poppins;
-    }
 }

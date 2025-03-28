@@ -11,55 +11,71 @@ get_header();
 <!-- le contenu de la page -->
 <main class="restaurant-page">
 	<!-- Hero / Card Restaurant -->
-	<section class="hero">
-
+	<section class="hero-mobile">
 		<!-- Version Mobile : Image principale -->
-		<div class="hero-mobile">
+		<div class="hero-card-mobile">
 			<picture>
 				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.webp" type="image/webp">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="Image du restaurant L’Ambroisie d’Or">
 			</picture>
+		</div>
+		<div class="actions-mobile">
 			<button class="back-button">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4571 17.9571C15.8476 17.5666 15.8476 16.9334 15.4571 16.5429L10.6642 11.75L15.4571 6.95711C15.8476 6.56658 15.8476 5.93342 15.4571 5.54289C15.0666 5.15237 14.4334 5.15237 14.0429 5.54289L8.54289 11.0429C8.15237 11.4334 8.15237 12.0666 8.54289 12.4571L14.0429 17.9571C14.4334 18.3476 15.0666 18.3476 15.4571 17.9571Z" fill="#222222" />
-				</svg>
+				<div class="btn-mobile-hero">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4571 17.9571C15.8476 17.5666 15.8476 16.9334 15.4571 16.5429L10.6642 11.75L15.4571 6.95711C15.8476 6.56658 15.8476 5.93342 15.4571 5.54289C15.0666 5.15237 14.4334 5.15237 14.0429 5.54289L8.54289 11.0429C8.15237 11.4334 8.15237 12.0666 8.54289 12.4571L14.0429 17.9571C14.4334 18.3476 15.0666 18.3476 15.4571 17.9571Z" fill="#222222" />
+					</svg>
+				</div>
 			</button>
-		</div>
+			<div class="actions-btn-right">
+				<button class="btn-share">
+					<div class="btn-mobile-hero">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M15.5 10.5H16C17.3807 10.5 18.5 11.6193 18.5 13V19C18.5 20.3807 17.3807 21.5 16 21.5H8C6.61929 21.5 5.5 20.3807 5.5 19V13C5.5 11.6193 6.61929 10.5 8 10.5H8.5" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M12 2V15M12 2L8 6M12 2L16 6" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+				</button>
+				<button class="btn-favorite">
+					<div class="btn-mobile-hero">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9997 20.1445L11.3911 19.7863C7.09286 17.2568 4.63777 14.74 3.41989 12.522C2.12195 10.1582 2.22507 8.14077 2.96272 6.6936C4.48246 3.71206 8.78026 2.80617 11.3721 6.08425L11.9996 6.87789L12.6272 6.08429C15.2195 2.80607 19.5175 3.71215 21.0372 6.6936C21.7749 8.14075 21.8779 10.1582 20.5799 12.522C19.3619 14.74 16.9067 17.2568 12.6083 19.7863L11.9997 20.1445ZM11.9996 8.81261L10.4308 6.82852C8.41309 4.27658 5.17779 4.99036 4.03184 7.23855C3.49793 8.28602 3.33892 9.88136 4.47174 11.9444C5.55151 13.9109 7.81509 16.2895 11.9997 18.7521C16.1845 16.2894 18.4482 13.9108 19.5281 11.9444C20.661 9.8813 20.502 8.28598 19.9681 7.23855C18.8222 4.99049 15.5866 4.27642 13.5684 6.82862L11.9996 8.81261Z" fill="black" />
+						</svg>
+					</div>
+				</button>
+			</div>
 
-		<!-- Version Desktop : Carousel ou plusieurs images -->
-		<div class="hero-desktop">
-			<picture>
-				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.webp" type="image/webp">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
-			</picture>
-			<picture>
-				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.webp" type="image/webp">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
-			</picture>
-			<picture>
-				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.webp" type="image/webp">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
-			</picture>
-			<picture>
-				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.webp" type="image/webp">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
-			</picture>
-		</div>
-
-		<div class="actions">
-			<button class="btn-share">
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-					<circle cx="16" cy="16" r="15.95" fill="white" stroke="black" stroke-width="0.1" />
-				</svg>
-			</button>
-			<button class="btn-favorite">
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-					<circle cx="16" cy="16" r="15.95" fill="white" stroke="black" stroke-width="0.1" />
-				</svg>
-			</button>
 		</div>
 		<div class="counter">1/12</div>
+	</section>
 
+	<!-- Version Desktop : Carousel ou plusieurs images -->
+	<div class="hero-desktop">
+		<div class="card-restaurant">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.webp" type="image/webp">
+				<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
+			</picture>
+		</div>
+		<div class="card-restaurant">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.webp" type="image/webp">
+				<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
+			</picture>
+		</div>
+		<div class="card-restaurant">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.webp" type="image/webp">
+				<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
+			</picture>
+		</div>
+		<div class="card-restaurant">
+			<picture>
+				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.webp" type="image/webp">
+				<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
+			</picture>
+		</div>
+	</div>
 	</section>
 
 	<div class="divider"></div>
