@@ -21,13 +21,13 @@ get_header();
 			<div class="img-counter">1/12</div>
 		</div>
 		<div class="actions-mobile">
-			<button class="back-button">
-				<div class="btn-mobile-hero">
+			<div class="back-button">
+				<a href="<?php echo home_url('/'); ?>" class="btn-mobile-hero" aria-label="Retour à l’accueil">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4571 17.9571C15.8476 17.5666 15.8476 16.9334 15.4571 16.5429L10.6642 11.75L15.4571 6.95711C15.8476 6.56658 15.8476 5.93342 15.4571 5.54289C15.0666 5.15237 14.4334 5.15237 14.0429 5.54289L8.54289 11.0429C8.15237 11.4334 8.15237 12.0666 8.54289 12.4571L14.0429 17.9571C14.4334 18.3476 15.0666 18.3476 15.4571 17.9571Z" fill="#222222" />
 					</svg>
-				</div>
-			</button>
+				</a>
+			</div>
 			<div class="actions-btn-right">
 				<button class="btn-share">
 					<div class="btn-mobile-hero">
@@ -45,9 +45,7 @@ get_header();
 					</div>
 				</button>
 			</div>
-
 		</div>
-
 	</section>
 
 	<!-- Version Desktop : Carousel ou plusieurs images -->
@@ -78,8 +76,6 @@ get_header();
 		</div>
 	</div>
 	</section>
-
-	<div class="divider"></div>
 
 	<!-- Infos Restaurant -->
 	<section class="restaurant-infos" style="padding-inline: 23px;">

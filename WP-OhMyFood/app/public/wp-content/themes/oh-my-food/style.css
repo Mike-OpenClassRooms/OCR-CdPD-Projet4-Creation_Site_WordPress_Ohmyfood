@@ -1216,7 +1216,8 @@ button:hover {
     display: none;
   }
 }
-.actions-mobile button {
+.actions-mobile button,
+.actions-mobile .back-button {
   border-radius: 50% !important;
   background-color: #FFFFFF !important;
   fill: #FFF;

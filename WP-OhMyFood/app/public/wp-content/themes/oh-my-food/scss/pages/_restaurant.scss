@@ -50,6 +50,7 @@
     }
 }
 
+// Boutons de la section Hero Mobile
 .actions-mobile {
     position: absolute;
     top: 0;
@@ -66,7 +67,8 @@
         display: none;
     }
 
-    button {
+    button,
+    .back-button {
         border-radius: $radius-full !important;
         background-color: $color-white !important;
         fill: #FFF;
