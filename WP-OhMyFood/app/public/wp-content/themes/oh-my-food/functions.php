@@ -37,3 +37,6 @@ function wpchild_enqueue_scripts()
 {
   wp_enqueue_script('oh-my-food-script', get_stylesheet_directory_uri() . '/script.js', array('jquery'), '', true);
 }
+
+// Désactiver la barre d'administration pour tous les utilisateurs
+add_filter('show_admin_bar', '__return_false');
