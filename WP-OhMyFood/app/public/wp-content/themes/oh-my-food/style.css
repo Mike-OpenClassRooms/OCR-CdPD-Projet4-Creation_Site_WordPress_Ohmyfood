@@ -807,33 +807,27 @@ button:hover {
 }
 
 .home-section-restaurants {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 2.4rem;
   gap: 3.2rem;
   padding: 0;
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
   .home-section-restaurants {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 2rem 0;
   }
 }
 @media (min-width: 1024px) {
   .home-section-restaurants {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.4rem;
     padding: 4.8rem 0;
   }
 }
 
 .home-card-restaurant {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
@@ -861,7 +855,7 @@ button:hover {
 }
 @media (min-width: 1024px) {
   .home-card-restaurant .home-image-wrapper {
-    height: 26rem;
+    height: 26rem !important;
     border-radius: 0.8rem;
   }
 }

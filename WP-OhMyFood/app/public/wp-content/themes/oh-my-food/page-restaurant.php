@@ -57,29 +57,31 @@ get_header();
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="Image du restaurant L’Ambroisie d’Or">
 				</picture>
 			</div>
-			<div class="card-restaurant">
-				<picture>
-					<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.webp" type="image/webp">
-					<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
-				</picture>
-			</div>
-			<div class="card-restaurant">
-				<picture>
-					<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.webp" type="image/webp">
-					<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
-				</picture>
-			</div>
-			<div class="card-restaurant">
-				<picture>
-					<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.webp" type="image/webp">
-					<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
-				</picture>
-			</div>
-			<div class="card-restaurant">
-				<picture>
-					<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.webp" type="image/webp">
-					<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
-				</picture>
+			<div class="other-card-restaurant">
+				<div class="card-restaurant">
+					<picture>
+						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.webp" type="image/webp">
+						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
+					</picture>
+				</div>
+				<div class="card-restaurant">
+					<picture>
+						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.webp" type="image/webp">
+						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
+					</picture>
+				</div>
+				<div class="card-restaurant">
+					<picture>
+						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.webp" type="image/webp">
+						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
+					</picture>
+				</div>
+				<div class="card-restaurant">
+					<picture>
+						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.webp" type="image/webp">
+						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
+					</picture>
+				</div>
 			</div>
 		</div>
 	</div>
