@@ -18,6 +18,7 @@ get_header();
 				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.webp" type="image/webp">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor.jpg" alt="Image du restaurant L’Ambroisie d’Or">
 			</picture>
+			<div class="img-counter">1/12</div>
 		</div>
 		<div class="actions-mobile">
 			<button class="back-button">
@@ -46,7 +47,7 @@ get_header();
 			</div>
 
 		</div>
-		<div class="counter">1/12</div>
+
 	</section>
 
 	<!-- Version Desktop : Carousel ou plusieurs images -->
