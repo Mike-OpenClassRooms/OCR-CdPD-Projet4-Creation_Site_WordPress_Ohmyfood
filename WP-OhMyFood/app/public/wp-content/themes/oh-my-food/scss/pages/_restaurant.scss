@@ -116,6 +116,31 @@
     font-weight: $font-weight-light;
 }
 
+// 
+#restaurant-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include respond(md-up) {
+        grid-template-columns: 1fr 1fr;
+        gap: 8.4rem;
+        grid-template-areas:
+            "infos       booking"
+            "buttons     booking"
+            "chef        booking"
+            "presentation map"
+            "advantages   map";
+    }
+}
+
+// Seconde colonne du layout
+.map,
+.booking {
+    @include respond(md-up) {
+        grid-column: 2;
+    }
+}
+
 // Affichage conditionnel des versions mobile/desktop de la section restaurant-infos
 .restaurant-infos-mobile {
     display: block;
@@ -130,6 +155,9 @@
 
     @include respond(md-up) {
         display: block;
+
+        grid-area: infos;
+
     }
 }
 
@@ -180,6 +208,10 @@
     display: flex;
     align-items: center;
     gap: $spacing-md;
+
+    @include respond(md-up) {
+        grid-area: chef;
+    }
 
     &__avatar {
         width: 113px;
@@ -236,6 +268,10 @@
     flex-direction: column;
     gap: 16px;
 
+    @include respond(md-up) {
+        grid-area: presentation;
+    }
+
     .text {
         color: $color-black;
         font-family: $font-body;
@@ -267,28 +303,48 @@
 // ---------------------
 // SECTION BOUTONS
 // ---------------------
-.section-buttons {
-    padding-inline: 23px;
-    width: 100%;
-    padding: 24px 46px;
+.actions-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 23px;
+    width: 100%;
+    padding: 24px 46px;
 
-    .btn {
-        height: 44px;
-        padding: 0 16px;
-        border-radius: $radius-medium;
-        background: $color-secondary;
-        box-shadow: $shadow-medium;
-        font-family: $font-body;
-        font-size: 12px;
-        font-weight: $font-weight-bold;
-        color: $color-accent-blue;
-        text-align: center;
+
+    @include respond(md-up) {
+        grid-area: buttons;
+    }
+
+    button {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 44px !important;
+        width: 10.57rem !important;
+        padding: 0 16px !important;
+        border-radius: $radius-medium !important;
+        background: $color-secondary;
+        box-shadow: $shadow-medium !important;
+        text-align: center !important;
+        text-transform: none !important;
+
+    }
+
+    .btn-menu {
+        order: 1; // mobile : en premier
+
+        @include respond(md-up) {
+            order: 2; // desktop : en deuxième
+        }
+    }
+
+    .btn-avis {
+        order: 2; // mobile : en deuxième
+
+        @include respond(md-up) {
+            order: 1; // desktop : en premier
+        }
     }
 }
 
@@ -301,6 +357,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include respond(md-up) {
+        grid-area: advantages;
+    }
 
     h2 {
         font-family: $font-title;
@@ -340,6 +400,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include respond(md-up) {
+        grid-area: map;
+    }
 
     .info {
         display: flex;
@@ -415,6 +479,10 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
+    @include respond(md-up) {
+        grid-area: booking;
+    }
 
     h2 {
         font-family: $font-title;

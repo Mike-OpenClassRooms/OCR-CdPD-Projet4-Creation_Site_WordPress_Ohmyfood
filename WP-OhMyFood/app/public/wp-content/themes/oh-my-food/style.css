@@ -1259,6 +1259,25 @@ button:hover {
   font-weight: 300;
 }
 
+#restaurant-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  #restaurant-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 8.4rem;
+    grid-template-areas: "infos       booking" "buttons     booking" "chef        booking" "presentation map" "advantages   map";
+  }
+}
+
+@media (min-width: 1024px) {
+  .map,
+  .booking {
+    grid-column: 2;
+  }
+}
+
 .restaurant-infos-mobile {
   display: block;
 }
@@ -1274,6 +1293,7 @@ button:hover {
 @media (min-width: 1024px) {
   .restaurant-infos-desktop {
     display: block;
+    grid-area: infos;
   }
 }
 
@@ -1317,6 +1337,11 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+@media (min-width: 1024px) {
+  .section-chef {
+    grid-area: chef;
+  }
 }
 .section-chef__avatar {
   width: 113px;
@@ -1365,6 +1390,11 @@ button:hover {
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 1024px) {
+  .section-presentation {
+    grid-area: presentation;
+  }
+}
 .section-presentation .text {
   color: #000000;
   font-family: "Poppins", sans-serif;
@@ -1390,28 +1420,47 @@ button:hover {
   line-height: 22px;
 }
 
-.section-buttons {
-  padding-inline: 23px;
-  width: 100%;
-  padding: 24px 46px;
+.actions-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 23px;
+  width: 100%;
+  padding: 24px 46px;
 }
-.section-buttons .btn {
-  height: 44px;
-  padding: 0 16px;
-  border-radius: 10px;
-  background: #D4AF37;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #0D1B2A;
-  text-align: center;
+@media (min-width: 1024px) {
+  .actions-buttons {
+    grid-area: buttons;
+  }
+}
+.actions-buttons button {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 44px !important;
+  width: 10.57rem !important;
+  padding: 0 16px !important;
+  border-radius: 10px !important;
+  background: #D4AF37;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+  text-align: center !important;
+  text-transform: none !important;
+}
+.actions-buttons .btn-menu {
+  order: 1;
+}
+@media (min-width: 1024px) {
+  .actions-buttons .btn-menu {
+    order: 2;
+  }
+}
+.actions-buttons .btn-avis {
+  order: 2;
+}
+@media (min-width: 1024px) {
+  .actions-buttons .btn-avis {
+    order: 1;
+  }
 }
 
 .section-advantages {
@@ -1420,6 +1469,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+@media (min-width: 1024px) {
+  .section-advantages {
+    grid-area: advantages;
+  }
 }
 .section-advantages h2 {
   font-family: "Playfair Display", serif;
@@ -1452,6 +1506,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+@media (min-width: 1024px) {
+  .section-map {
+    grid-area: map;
+  }
 }
 .section-map .info {
   display: flex;
@@ -1515,6 +1574,11 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+@media (min-width: 1024px) {
+  .section-reservation {
+    grid-area: booking;
+  }
 }
 .section-reservation h2 {
   font-family: "Playfair Display", serif;
