@@ -19,6 +19,11 @@
 
     @include respond(md-up) {
         display: block;
+        width: 77, 77777777777778%;
+        height: 560px;
+        position: relative;
+        overflow: hidden;
+        padding: 1.6rem 16rem;
     }
 }
 
@@ -40,5 +45,92 @@
 
     @include respond(md-up) {
         display: none;
+    }
+}
+
+.cards-restaurant-img {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}
+
+.main-card-restaurant {
+    width: 100%;
+    height: 276px;
+    flex-shrink: 0;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__top-bar {
+        position: absolute;
+        top: 15px;
+        left: 23px;
+        right: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn-group {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .circle-btn {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $radius-full;
+            background-color: $color-white;
+        }
+    }
+}
+
+.card-restaurant {
+    width: 100%;
+    height: 276px;
+    flex-shrink: 0;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__top-bar {
+        position: absolute;
+        top: 15px;
+        left: 23px;
+        right: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn-group {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .circle-btn {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $radius-full;
+            background-color: $color-white;
+        }
     }
 }
