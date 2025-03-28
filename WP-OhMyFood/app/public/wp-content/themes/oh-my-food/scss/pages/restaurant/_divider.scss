@@ -5,9 +5,41 @@
 @use '../../abstracts/variables' as *;
 @use '../../utils/breakpoints' as *;
 
-.divider {
+.divider-mobile {
     width: 342.696px;
     height: 1px;
     background: #D8DCE0;
     margin: 1.2rem auto;
+
+    @include respond(md-up) {
+        display: none;
+    }
+}
+
+.divider-desktop {
+    display: none;
+
+    @include respond(md-up) {
+        display: block;
+        width: 610px;
+        height: 1px;
+        background: #D8DCE0;
+        margin: 1.2rem auto;
+    }
+}
+
+.divider-1 {
+    grid-area: divider-1;
+}
+
+.divider-2 {
+    grid-area: divider-2;
+}
+
+.divider-3 {
+    grid-area: divider-3;
+}
+
+.divider-4 {
+    grid-area: divider-4;
 }

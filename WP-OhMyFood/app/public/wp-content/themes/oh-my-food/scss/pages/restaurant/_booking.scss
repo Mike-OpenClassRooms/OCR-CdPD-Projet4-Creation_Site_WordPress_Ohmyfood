@@ -15,9 +15,25 @@
 
     @include respond(md-up) {
         grid-area: booking;
+        padding-bottom: 1.6rem !important;
     }
 
     h2 {
         align-self: stretch;
+
+        @include respond(md-up) {
+            font-size: 3.2rem !important;
+        }
+    }
+
+    .btn-book {
+        display: none;
+
+        @include respond(md-up) {
+            display: block;
+            width: 100%;
+            font-size: 2rem !important;
+            text-transform: none !important;
+        }
     }
 }

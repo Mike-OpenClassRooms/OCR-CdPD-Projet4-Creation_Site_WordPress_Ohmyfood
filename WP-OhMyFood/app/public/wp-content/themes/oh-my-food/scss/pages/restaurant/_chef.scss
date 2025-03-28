@@ -29,6 +29,11 @@
             height: 100%;
             object-fit: cover;
         }
+
+        @include respond(md-up) {
+            width: 140px;
+            height: 140px;
+        }
     }
 
     .chef-description {
@@ -38,10 +43,19 @@
         align-items: flex-start;
         gap: 2px;
 
+        @include respond(md-up) {
+            gap: 0.8rem;
+        }
+
+
         .chef-name {
             font-family: $font-body !important;
             font-size: 14px !important;
             font-weight: $font-weight-medium !important;
+
+            @include respond(md-up) {
+                font-size: 2.4rem !important;
+            }
 
         }
 
@@ -49,6 +63,10 @@
             font-family: $font-body !important;
             font-size: 12px !important;
             font-weight: 275 !important;
+
+            @include respond(md-up) {
+                font-size: 2rem !important;
+            }
 
         }
 
@@ -60,6 +78,15 @@
             font-weight: $font-weight-medium;
             line-height: 22px;
             text-decoration: underline;
+
+            @include respond(md-up) {
+                font-size: 2rem;
+
+                svg {
+                    width: 24px !important;
+                    height: 24px !important;
+                }
+            }
         }
     }
 }

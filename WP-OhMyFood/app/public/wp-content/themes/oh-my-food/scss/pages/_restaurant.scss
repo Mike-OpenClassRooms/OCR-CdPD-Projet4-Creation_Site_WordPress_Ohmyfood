@@ -29,15 +29,23 @@
     grid-template-columns: 1fr;
     padding: 0 2.3rem;
 
+
     @include respond(md-up) {
-        grid-template-columns: 1fr 1fr;
-        gap: 8.4rem;
+        padding: 2rem 16rem 15rem;
+        grid-template-columns: 610px 428px;
+        row-gap: 1.2rem;
+        column-gap: 8.4rem;
         grid-template-areas:
-            "infos       booking"
-            "buttons     booking"
-            "chef        booking"
-            "presentation map"
-            "advantages   map";
+            "infos         booking"
+            "divider-1     booking"
+            "buttons       booking"
+            "divider-2     booking"
+            "chef          booking"
+            "divider-3     booking"
+            "presentation  map"
+            "divider-4     map"
+            "advantages    map"
+            "divider-5     map";
     }
 }
 

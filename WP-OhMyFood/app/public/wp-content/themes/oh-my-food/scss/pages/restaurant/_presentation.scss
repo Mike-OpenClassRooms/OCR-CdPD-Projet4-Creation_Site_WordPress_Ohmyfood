@@ -14,11 +14,13 @@
 
     @include respond(md-up) {
         grid-area: presentation;
+
     }
+
 
     .presentation-text {
         font-size: $font-size-sm !important;
-        font-weight: $font-weight-light;
+        font-weight: $font-weight-light !important;
         line-height: 1.8rem;
         overflow: hidden;
         -webkit-box-orient: vertical;
@@ -29,6 +31,11 @@
         strong {
             font-weight: $font-weight-medium !important;
         }
+
+        @include respond(md-up) {
+            font-size: 2rem !important;
+            line-height: 3.5rem;
+        }
     }
 
     .read-more-presentation {
@@ -37,5 +44,15 @@
         gap: 8px;
         font-weight: $font-weight-medium !important;
         line-height: 22px;
+
+        @include respond(md-up) {
+            font-size: 2rem;
+
+            svg {
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+        }
     }
 }

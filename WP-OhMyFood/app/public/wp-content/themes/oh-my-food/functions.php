@@ -40,3 +40,19 @@ function wpchild_enqueue_scripts()
 
 // Désactiver la barre d'administration pour tous les utilisateurs
 add_filter('show_admin_bar', '__return_false');
+
+function ohmyfood_enqueue_assets()
+{
+  // Fichier CSS principal
+  wp_enqueue_style('ohmyfood-style', get_stylesheet_uri());
+
+  // Fichier JS
+  wp_enqueue_script(
+    'ohmyfood-script',
+    get_stylesheet_directory_uri() . '/script.js',
+    array(), // Dépendances éventuelles (ex : array('jquery'))
+    null,    // Version (null = pas de version)
+    true     // Chargé dans le footer
+  );
+}
+add_action('wp_enqueue_scripts', 'ohmyfood_enqueue_assets');

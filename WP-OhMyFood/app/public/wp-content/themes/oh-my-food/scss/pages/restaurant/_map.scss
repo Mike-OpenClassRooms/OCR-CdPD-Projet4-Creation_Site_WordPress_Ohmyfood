@@ -8,11 +8,16 @@
 .section-map {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 8px;
     padding: 0.4rem 1.3rem 0;
 
     @include respond(md-up) {
         grid-area: map;
+
+        h2 {
+            font-size: 3.2rem !important;
+        }
     }
 
     .address-infos {
@@ -22,6 +27,10 @@
 
         p {
             font-size: 1rem !important;
+
+            @include respond(md-up) {
+                font-size: 1.6rem !important;
+            }
 
         }
 
@@ -59,8 +68,9 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            right: 90px;
-            top: 68px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -75%);
             border-radius: $radius-full;
             background: rgba(13, 27, 42, 0.25);
 

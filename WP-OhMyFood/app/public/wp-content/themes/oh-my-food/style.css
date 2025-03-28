@@ -1385,7 +1385,6 @@ button:hover {
 }
 .restaurant-infos-mobile .restaurant-type,
 .restaurant-infos-mobile .restaurant-location {
-  font-family: Poppins, sans-serif !important;
   font-size: 1.4rem !important;
 }
 .restaurant-infos-mobile .restaurant-type.restaurant-type,
@@ -1442,7 +1441,53 @@ button:hover {
 @media (min-width: 1024px) {
   .restaurant-infos-desktop {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
     grid-area: infos;
+  }
+  .restaurant-infos-desktop .restaurant-type,
+  .restaurant-infos-desktop .restaurant-location {
+    font-size: 3.2rem !important;
+  }
+  .restaurant-infos-desktop .restaurant-type.restaurant-type,
+  .restaurant-infos-desktop .restaurant-location.restaurant-type {
+    font-weight: 275 !important;
+  }
+  .restaurant-infos-desktop .restaurant-type.restaurant-location,
+  .restaurant-infos-desktop .restaurant-location.restaurant-location {
+    font-weight: 300 !important;
+  }
+  .restaurant-infos-desktop .infos-text-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .notes-avis-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.8rem;
+    height: auto;
+    font-size: 2.4rem !important;
+  }
+  .notes-avis-desktop .restaurant-rating {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .notes-avis-desktop svg {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .notes-avis-desktop a {
+    text-decoration: underline !important;
   }
 }
 
@@ -1471,6 +1516,12 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .chef .chef-avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
 .chef .chef-description {
   display: flex;
   flex-direction: column;
@@ -1478,15 +1529,30 @@ button:hover {
   align-items: flex-start;
   gap: 2px;
 }
+@media (min-width: 1024px) {
+  .chef .chef-description {
+    gap: 0.8rem;
+  }
+}
 .chef .chef-description .chef-name {
   font-family: "Poppins", sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
 }
+@media (min-width: 1024px) {
+  .chef .chef-description .chef-name {
+    font-size: 2.4rem !important;
+  }
+}
 .chef .chef-description .chef-bio {
   font-family: "Poppins", sans-serif !important;
   font-size: 12px !important;
   font-weight: 275 !important;
+}
+@media (min-width: 1024px) {
+  .chef .chef-description .chef-bio {
+    font-size: 2rem !important;
+  }
 }
 .chef .chef-description .read-more-chef {
   display: flex;
@@ -1496,6 +1562,15 @@ button:hover {
   font-weight: 500;
   line-height: 22px;
   text-decoration: underline;
+}
+@media (min-width: 1024px) {
+  .chef .chef-description .read-more-chef {
+    font-size: 2rem;
+  }
+  .chef .chef-description .read-more-chef svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
 }
 
 .presentation {
@@ -1512,7 +1587,7 @@ button:hover {
 }
 .presentation .presentation-text {
   font-size: 14px !important;
-  font-weight: 300;
+  font-weight: 300 !important;
   line-height: 1.8rem;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -1523,12 +1598,27 @@ button:hover {
 .presentation .presentation-text strong {
   font-weight: 500 !important;
 }
+@media (min-width: 1024px) {
+  .presentation .presentation-text {
+    font-size: 2rem !important;
+    line-height: 3.5rem;
+  }
+}
 .presentation .read-more-presentation {
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 500 !important;
   line-height: 22px;
+}
+@media (min-width: 1024px) {
+  .presentation .read-more-presentation {
+    font-size: 2rem;
+  }
+  .presentation .read-more-presentation svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
 }
 
 .actions-buttons {
@@ -1557,6 +1647,12 @@ button:hover {
   text-align: center !important;
   text-transform: none !important;
 }
+@media (min-width: 1024px) {
+  .actions-buttons button {
+    font-size: 1.8rem !important;
+    width: 16.8rem !important;
+  }
+}
 .actions-buttons .btn-menu {
   order: 1;
 }
@@ -1583,12 +1679,23 @@ button:hover {
 @media (min-width: 1024px) {
   .advantages {
     grid-area: advantages;
+    gap: 2.6rem;
+    padding-top: 1.2rem;
+    padding-bottom: 5.2rem;
   }
 }
 .advantages .advantages-list {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media (min-width: 1024px) {
+  .advantages .advantages-list {
+    gap: 2.6rem;
+  }
+  .advantages .advantages-list h2 {
+    font-size: 3.2rem !important;
+  }
 }
 .advantages .advantages-list .item {
   display: flex;
@@ -1599,6 +1706,11 @@ button:hover {
   font-size: 14px !important;
   font-weight: 275;
 }
+@media (min-width: 1024px) {
+  .advantages .advantages-list .item p {
+    font-size: 2rem !important;
+  }
+}
 .advantages .advantages-list .item svg {
   width: 24px;
   height: 24px;
@@ -1608,12 +1720,16 @@ button:hover {
 .section-map {
   display: flex;
   flex-direction: column;
+  height: 100%;
   gap: 8px;
   padding: 0.4rem 1.3rem 0;
 }
 @media (min-width: 1024px) {
   .section-map {
     grid-area: map;
+  }
+  .section-map h2 {
+    font-size: 3.2rem !important;
   }
 }
 .section-map .address-infos {
@@ -1623,6 +1739,11 @@ button:hover {
 }
 .section-map .address-infos p {
   font-size: 1rem !important;
+}
+@media (min-width: 1024px) {
+  .section-map .address-infos p {
+    font-size: 1.6rem !important;
+  }
 }
 .section-map .address-infos .infos-transports {
   display: flex;
@@ -1654,8 +1775,9 @@ button:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 90px;
-  top: 68px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -75%);
   border-radius: 50%;
   background: rgba(13, 27, 42, 0.25);
 }
@@ -1675,17 +1797,68 @@ button:hover {
 @media (min-width: 1024px) {
   .booking {
     grid-area: booking;
+    padding-bottom: 1.6rem !important;
   }
 }
 .booking h2 {
   align-self: stretch;
 }
+@media (min-width: 1024px) {
+  .booking h2 {
+    font-size: 3.2rem !important;
+  }
+}
+.booking .btn-book {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .booking .btn-book {
+    display: block;
+    width: 100%;
+    font-size: 2rem !important;
+    text-transform: none !important;
+  }
+}
 
-.divider {
+.divider-mobile {
   width: 342.696px;
   height: 1px;
   background: #D8DCE0;
   margin: 1.2rem auto;
+}
+@media (min-width: 1024px) {
+  .divider-mobile {
+    display: none;
+  }
+}
+
+.divider-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .divider-desktop {
+    display: block;
+    width: 610px;
+    height: 1px;
+    background: #D8DCE0;
+    margin: 1.2rem auto;
+  }
+}
+
+.divider-1 {
+  grid-area: divider-1;
+}
+
+.divider-2 {
+  grid-area: divider-2;
+}
+
+.divider-3 {
+  grid-area: divider-3;
+}
+
+.divider-4 {
+  grid-area: divider-4;
 }
 
 .page-template-page-restaurant header {
@@ -1704,9 +1877,11 @@ button:hover {
 }
 @media (min-width: 1024px) {
   #restaurant-layout {
-    grid-template-columns: 1fr 1fr;
-    gap: 8.4rem;
-    grid-template-areas: "infos       booking" "buttons     booking" "chef        booking" "presentation map" "advantages   map";
+    padding: 2rem 16rem 15rem;
+    grid-template-columns: 610px 428px;
+    row-gap: 1.2rem;
+    column-gap: 8.4rem;
+    grid-template-areas: "infos         booking" "divider-1     booking" "buttons       booking" "divider-2     booking" "chef          booking" "divider-3     booking" "presentation  map" "divider-4     map" "advantages    map" "divider-5     map";
   }
 }
 
@@ -1715,4 +1890,56 @@ button:hover {
   .booking {
     grid-column: 2;
   }
+}
+
+#popup-jeu-concours {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup-jeu-concours.hidden {
+  display: none;
+}
+#popup-jeu-concours .popup-content {
+  background: #fff;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+#popup-jeu-concours .popup-content h2 {
+  margin-top: 0;
+}
+#popup-jeu-concours .popup-content input[type=email] {
+  padding: 0.8rem;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#popup-jeu-concours .popup-content button[type=submit] {
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#popup-jeu-concours .popup-content #popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }

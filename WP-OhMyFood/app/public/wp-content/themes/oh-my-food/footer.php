@@ -34,6 +34,25 @@ get_template_part('template-parts/footer/footer-widgets');
 ?>
 
 <footer>
+
+	<!------- Pop up jeu concours ------->
+	<div id="popup-jeu-concours" class="popup hidden" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+		<div class="popup-content">
+			<h2 id="popup-title">Participez à notre jeu concours !</h2>
+			<p>Offre exceptionnelle : gagnez deux places pour un déjeuner dans un de nos restaurants gastronomiques ! Résultat immédiat dans votre boîte mail.</p>
+			<p><strong>Attention :</strong> cette offre est limitée, vous ne pouvez jouer qu’une fois.</p>
+
+			<form id="popup-form">
+				<label for="popup-email" class="sr-only">Votre adresse e-mail</label>
+				<input type="email" id="popup-email" name="email" placeholder="Votre e-mail" required>
+				<button type="submit">Je participe</button>
+			</form>
+
+			<button id="popup-close" aria-label="Fermer la fenêtre">&times;</button>
+		</div>
+	</div>
+
+
 	<div class="infos-footer">
 		<section class="social-follow" aria-label="Suivez-nous sur les réseaux sociaux">
 			<div class="social-icons">

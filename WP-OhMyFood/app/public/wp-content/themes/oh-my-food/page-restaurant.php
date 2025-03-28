@@ -149,13 +149,15 @@ get_header();
 						<path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="black" />
 					</svg>
 					<span class="rating-value">4.9</span>
-					<span class="review-divider"></span>
-					<a href="#avis" class="review-link">25 avis</a>
 				</div>
+				<span class="review-divider"></span>
+				<a href="#avis" class="review-link">25 avis</a>
 			</div>
 		</section>
 
-		<div class="divider"></div>
+		<div class="divider-mobile"></div>
+
+		<div class="divider-desktop divider-1"></div>
 
 		<!-- Section Chef -->
 		<section class="chef">
@@ -168,8 +170,8 @@ get_header();
 			<div class="chef-description">
 				<h2 class="chef-name">Jean-Michel Ferrand</h2>
 				<p class="chef-bio">Chef étoilé spécialiste d’une cuisine raffinée, fusion subtile entre tradition et modernité.</p>
-				<div class="read-more">
-					<span class="read-more-chef">Lire plus</span>
+				<div class="read-more-chef">
+					<span>Lire plus</span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
 						<path d="M5.25 1.75L10.1937 6.69375C10.2739 6.77553 10.3188 6.88548 10.3188 7C10.3188 7.11452 10.2739 7.22447 10.1937 7.30625L5.25 12.25" stroke="#0A0A0A" stroke-width="2" />
 					</svg>
@@ -177,7 +179,9 @@ get_header();
 			</div>
 		</section>
 
-		<div class="divider"></div>
+		<div class="divider-mobile"></div>
+
+		<div class="divider-desktop divider-2"></div>
 
 		<!-- Présentation du restaurant -->
 		<section class="presentation">
@@ -192,7 +196,8 @@ get_header();
 			</div>
 		</section>
 
-		<div class="divider"></div>
+		<div class="divider-mobile"></div>
+		<div class="divider-desktop divider-3"></div>
 
 		<!-- Boutons Menu / Voir les avis -->
 		<section class="actions-buttons">
@@ -200,7 +205,8 @@ get_header();
 			<button class="btn-avis">Voir les avis</button>
 		</section>
 
-		<div class="divider"></div>
+		<div class="divider-mobile"></div>
+		<div class="divider-desktop divider-4"></div>
 
 		<!-- Avantages -->
 		<section class="advantages">
@@ -249,7 +255,8 @@ get_header();
 			</div>
 		</section>
 
-		<div class="divider"></div>
+		<div class="divider-mobile"></div>
+		<div class="divider-desktop divider-5"></div>
 
 		<!-- Carte et Adresse -->
 		<section class="section-map">
@@ -282,12 +289,14 @@ get_header();
 			</div>
 		</section>
 
-		<div class="divider"></div>
+		<div class="divider-mobile"></div>
 
 		<!-- Réservation -->
 		<section class="booking">
 			<h2>Réservez votre table</h2>
 			<img class="calendar" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-restaurant.png" alt="Calendrier">
+			<button class="btn-book">Réserver
+			</button>
 		</section>
 
 	</section>

@@ -35,7 +35,6 @@
 
     .restaurant-type,
     .restaurant-location {
-        font-family: Poppins, sans-serif !important;
         font-size: 1.4rem !important;
 
         &.restaurant-type {
@@ -89,8 +88,57 @@
 
     @include respond(md-up) {
         display: block;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2.4rem;
         grid-area: infos;
 
+        .restaurant-type,
+        .restaurant-location {
+            font-size: 3.2rem !important;
+
+            &.restaurant-type {
+                font-weight: 275 !important;
+            }
+
+            &.restaurant-location {
+                font-weight: 300 !important;
+            }
+        }
+
+        .infos-text-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+        }
+    }
+}
+
+.notes-avis-desktop {
+    @include respond(md-up) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4.8rem;
+        height: auto;
+        font-size: 2.4rem !important;
+
+        .restaurant-rating {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+
+        svg {
+            width: 2.1rem;
+            height: 2.1rem;
+        }
+
+        a {
+            text-decoration: underline !important;
+        }
     }
 }

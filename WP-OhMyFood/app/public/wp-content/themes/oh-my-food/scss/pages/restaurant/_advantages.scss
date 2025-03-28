@@ -13,12 +13,23 @@
 
     @include respond(md-up) {
         grid-area: advantages;
+        gap: 2.6rem;
+        padding-top: 1.2rem;
+        padding-bottom: 5.2rem;
     }
 
     .advantages-list {
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        @include respond(md-up) {
+            gap: 2.6rem;
+
+            h2 {
+                font-size: 3.2rem !important;
+            }
+        }
 
         .item {
             display: flex;
@@ -28,6 +39,10 @@
             p {
                 font-size: $font-size-sm !important;
                 font-weight: 275;
+
+                @include respond(md-up) {
+                    font-size: 2rem !important;
+                }
 
             }
 

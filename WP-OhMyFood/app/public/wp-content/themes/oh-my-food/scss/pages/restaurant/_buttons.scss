@@ -31,6 +31,11 @@
         text-align: center !important;
         text-transform: none !important;
 
+        @include respond(md-up) {
+            font-size: 1.8rem !important;
+            width: 16.8rem !important;
+        }
+
     }
 
     .btn-menu {
