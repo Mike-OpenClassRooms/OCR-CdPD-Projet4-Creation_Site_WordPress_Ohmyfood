@@ -5,42 +5,37 @@
 @use '../../abstracts/variables' as *;
 @use '../../utils/breakpoints' as *;
 
-.section-presentation {
-    padding-inline: 23px;
-    width: 100%;
-    padding: 24px;
+.presentation {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    width: 100%;
+    padding: 1.2rem 0;
+    gap: 1.6rem;
 
     @include respond(md-up) {
         grid-area: presentation;
     }
 
-    .text {
-        color: $color-black;
-        font-family: $font-body;
-        font-size: 14px;
+    .presentation-text {
+        font-size: $font-size-sm !important;
         font-weight: $font-weight-light;
-        line-height: 18px;
+        line-height: 1.8rem;
         overflow: hidden;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 6;
         display: -webkit-box;
         text-overflow: ellipsis;
 
-        .highlight {
-            font-weight: $font-weight-medium;
+        strong {
+            font-weight: $font-weight-medium !important;
         }
     }
 
-    .read-more {
+    .read-more-presentation {
         display: flex;
         align-items: center;
         gap: 8px;
-        font-size: 16px;
-        font-weight: $font-weight-medium;
-        color: $color-black;
+        font-weight: $font-weight-medium !important;
         line-height: 22px;
     }
 }

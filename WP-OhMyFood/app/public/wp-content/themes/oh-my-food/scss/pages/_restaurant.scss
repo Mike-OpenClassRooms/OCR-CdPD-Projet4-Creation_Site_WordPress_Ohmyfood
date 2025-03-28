@@ -23,6 +23,7 @@
 #restaurant-layout {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0 2.3rem;
 
     @include respond(md-up) {
         grid-template-columns: 1fr 1fr;

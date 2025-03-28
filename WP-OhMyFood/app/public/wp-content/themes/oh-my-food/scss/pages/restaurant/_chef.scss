@@ -5,8 +5,7 @@
 @use '../../abstracts/variables' as *;
 @use '../../utils/breakpoints' as *;
 
-.section-chef {
-    padding-inline: 23px;
+.chef {
     display: flex;
     align-items: center;
     gap: $spacing-md;
@@ -15,44 +14,50 @@
         grid-area: chef;
     }
 
-    &__avatar {
+    .chef-avatar {
         width: 113px;
         height: 113px;
-        border-radius: $radius-full;
-        border: 4px solid $color-white;
-        background-size: cover;
-        background-position: center;
+        border-radius: $radius-full !important;
+        border: 4px solid $color-white !important;
+        background-size: cover !important;
+        background-position: center !important;
         flex-shrink: 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
-    &__text {
+    .chef-description {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 2px;
 
-        .name {
-            font-family: $font-body;
-            font-size: 14px;
-            font-weight: $font-weight-medium;
-            color: $color-black;
+        .chef-name {
+            font-family: $font-body !important;
+            font-size: 14px !important;
+            font-weight: $font-weight-medium !important;
+
         }
 
-        .bio {
-            font-family: $font-body;
-            font-size: 12px;
-            font-weight: 275;
-            color: $color-black;
+        .chef-bio {
+            font-family: $font-body !important;
+            font-size: 12px !important;
+            font-weight: 275 !important;
+
         }
 
-        .read-more {
+        .read-more-chef {
             display: flex;
             align-items: center;
             gap: 8px;
             font-size: 12px;
             font-weight: $font-weight-medium;
-            color: $color-black;
             line-height: 22px;
             text-decoration: underline;
         }

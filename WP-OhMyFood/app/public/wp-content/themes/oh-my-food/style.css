@@ -1253,11 +1253,82 @@ button:hover {
 
 .restaurant-infos-mobile {
   display: block;
+  padding: 1.2rem 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.restaurant-infos-mobile h1 {
+  font-size: 1.6rem !important;
+  font-weight: 800;
+}
+@media (min-width: 1024px) {
+  .restaurant-infos-mobile h1 {
+    font-size: 2rem !important;
+    line-height: 2.4rem !important;
+  }
+}
+.restaurant-infos-mobile .infos-text-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 @media (min-width: 1024px) {
   .restaurant-infos-mobile {
     display: none;
   }
+}
+.restaurant-infos-mobile .restaurant-type,
+.restaurant-infos-mobile .restaurant-location {
+  font-family: Poppins, sans-serif !important;
+  font-size: 1.4rem !important;
+}
+.restaurant-infos-mobile .restaurant-type.restaurant-type,
+.restaurant-infos-mobile .restaurant-location.restaurant-type {
+  font-weight: 275 !important;
+}
+@media (min-width: 1024px) {
+  .restaurant-infos-mobile .restaurant-type.restaurant-type,
+  .restaurant-infos-mobile .restaurant-location.restaurant-type {
+    font-size: 1.6rem !important;
+    color: #6a6a6a !important;
+    line-height: 2.4rem !important;
+  }
+}
+.restaurant-infos-mobile .restaurant-type.restaurant-location,
+.restaurant-infos-mobile .restaurant-location.restaurant-location {
+  font-weight: 300 !important;
+}
+@media (min-width: 1024px) {
+  .restaurant-infos-mobile .restaurant-type.restaurant-location,
+  .restaurant-infos-mobile .restaurant-location.restaurant-location {
+    font-size: 1.6rem !important;
+    font-weight: 400 !important;
+    line-height: 1.8rem !important;
+    color: #222 !important;
+  }
+}
+
+.notes-avis-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.1rem;
+  height: auto;
+  font-size: 1.4rem !important;
+}
+@media (min-width: 1024px) {
+  .notes-avis-mobile {
+    display: none;
+  }
+}
+.notes-avis-mobile svg {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+.notes-avis-mobile a {
+  text-decoration: underline !important;
 }
 
 .restaurant-infos-desktop {
@@ -1270,101 +1341,98 @@ button:hover {
   }
 }
 
-.section-chef {
-  padding-inline: 23px;
+.chef {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 @media (min-width: 1024px) {
-  .section-chef {
+  .chef {
     grid-area: chef;
   }
 }
-.section-chef__avatar {
+.chef .chef-avatar {
   width: 113px;
   height: 113px;
-  border-radius: 50%;
-  border: 4px solid #FFFFFF;
-  background-size: cover;
-  background-position: center;
+  border-radius: 50% !important;
+  border: 4px solid #FFFFFF !important;
+  background-size: cover !important;
+  background-position: center !important;
   flex-shrink: 0;
+  overflow: hidden;
 }
-.section-chef__text {
+.chef .chef-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chef .chef-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2px;
 }
-.section-chef__text .name {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #000000;
+.chef .chef-description .chef-name {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
 }
-.section-chef__text .bio {
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-weight: 275;
-  color: #000000;
+.chef .chef-description .chef-bio {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 275 !important;
 }
-.section-chef__text .read-more {
+.chef .chef-description .read-more-chef {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 12px;
   font-weight: 500;
-  color: #000000;
   line-height: 22px;
   text-decoration: underline;
 }
 
-.section-presentation {
-  padding-inline: 23px;
-  width: 100%;
-  padding: 24px;
+.presentation {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 100%;
+  padding: 1.2rem 0;
+  gap: 1.6rem;
 }
 @media (min-width: 1024px) {
-  .section-presentation {
+  .presentation {
     grid-area: presentation;
   }
 }
-.section-presentation .text {
-  color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+.presentation .presentation-text {
+  font-size: 14px !important;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 1.8rem;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
   display: -webkit-box;
   text-overflow: ellipsis;
 }
-.section-presentation .text .highlight {
-  font-weight: 500;
+.presentation .presentation-text strong {
+  font-weight: 500 !important;
 }
-.section-presentation .read-more {
+.presentation .read-more-presentation {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 500 !important;
   line-height: 22px;
 }
 
 .actions-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding-inline: 23px;
+  gap: 2.8rem;
   width: 100%;
-  padding: 24px 46px;
+  padding: 2.4rem 0;
 }
 @media (min-width: 1024px) {
   .actions-buttons {
@@ -1376,7 +1444,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   height: 44px !important;
-  width: 10.57rem !important;
+  width: 13.6rem !important;
   padding: 0 16px !important;
   border-radius: 10px !important;
   background: #D4AF37;
@@ -1401,91 +1469,78 @@ button:hover {
   }
 }
 
-.section-advantages {
-  padding-inline: 23px;
-  padding: 0 23px;
+.advantages {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 1.4rem 0px;
 }
 @media (min-width: 1024px) {
-  .section-advantages {
+  .advantages {
     grid-area: advantages;
   }
 }
-.section-advantages h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #000000;
-}
-.section-advantages .advantage {
+.advantages .advantages-list {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.section-advantages .advantage .item {
+.advantages .advantages-list .item {
   display: flex;
   align-items: center;
   gap: 25px;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: #000000;
 }
-.section-advantages .advantage .item svg {
+.advantages .advantages-list .item p {
+  font-size: 14px !important;
+  font-weight: 275;
+}
+.advantages .advantages-list .item svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
 .section-map {
-  padding-inline: 23px;
-  padding: 0 23px 25px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 0.4rem 1.3rem 0;
 }
 @media (min-width: 1024px) {
   .section-map {
     grid-area: map;
   }
 }
-.section-map .info {
+.section-map .address-infos {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.section-map .info h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  font-weight: 700;
+.section-map .address-infos p {
+  font-size: 1rem !important;
 }
-.section-map .info .address,
-.section-map .info .transport-text {
-  font-family: "Poppins", sans-serif;
-  font-size: 10px;
-  color: #000000;
-}
-.section-map .info .transports {
+.section-map .address-infos .infos-transports {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.section-map .info .transports .transport {
+.section-map .address-infos .infos-transports .transport {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.section-map .info .transports .transport .icons {
+.section-map .address-infos .infos-transports .transport .icons {
   display: flex;
   align-items: center;
   gap: 2px;
 }
 .section-map .map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 345px;
   position: relative;
-  background-color: #FAF3E0;
-  margin-top: 16px;
 }
 .section-map .map-container .marker {
   width: 138px;
@@ -1504,46 +1559,28 @@ button:hover {
   height: 52px;
 }
 
-.section-reservation {
-  padding-inline: 23px;
+.booking {
   width: 100%;
-  padding: 25px 23px;
+  padding: 1.3rem 0 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 @media (min-width: 1024px) {
-  .section-reservation {
+  .booking {
     grid-area: booking;
   }
 }
-.section-reservation h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #000000;
+.booking h2 {
   align-self: stretch;
-}
-.section-reservation .calendar {
-  padding: 23px;
-  border-radius: 40px;
-  border: 1px solid #DDD;
-  background: #FFFFFF;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .divider {
   width: 342.696px;
   height: 1px;
   background: #D8DCE0;
-  margin: 24px auto;
+  margin: 1.2rem auto;
 }
 
 .page-template-page-restaurant header {
@@ -1553,6 +1590,7 @@ button:hover {
 #restaurant-layout {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 2.3rem;
 }
 @media (min-width: 1024px) {
   #restaurant-layout {
