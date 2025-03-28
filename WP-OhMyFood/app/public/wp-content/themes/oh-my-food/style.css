@@ -1157,17 +1157,58 @@ button:hover {
   }
 }
 
+.top-bar {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.3rem 16rem;
+  }
+  .top-bar .btn-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500 !important;
+  }
+  .top-bar button {
+    border-radius: 50% !important;
+    background-color: #FFFFFF !important;
+    fill: #FFF;
+    stroke-width: 0.1px !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+    aspect-ratio: 1/1;
+    padding: 0.4rem !important;
+  }
+  .top-bar .actions-btn-right {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .top-bar .btn-mobile-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
 .hero-desktop {
   display: none;
 }
 @media (min-width: 1024px) {
   .hero-desktop {
     display: block;
-    width: 77, 77777777777778%;
-    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     position: relative;
     overflow: hidden;
-    padding: 1.6rem 16rem;
+    padding: 1.6rem 0;
   }
 }
 
@@ -1192,67 +1233,45 @@ button:hover {
 
 .cards-restaurant-img {
   display: flex;
+  width: 1120px;
+  padding: 16px 0;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-card-restaurant {
+  width: 560px;
+  height: 560px;
+  flex-shrink: 0;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
+.main-card-restaurant picture,
+.main-card-restaurant img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.other-card-restaurant {
+  display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
   gap: 8px;
   flex: 1 0 0;
-  flex-wrap: wrap;
-}
-
-.main-card-restaurant {
-  width: 100%;
-  height: 276px;
-  flex-shrink: 0;
-  position: relative;
-}
-.main-card-restaurant__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.main-card-restaurant__top-bar {
-  position: absolute;
-  top: 15px;
-  left: 23px;
-  right: 23px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main-card-restaurant__btn-group {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.main-card-restaurant__btn-group .circle-btn {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #FFFFFF;
 }
 
 .card-restaurant {
-  width: 100%;
+  width: 272px;
   height: 276px;
-  flex-shrink: 0;
-  position: relative;
+  overflow: hidden;
 }
-.card-restaurant__img {
+.card-restaurant picture,
+.card-restaurant img {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   object-fit: cover;
-}
-.card-restaurant__top-bar {
-  position: absolute;
-  top: 15px;
-  left: 23px;
-  right: 23px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .card-restaurant__btn-group {
   display: flex;
@@ -1267,6 +1286,14 @@ button:hover {
   align-items: center;
   border-radius: 50%;
   background-color: #FFFFFF;
+}
+
+.card-restaurant-up {
+  border-radius: 0 20px 0 0;
+}
+
+.card-restaurant-down {
+  border-radius: 0 0 20px 0;
 }
 
 .actions-mobile {

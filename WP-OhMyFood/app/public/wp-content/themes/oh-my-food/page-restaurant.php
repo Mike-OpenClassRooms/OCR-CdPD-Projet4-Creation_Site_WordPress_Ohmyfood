@@ -49,7 +49,35 @@ get_header();
 	</section>
 
 	<!-- Version Desktop : Carousel ou plusieurs images -->
-	<div class="hero-desktop">
+	<section class="top-bar">
+		<h1>L’Ambroisie d’Or</h1>
+
+		<div class="actions-btn-right">
+			<div class="btn-text">
+				<button class="btn-share">
+					<div class="btn-mobile-hero">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M15.5 10.5H16C17.3807 10.5 18.5 11.6193 18.5 13V19C18.5 20.3807 17.3807 21.5 16 21.5H8C6.61929 21.5 5.5 20.3807 5.5 19V13C5.5 11.6193 6.61929 10.5 8 10.5H8.5" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M12 2V15M12 2L8 6M12 2L16 6" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+				</button>
+				<p>Partager</p>
+			</div>
+			<div class="btn-text">
+				<button class="btn-favorite">
+					<div class="btn-mobile-hero">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9997 20.1445L11.3911 19.7863C7.09286 17.2568 4.63777 14.74 3.41989 12.522C2.12195 10.1582 2.22507 8.14077 2.96272 6.6936C4.48246 3.71206 8.78026 2.80617 11.3721 6.08425L11.9996 6.87789L12.6272 6.08429C15.2195 2.80607 19.5175 3.71215 21.0372 6.6936C21.7749 8.14075 21.8779 10.1582 20.5799 12.522C19.3619 14.74 16.9067 17.2568 12.6083 19.7863L11.9997 20.1445ZM11.9996 8.81261L10.4308 6.82852C8.41309 4.27658 5.17779 4.99036 4.03184 7.23855C3.49793 8.28602 3.33892 9.88136 4.47174 11.9444C5.55151 13.9109 7.81509 16.2895 11.9997 18.7521C16.1845 16.2894 18.4482 13.9108 19.5281 11.9444C20.661 9.8813 20.502 8.28598 19.9681 7.23855C18.8222 4.99049 15.5866 4.27642 13.5684 6.82862L11.9996 8.81261Z" fill="black" />
+						</svg>
+					</div>
+				</button>
+				<p>Enregistrer</p>
+			</div>
+
+		</div>
+	</section>
+	<section class="hero-desktop">
 		<div class="cards-restaurant-img">
 			<div class="main-card-restaurant">
 				<picture>
@@ -61,30 +89,29 @@ get_header();
 				<div class="card-restaurant">
 					<picture>
 						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.webp" type="image/webp">
-						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-02.jpg" alt="Image secondaire 1">
 					</picture>
 				</div>
-				<div class="card-restaurant">
+				<div class="card-restaurant card-restaurant-up">
 					<picture>
 						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.webp" type="image/webp">
-						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-03.jpg" alt="Image secondaire 2">
 					</picture>
 				</div>
 				<div class="card-restaurant">
 					<picture>
 						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.webp" type="image/webp">
-						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-04.jpg" alt="Image secondaire 3">
 					</picture>
 				</div>
-				<div class="card-restaurant">
+				<div class="card-restaurant card-restaurant-down">
 					<picture>
 						<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.webp" type="image/webp">
-						<img class="card-restaurant__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/restaurants/lambroisiedor-05.jpg" alt="Image secondaire 4">
 					</picture>
 				</div>
 			</div>
 		</div>
-	</div>
 	</section>
 
 	<!-- Infos Restaurant -->

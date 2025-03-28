@@ -14,16 +14,64 @@
     }
 }
 
+// Top bar
+.top-bar {
+    display: none;
+
+    @include respond(md-up) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.3rem 16rem;
+
+        .btn-text {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: $font-weight-medium !important;
+        }
+
+        button {
+            border-radius: $radius-full !important;
+            background-color: $color-white !important;
+            fill: #FFF;
+            stroke-width: 0.1px !important;
+            box-shadow: $shadow-button !important;
+            aspect-ratio: 1/1;
+            padding: 0.4rem !important;
+        }
+
+        .actions-btn-right {
+            display: flex;
+            gap: 2.4rem;
+        }
+
+        .btn-mobile-hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3.2rem;
+            height: 3.2rem;
+
+        }
+    }
+
+}
+
+// Section Hero Desktop
 .hero-desktop {
     display: none;
 
     @include respond(md-up) {
         display: block;
-        width: 77, 77777777777778%;
-        height: 560px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
         position: relative;
         overflow: hidden;
-        padding: 1.6rem 16rem;
+        padding: 1.6rem 0;
     }
 }
 
@@ -50,72 +98,46 @@
 
 .cards-restaurant-img {
     display: flex;
+    width: 1120px;
+    padding: 16px 0;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-card-restaurant {
+    width: 560px;
+    height: 560px;
+    flex-shrink: 0;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+
+    picture,
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.other-card-restaurant {
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
     gap: 8px;
     flex: 1 0 0;
-    flex-wrap: wrap;
-}
-
-.main-card-restaurant {
-    width: 100%;
-    height: 276px;
-    flex-shrink: 0;
-    position: relative;
-
-    &__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &__top-bar {
-        position: absolute;
-        top: 15px;
-        left: 23px;
-        right: 23px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__btn-group {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        .circle-btn {
-            width: 32px;
-            height: 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: $radius-full;
-            background-color: $color-white;
-        }
-    }
 }
 
 .card-restaurant {
-    width: 100%;
+    width: 272px;
     height: 276px;
-    flex-shrink: 0;
-    position: relative;
+    overflow: hidden;
 
-    &__img {
+    picture,
+    img {
         width: 100%;
-        height: 100%;
+        height: 100% !important;
         object-fit: cover;
-    }
-
-    &__top-bar {
-        position: absolute;
-        top: 15px;
-        left: 23px;
-        right: 23px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     &__btn-group {
@@ -133,4 +155,12 @@
             background-color: $color-white;
         }
     }
+}
+
+.card-restaurant-up {
+    border-radius: 0 20px 0 0;
+}
+
+.card-restaurant-down {
+    border-radius: 0 0 20px 0;
 }
