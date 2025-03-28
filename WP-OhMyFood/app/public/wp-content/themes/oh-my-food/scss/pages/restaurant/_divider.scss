@@ -1,0 +1,13 @@
+// ---------------------
+// DIVIDER
+// ---------------------
+
+@use '../../abstracts/variables' as *;
+@use '../../utils/breakpoints' as *;
+
+.divider {
+    width: 342.696px;
+    height: 1px;
+    background: #D8DCE0;
+    margin: 24px auto;
+}

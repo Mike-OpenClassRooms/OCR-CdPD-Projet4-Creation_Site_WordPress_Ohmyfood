@@ -1,0 +1,44 @@
+// ---------------------
+// SECTION HERO RESTAURANT
+// ---------------------
+
+@use '../../abstracts/variables' as *;
+@use '../../utils/breakpoints' as *;
+
+// Affichage conditionnel des versions mobile/desktop de la section hero
+.hero-mobile {
+    display: block;
+
+    @include respond(md-up) {
+        display: none;
+    }
+}
+
+.hero-desktop {
+    display: none;
+
+    @include respond(md-up) {
+        display: block;
+    }
+}
+
+// Section Hero Mobile
+.hero-card-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+
+    picture,
+    img {
+        z-index: 0;
+    }
+
+
+    @include respond(md-up) {
+        display: none;
+    }
+}

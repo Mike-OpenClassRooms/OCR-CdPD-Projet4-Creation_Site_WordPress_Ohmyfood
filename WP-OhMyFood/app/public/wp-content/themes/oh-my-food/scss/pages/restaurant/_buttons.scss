@@ -1,0 +1,51 @@
+// ---------------------
+// SECTION BOUTONS MENU & AVIS
+// ---------------------
+
+@use '../../abstracts/variables' as *;
+@use '../../utils/breakpoints' as *;
+
+.actions-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 23px;
+    width: 100%;
+    padding: 24px 46px;
+
+
+    @include respond(md-up) {
+        grid-area: buttons;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px !important;
+        width: 10.57rem !important;
+        padding: 0 16px !important;
+        border-radius: $radius-medium !important;
+        background: $color-secondary;
+        box-shadow: $shadow-medium !important;
+        text-align: center !important;
+        text-transform: none !important;
+
+    }
+
+    .btn-menu {
+        order: 1; // mobile : en premier
+
+        @include respond(md-up) {
+            order: 2; // desktop : en deuxième
+        }
+    }
+
+    .btn-avis {
+        order: 2; // mobile : en deuxième
+
+        @include respond(md-up) {
+            order: 1; // desktop : en premier
+        }
+    }
+}

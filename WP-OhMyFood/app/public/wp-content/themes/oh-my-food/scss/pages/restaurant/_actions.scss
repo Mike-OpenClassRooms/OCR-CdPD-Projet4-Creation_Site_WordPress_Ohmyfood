@@ -1,0 +1,72 @@
+// ---------------------
+// SECTION ACTIONS RESTAURANT
+// ---------------------
+
+@use '../../abstracts/variables' as *;
+@use '../../utils/breakpoints' as *;
+
+// Boutons de la section Hero Mobile
+.actions-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2.3rem;
+
+    @include respond(md-up) {
+        display: none;
+    }
+
+    button,
+    .back-button {
+        border-radius: $radius-full !important;
+        background-color: $color-white !important;
+        fill: #FFF;
+        stroke-width: 0.1px !important;
+        box-shadow: $shadow-button !important;
+        aspect-ratio: 1/1;
+        padding: 0.4rem !important;
+    }
+
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+        color: $color-black !important;
+
+    }
+
+    .actions-btn-right {
+        display: flex;
+        gap: 1.9rem;
+    }
+
+    .btn-mobile-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.2rem;
+        height: 3.2rem;
+
+    }
+}
+
+.img-counter {
+    position: absolute;
+    bottom: 12px;
+    right: 2.3rem;
+    width: 40px;
+    height: 28px;
+    z-index: 2;
+    border-radius: $radius-small;
+    background: rgba(34, 34, 34, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    font-weight: $font-weight-light;
+}

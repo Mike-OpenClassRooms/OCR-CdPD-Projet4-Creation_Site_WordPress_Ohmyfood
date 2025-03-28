@@ -1,0 +1,42 @@
+// ---------------------
+// SECTION RÉSERVATION
+// ---------------------
+
+@use '../../abstracts/variables' as *;
+@use '../../utils/breakpoints' as *;
+
+.section-reservation {
+    padding-inline: 23px;
+    width: 100%;
+    padding: 25px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    @include respond(md-up) {
+        grid-area: booking;
+    }
+
+    h2 {
+        font-family: $font-title;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        color: $color-black;
+        align-self: stretch;
+    }
+
+    .calendar {
+        padding: 23px;
+        border-radius: $radius-xlarge;
+        border: 1px solid #DDD;
+        background: $color-white;
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.10), 0px 1px 2px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

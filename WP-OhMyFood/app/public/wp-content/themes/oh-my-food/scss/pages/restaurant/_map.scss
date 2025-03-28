@@ -1,0 +1,80 @@
+// ---------------------
+// SECTION MAP & ADRESSE
+// ---------------------
+
+@use '../../abstracts/variables' as *;
+@use '../../utils/breakpoints' as *;
+
+.section-map {
+    padding-inline: 23px;
+    padding: 0 23px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include respond(md-up) {
+        grid-area: map;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h2 {
+            font-family: $font-title;
+            font-size: 20px;
+            font-weight: $font-weight-bold;
+        }
+
+        .address,
+        .transport-text {
+            font-family: $font-body;
+            font-size: 10px;
+            color: $color-black;
+        }
+
+        .transports {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .transport {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                }
+            }
+        }
+    }
+
+    .map-container {
+        height: 345px;
+        position: relative;
+        background-color: $color-background-light;
+        margin-top: $spacing-sm;
+
+        .marker {
+            width: 138px;
+            height: 138px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 90px;
+            top: 68px;
+            border-radius: $radius-full;
+            background: rgba(13, 27, 42, 0.25);
+
+            svg {
+                width: 33px;
+                height: 52px;
+            }
+        }
+    }
+}
