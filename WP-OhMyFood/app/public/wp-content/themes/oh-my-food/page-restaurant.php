@@ -78,7 +78,7 @@ get_header();
 	</section>
 
 	<!-- Infos Restaurant -->
-	<section class="restaurant-infos" style="padding-inline: 23px;">
+	<section class="restaurant-infos">
 		<h1>L’Ambroisie d’Or</h1>
 		<p class="restaurant-type">Cuisine terroir raffinée</p>
 		<p class="restaurant-location">Paris, 8e</p>
@@ -95,7 +95,7 @@ get_header();
 	<div class="divider"></div>
 
 	<!-- Section Chef -->
-	<section class="chef" style="padding-inline: 23px;">
+	<section class="chef">
 		<div class="chef-avatar">
 			<picture>
 				<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/avatars/chef-jm-ferrand.webp" type="image/webp">
@@ -117,7 +117,7 @@ get_header();
 	<div class="divider"></div>
 
 	<!-- Présentation du restaurant -->
-	<section class="presentation" style="padding-inline: 23px;">
+	<section class="presentation">
 		<p class="presentation-text">
 			Au cœur du prestigieux 8e arrondissement de Paris, <strong>L’Ambroisie d’Or</strong> propose une expérience culinaire haut de gamme où se rencontrent saveurs traditionnelles et créativité audacieuse. Sa carte, évoluant au rythme des saisons, met à l’honneur des spécialités raffinées telles que ...
 		</p>
@@ -132,7 +132,7 @@ get_header();
 	<div class="divider"></div>
 
 	<!-- Boutons Menu / Voir les avis -->
-	<section class="actions-buttons" style="padding-inline: 23px;">
+	<section class="actions-buttons">
 		<button class="btn-menu">Menu</button>
 		<button class="btn-avis">Voir les avis</button>
 	</section>
@@ -140,7 +140,7 @@ get_header();
 	<div class="divider"></div>
 
 	<!-- Avantages -->
-	<section class="advantages" style="padding-inline: 23px;">
+	<section class="advantages">
 		<h2>Les plus</h2>
 		<div class="advantage">
 			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24" fill="none">
@@ -186,7 +186,7 @@ get_header();
 	<div class="divider"></div>
 
 	<!-- Carte et Adresse -->
-	<section class="map" style="padding-inline: 23px;">
+	<section class="map">
 		<div class="address-infos">
 			<h2>Où est situé le restaurant</h2>
 			<p class="address">Adresse :<br>
@@ -213,7 +213,7 @@ get_header();
 	<div class="divider"></div>
 
 	<!-- Réservation -->
-	<section class="booking" style="padding-inline: 23px;">
+	<section class="booking">
 		<h2>Réservez votre table</h2>
 		<div class="reservation-calendar">
 			<!-- Placeholder calendrier -->
