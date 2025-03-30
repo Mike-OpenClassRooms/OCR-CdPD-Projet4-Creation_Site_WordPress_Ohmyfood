@@ -1,24 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
- // ----- Pop-up concours -----
   const popup = document.getElementById("popup-jeu-concours");
-  const closeBtn = document.getElementById("popup-close");
-  const popupForm = document.getElementById("popup-form");
-  const popupEmail = document.getElementById("popup-email");
 
-  if (popup && closeBtn && popupForm && popupEmail && !localStorage.getItem("popupShown")) {
-    setTimeout(() => {
-      popup.classList.remove("hidden");
-      localStorage.setItem("popupShown", "true");
-    }, 1000);
+  if (!popup) return;
 
-    closeBtn.addEventListener("click", () => {
-      popup.classList.add("hidden");
-    });
+  // Affiche la popup si jamais elle n'a jamais été affichée
+  if (!localStorage.getItem("popupShown")) {
+    popup.classList.remove("hidden");
+    localStorage.setItem("popupShown", "true");
+  }
 
-    popupForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert(`Merci ! Un e-mail sera envoyé à ${popupEmail.value}.`);
-      popup.classList.add("hidden");
+  // Utilisation d'un intervalle pour attendre que le bouton soit bien dans le DOM
+  const interval = setInterval(() => {
+    const closeBtn = document.getElementById("popup-close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        popup.classList.add("hidden");
       });
+      clearInterval(interval); // Une fois trouvé, on arrête de chercher
     }
-  });
+  }, 200);
+});
