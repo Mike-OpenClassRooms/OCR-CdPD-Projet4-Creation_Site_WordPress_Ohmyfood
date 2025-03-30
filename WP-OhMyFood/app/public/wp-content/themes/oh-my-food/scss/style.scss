@@ -8,6 +8,7 @@ Version: 1.0
 
 // 1. Abstracts
 @use 'abstracts/variables' as *;
+@use 'sass:color';
 @use 'abstracts/mixins' as *;
 @use 'abstracts/functions' as *;
 @use 'utils/breakpoints';
@@ -147,8 +148,8 @@ Version: 1.0
     }
 
     input[type="submit"] {
-        background-color: $color-primary;
-        color: $color-white;
+        background-color: $color-secondary;
+        color: $color-accent-blue;
         font-weight: $font-weight-bold;
         padding: 1rem 2rem;
         border: none;
@@ -161,7 +162,7 @@ Version: 1.0
         margin: 0 auto;
 
         &:hover {
-            background-color: darken($color-primary, 10%);
+            background-color: $color-accent-red;
         }
     }
 

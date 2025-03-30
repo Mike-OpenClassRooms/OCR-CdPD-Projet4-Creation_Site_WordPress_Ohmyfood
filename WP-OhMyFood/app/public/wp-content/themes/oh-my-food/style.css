@@ -2241,8 +2241,8 @@ button:hover {
   outline: none;
 }
 .wpcf7 input[type=submit] {
-  background-color: #1C1C1C;
-  color: #FFFFFF;
+  background-color: #D4AF37;
+  color: #0D1B2A;
   font-weight: 700;
   padding: 1rem 2rem;
   border: none;
@@ -2255,7 +2255,7 @@ button:hover {
   margin: 0 auto;
 }
 .wpcf7 input[type=submit]:hover {
-  background-color: rgb(2.5, 2.5, 2.5);
+  background-color: #7D2A2A;
 }
 .wpcf7 .wpcf7-response-output {
   margin-top: 1rem;
