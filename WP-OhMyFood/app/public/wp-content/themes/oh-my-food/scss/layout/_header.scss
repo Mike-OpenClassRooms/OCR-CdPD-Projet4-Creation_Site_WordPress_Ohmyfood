@@ -64,11 +64,11 @@ header {
     height: 27px !important;
 
     @include respond(lg) {
-        height: 35px !important;
+        height: 28px !important;
     }
 
     @include respond(xl) {
-        height: 35px !important;
+        height: 30px !important;
     }
 }
 
@@ -120,7 +120,7 @@ header {
     @include respond(lg) {
 
         li {
-            font-size: 2rem !important;
+            font-size: 1.6rem !important;
         }
     }
 }
@@ -160,6 +160,12 @@ header {
 }
 
 /* Avatar */
+
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
 .profile-avatar {
     width: 32px;
     height: 32px;
