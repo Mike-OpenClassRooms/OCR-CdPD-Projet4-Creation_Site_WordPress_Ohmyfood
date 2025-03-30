@@ -1265,6 +1265,10 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.3rem 16rem;
   }
   .top-bar .btn-text {
     display: flex;
@@ -1291,21 +1295,6 @@ button:hover {
     align-items: center;
     width: 3.2rem;
     height: 3.2rem;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1279.99px) {
-  .top-bar {
-    padding: 2.3rem 6rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439.99px) {
-  .top-bar {
-    padding: 2.3rem 16rem;
-  }
-}
-@media (min-width: 1440px) {
-  .top-bar {
-    padding: 2.3rem 16rem;
   }
 }
 
@@ -1384,13 +1373,12 @@ button:hover {
 }
 
 .other-card-restaurant {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   width: 440px;
   height: auto;
+  flex: 1 0 0;
 }
 
 .card-restaurant {
@@ -1429,12 +1417,13 @@ button:hover {
 
 @media (min-width: 1280px) and (max-width: 1439.99px) {
   .cards-restaurant-img {
+    width: 1120px;
     padding: 16px 0;
     gap: 8px;
   }
   .main-card-restaurant {
-    width: 560px;
-    height: 560px;
+    width: 560px !important;
+    height: 560px !important;
   }
   .card-restaurant {
     width: 272px;
@@ -1443,12 +1432,13 @@ button:hover {
 }
 @media (min-width: 1440px) {
   .cards-restaurant-img {
+    width: 1120px;
     padding: 16px 0;
     gap: 8px;
   }
   .main-card-restaurant {
-    width: 560px;
-    height: 560px;
+    width: 560px !important;
+    height: 560px !important;
   }
   .card-restaurant {
     width: 272px;

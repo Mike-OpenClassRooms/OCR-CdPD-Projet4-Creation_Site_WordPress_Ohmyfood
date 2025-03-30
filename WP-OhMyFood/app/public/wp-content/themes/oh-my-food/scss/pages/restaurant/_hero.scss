@@ -22,6 +22,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2.3rem 16rem;
 
         .btn-text {
             display: flex;
@@ -54,19 +58,6 @@
 
         }
     }
-
-    @include respond(md) {
-        padding: 2.3rem 6rem;
-    }
-
-    @include respond(lg) {
-        padding: 2.3rem 16rem;
-    }
-
-    @include respond(xl) {
-        padding: 2.3rem 16rem;
-    }
-
 }
 
 // Section Hero Desktop
@@ -147,13 +138,12 @@
 
 // Images secondaires
 .other-card-restaurant {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     width: 440px;
     height: auto;
+    flex: 1 0 0;
 
 }
 
@@ -196,13 +186,14 @@
 
 @include respond(lg) {
     .cards-restaurant-img {
+        width: 1120px;
         padding: 16px 0;
         gap: 8px;
     }
 
     .main-card-restaurant {
-        width: 560px;
-        height: 560px;
+        width: 560px !important;
+        height: 560px !important;
     }
 
     .card-restaurant {
@@ -213,13 +204,14 @@
 
 @include respond(xl) {
     .cards-restaurant-img {
+        width: 1120px;
         padding: 16px 0;
         gap: 8px;
     }
 
     .main-card-restaurant {
-        width: 560px;
-        height: 560px;
+        width: 560px !important;
+        height: 560px !important;
     }
 
     .card-restaurant {
