@@ -202,3 +202,46 @@ footer {
         display: none !important;
     }
 }
+
+//Tab bar
+.tab-bar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-inline: clamp(1.8rem, 3vw, 6rem) !important;
+    padding-block: 1.6rem !important;
+
+    @include respond(md-up) {
+        display: none !important;
+    }
+
+    .tab-bar-content {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 2px !important;
+        width: 100% !important;
+
+        p {
+            font-size: 1rem !important;
+            font-weight: $font-weight-light !important;
+            text-align: center !important;
+            color: $color-accent-blue !important;
+        }
+
+        .svg-content {
+            width: 40px !important;
+            height: 40px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        svg {
+            width: 24px !important;
+            height: 24px !important;
+            color: $color-accent-blue !important;
+        }
+    }
+}
