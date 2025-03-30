@@ -15,7 +15,9 @@
 
     @include respond(md-up) {
         grid-area: booking;
-        padding-bottom: 1.6rem !important;
+        padding: 1.4rem 0;
+        border-radius: 15px;
+        background: rgba(13, 27, 42, 0.05);
     }
 
     h2 {
@@ -23,6 +25,29 @@
 
         @include respond(md-up) {
             font-size: 3.2rem !important;
+            padding-left: 0.9rem;
+        }
+    }
+
+    .calendar-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @include respond(md-up) {
+            display: none;
+        }
+    }
+
+    .calendar-desktop {
+        display: none;
+
+        @include respond(md-up) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
     }
 
@@ -30,10 +55,17 @@
         display: none;
 
         @include respond(md-up) {
-            display: block;
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 1.8rem); // équivalent à 0.9rem de chaque côté
             font-size: 2rem !important;
             text-transform: none !important;
+            margin-bottom: 1.6rem !important;
+            padding: 1.6rem !important;
+            border-radius: $radius-medium !important;
+            box-shadow: $shadow-medium !important;
+
         }
     }
 }

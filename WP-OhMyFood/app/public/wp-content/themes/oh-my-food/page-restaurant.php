@@ -294,7 +294,8 @@ get_header();
 		<!-- Réservation -->
 		<section class="booking">
 			<h2>Réservez votre table</h2>
-			<img class="calendar" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-restaurant.png" alt="Calendrier">
+			<img class="calendar calendar-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-restaurant.png" alt="Calendrier">
+			<img class="calendar calendar-desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-restaurant-xl.png" alt="Calendrier">
 			<button class="btn-book">Réserver
 			</button>
 		</section>

@@ -1829,7 +1829,9 @@ button:hover {
 @media (min-width: 1024px) {
   .booking {
     grid-area: booking;
-    padding-bottom: 1.6rem !important;
+    padding: 1.4rem 0;
+    border-radius: 15px;
+    background: rgba(13, 27, 42, 0.05);
   }
 }
 .booking h2 {
@@ -1838,6 +1840,29 @@ button:hover {
 @media (min-width: 1024px) {
   .booking h2 {
     font-size: 3.2rem !important;
+    padding-left: 0.9rem;
+  }
+}
+.booking .calendar-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .booking .calendar-mobile {
+    display: none;
+  }
+}
+.booking .calendar-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .booking .calendar-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 .booking .btn-book {
@@ -1845,10 +1870,16 @@ button:hover {
 }
 @media (min-width: 1024px) {
   .booking .btn-book {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 1.8rem);
     font-size: 2rem !important;
     text-transform: none !important;
+    margin-bottom: 1.6rem !important;
+    padding: 1.6rem !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
   }
 }
 
