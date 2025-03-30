@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1.5rem 2.3rem;
+    padding: 1.5rem clamp(2.3rem, 6vw, 7.2rem);
 
     @include respond(md-up) {
         display: none;
@@ -58,7 +58,7 @@
 .img-counter {
     position: absolute;
     bottom: 12px;
-    right: 2.3rem;
+    right: clamp(2.3rem, 6vw, 7.2rem);
     width: 40px;
     height: 28px;
     z-index: 2;

@@ -27,7 +27,7 @@
 #restaurant-layout {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 2.3rem;
+    padding: 0 clamp(2.3rem, 6vw, 7.2rem);
     justify-content: center;
     align-items: center;
 

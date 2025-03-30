@@ -35,6 +35,10 @@
         align-items: center;
         width: 100%;
 
+        @include respond(sm) {
+            display: none;
+        }
+
         @include respond(md-up) {
             display: none;
         }
@@ -42,6 +46,13 @@
 
     .calendar-desktop {
         display: none;
+
+        @include respond(sm) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
 
         @include respond(md-up) {
             display: flex;

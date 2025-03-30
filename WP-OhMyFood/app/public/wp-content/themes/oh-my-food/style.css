@@ -1397,7 +1397,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.5rem 2.3rem;
+  padding: 1.5rem clamp(2.3rem, 6vw, 7.2rem);
 }
 @media (min-width: 1024px) {
   .actions-mobile {
@@ -1434,7 +1434,7 @@ button:hover {
 .img-counter {
   position: absolute;
   bottom: 12px;
-  right: 2.3rem;
+  right: clamp(2.3rem, 6vw, 7.2rem);
   width: 40px;
   height: 28px;
   z-index: 2;
@@ -1449,7 +1449,7 @@ button:hover {
 
 .restaurant-infos-mobile {
   display: block;
-  padding: 1.2rem 2.3rem;
+  padding: 1.2rem clamp(2.3rem, 6vw, 7.2rem);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1951,6 +1951,11 @@ button:hover {
   align-items: center;
   width: 100%;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .booking .calendar-mobile {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   .booking .calendar-mobile {
     display: none;
@@ -1958,6 +1963,14 @@ button:hover {
 }
 .booking .calendar-desktop {
   display: none;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .booking .calendar-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
 }
 @media (min-width: 1024px) {
   .booking .calendar-desktop {
@@ -1986,7 +1999,7 @@ button:hover {
 }
 
 .divider-mobile {
-  width: 342.696px;
+  width: 100%;
   height: 1px;
   background: #D8DCE0;
   margin: 1.2rem auto;
@@ -2038,7 +2051,7 @@ button:hover {
 #restaurant-layout {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 2.3rem;
+  padding: 0 clamp(2.3rem, 6vw, 7.2rem);
   justify-content: center;
   align-items: center;
 }
