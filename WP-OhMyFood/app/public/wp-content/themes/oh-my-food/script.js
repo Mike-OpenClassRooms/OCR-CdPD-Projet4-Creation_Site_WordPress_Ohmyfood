@@ -20,3 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 200);
 });
+
+// Formulaire de réservation
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.querySelector(".modal-reservation");
+  const openBtn = document.querySelector(".open-reservation-modal");
+  const closeBtn = document.querySelector(".modal-close");
+
+  if (modal && openBtn && closeBtn) {
+    openBtn.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  }
+});
