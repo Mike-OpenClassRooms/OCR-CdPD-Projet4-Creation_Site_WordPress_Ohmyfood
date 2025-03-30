@@ -1772,6 +1772,9 @@ button:hover {
   flex-direction: column;
   gap: 8px;
 }
+.section-map .address-infos .address {
+  padding-bottom: 1.6rem;
+}
 .section-map .address-infos p {
   font-size: 1rem !important;
 }
@@ -1785,6 +1788,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding-bottom: 1.6rem;
 }
 .section-map .address-infos .infos-transports .transport {
   display: flex;
@@ -1795,6 +1799,28 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 2px;
+}
+.section-map .address-infos .transport-icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+@media (min-width: 1024px) {
+  .section-map .address-infos .transport-icons {
+    gap: 2px;
+  }
+}
+.section-map .address-infos .transport-icon,
+.section-map .address-infos .transport-line-icon {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 1024px) {
+  .section-map .address-infos .transport-icon,
+  .section-map .address-infos .transport-line-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 .section-map .map-container {
   display: flex;
@@ -1918,7 +1944,7 @@ button:hover {
 @media (min-width: 1024px) {
   .divider-desktop {
     display: block;
-    width: 610px;
+    width: 100%;
     height: 1px;
     background: #D8DCE0;
     margin: 1.2rem auto;
@@ -1954,8 +1980,28 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 2.3rem;
+  justify-content: center;
+  align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279.99px) {
+  #restaurant-layout {
+    padding: 2rem 3rem;
+    grid-template-columns: 510px 428px;
+    column-gap: 2rem;
+    row-gap: 1.2rem;
+    grid-template-areas: "infos         booking" "divider-1     booking" "buttons       booking" "divider-2     booking" "chef          booking" "divider-3     booking" "presentation  map" "divider-4     map" "advantages    map" "divider-5     map" ".             map" ".             map";
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439.99px) {
+  #restaurant-layout {
+    padding: 2rem 7rem 9.5rem;
+    grid-template-columns: 610px 428px;
+    row-gap: 1.2rem;
+    column-gap: 8.4rem;
+    grid-template-areas: "infos         booking" "divider-1     booking" "buttons       booking" "divider-2     booking" "chef          booking" "divider-3     booking" "presentation  map" "divider-4     map" "advantages    map" "divider-5     map" ".             map" ".             map";
+  }
+}
+@media (min-width: 1440px) {
   #restaurant-layout {
     padding: 2rem 16rem 9.5rem;
     grid-template-columns: 610px 428px;

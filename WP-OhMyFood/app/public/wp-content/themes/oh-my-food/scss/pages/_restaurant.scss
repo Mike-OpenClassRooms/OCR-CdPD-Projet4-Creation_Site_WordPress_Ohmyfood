@@ -28,9 +28,52 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 2.3rem;
+    justify-content: center;
+    align-items: center;
 
+    @include respond(md) {
+        padding: 2rem 3rem;
+        grid-template-columns: 510px 428px;
+        column-gap: 2rem;
+        row-gap: 1.2rem;
 
-    @include respond(md-up) {
+        grid-template-areas:
+            "infos         booking"
+            "divider-1     booking"
+            "buttons       booking"
+            "divider-2     booking"
+            "chef          booking"
+            "divider-3     booking"
+            "presentation  map"
+            "divider-4     map"
+            "advantages    map"
+            "divider-5     map"
+            ".             map"
+            ".             map";
+
+    }
+
+    @include respond(lg) {
+        padding: 2rem 7rem 9.5rem;
+        grid-template-columns: 610px 428px;
+        row-gap: 1.2rem;
+        column-gap: 8.4rem;
+        grid-template-areas:
+            "infos         booking"
+            "divider-1     booking"
+            "buttons       booking"
+            "divider-2     booking"
+            "chef          booking"
+            "divider-3     booking"
+            "presentation  map"
+            "divider-4     map"
+            "advantages    map"
+            "divider-5     map"
+            ".             map"
+            ".             map";
+    }
+
+    @include respond(xl) {
         padding: 2rem 16rem 9.5rem;
         grid-template-columns: 610px 428px;
         row-gap: 1.2rem;

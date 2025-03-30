@@ -266,12 +266,29 @@ get_header();
 					114 rue du Faubourg Saint-Honoré, 75008 Paris</p>
 				<div class="infos-transports">
 					<div class="transport">
+						<div class="transport-icons">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Métro.svg" alt="Icône métro de Paris" class="transport-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Métro_9.svg" alt="Ligne 9" class="transport-line-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Métro_13.svg" alt="Ligne 13" class="transport-line-icon">
+						</div>
 						<p>Miromesnil</p>
 					</div>
 					<div class="transport">
+						<div class="transport-icons">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Métro.svg" alt="Icône métro de Paris" class="transport-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Métro_1.svg" alt="Ligne 1" class="transport-line-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Métro_9.svg" alt="Ligne 9" class="transport-line-icon">
+						</div>
 						<p>Franklin D. Roosevelt</p>
 					</div>
 					<div class="transport">
+						<div class="transport-icons">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Paris_transit_icons_-_Bus.svg" alt="Icône bus de Paris" class="transport-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Logo_Ligne_Bus_RATP_28.svg" alt="Ligne 28" class="transport-line-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Logo_Ligne_Bus_RATP_32.svg" alt="Ligne 32" class="transport-line-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Logo_Ligne_Bus_RATP_52.svg" alt="Ligne 52" class="transport-line-icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Paris-RATP/Logo_Ligne_Bus_RATP_93.svg" alt="Ligne 93" class="transport-line-icon">
+						</div>
 						<p>Matignon — Saint-Honoré</p>
 					</div>
 				</div>
