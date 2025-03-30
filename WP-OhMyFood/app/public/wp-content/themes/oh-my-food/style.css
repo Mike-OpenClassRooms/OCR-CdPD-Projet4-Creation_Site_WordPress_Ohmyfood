@@ -1197,7 +1197,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.3rem 16rem;
   }
   .top-bar .btn-text {
     display: flex;
@@ -1226,6 +1225,21 @@ button:hover {
     height: 3.2rem;
   }
 }
+@media (min-width: 1024px) and (max-width: 1279.99px) {
+  .top-bar {
+    padding: 2.3rem 6rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439.99px) {
+  .top-bar {
+    padding: 2.3rem 16rem;
+  }
+}
+@media (min-width: 1440px) {
+  .top-bar {
+    padding: 2.3rem 16rem;
+  }
+}
 
 .hero-desktop {
   display: none;
@@ -1240,6 +1254,20 @@ button:hover {
     height: auto;
     position: relative;
     overflow: hidden;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279.99px) {
+  .hero-desktop {
+    padding: 1.6rem 4rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439.99px) {
+  .hero-desktop {
+    padding: 1.6rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-desktop {
     padding: 1.6rem 0;
   }
 }
@@ -1265,16 +1293,18 @@ button:hover {
 
 .cards-restaurant-img {
   display: flex;
-  width: 1120px;
-  padding: 16px 0;
   align-items: center;
-  gap: 8px;
+  width: 886px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-block: 1.6rem;
+  padding-inline: 0;
+  gap: 6px;
 }
 
 .main-card-restaurant {
-  width: 560px;
-  height: 560px;
-  flex-shrink: 0;
+  width: 440px;
+  height: 440px;
   border-radius: 20px 0 0 20px;
   overflow: hidden;
 }
@@ -1291,12 +1321,13 @@ button:hover {
   align-items: flex-start;
   align-content: flex-start;
   gap: 8px;
-  flex: 1 0 0;
+  width: 440px;
+  height: auto;
 }
 
 .card-restaurant {
-  width: 272px;
-  height: 276px;
+  width: 216px;
+  height: 216px;
   overflow: hidden;
 }
 .card-restaurant picture,
@@ -1328,6 +1359,34 @@ button:hover {
   border-radius: 0 0 20px 0;
 }
 
+@media (min-width: 1280px) and (max-width: 1439.99px) {
+  .cards-restaurant-img {
+    padding: 16px 0;
+    gap: 8px;
+  }
+  .main-card-restaurant {
+    width: 560px;
+    height: 560px;
+  }
+  .card-restaurant {
+    width: 272px;
+    height: 276px;
+  }
+}
+@media (min-width: 1440px) {
+  .cards-restaurant-img {
+    padding: 16px 0;
+    gap: 8px;
+  }
+  .main-card-restaurant {
+    width: 560px;
+    height: 560px;
+  }
+  .card-restaurant {
+    width: 272px;
+    height: 276px;
+  }
+}
 .actions-mobile {
   position: absolute;
   top: 0;
@@ -1985,7 +2044,7 @@ button:hover {
 }
 @media (min-width: 1024px) and (max-width: 1279.99px) {
   #restaurant-layout {
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     grid-template-columns: 510px 428px;
     column-gap: 2rem;
     row-gap: 1.2rem;

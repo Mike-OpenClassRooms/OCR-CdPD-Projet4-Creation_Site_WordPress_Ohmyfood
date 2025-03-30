@@ -32,7 +32,7 @@
     align-items: center;
 
     @include respond(md) {
-        padding: 2rem 3rem;
+        padding: 2rem 4rem;
         grid-template-columns: 510px 428px;
         column-gap: 2rem;
         row-gap: 1.2rem;

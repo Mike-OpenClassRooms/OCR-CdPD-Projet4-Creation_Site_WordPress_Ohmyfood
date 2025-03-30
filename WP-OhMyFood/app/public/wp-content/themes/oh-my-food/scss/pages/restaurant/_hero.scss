@@ -22,7 +22,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2.3rem 16rem;
 
         .btn-text {
             display: flex;
@@ -56,6 +55,18 @@
         }
     }
 
+    @include respond(md) {
+        padding: 2.3rem 6rem;
+    }
+
+    @include respond(lg) {
+        padding: 2.3rem 16rem;
+    }
+
+    @include respond(xl) {
+        padding: 2.3rem 16rem;
+    }
+
 }
 
 // Section Hero Desktop
@@ -71,6 +82,17 @@
         height: auto;
         position: relative;
         overflow: hidden;
+    }
+
+    @include respond(md) {
+        padding: 1.6rem 4rem;
+    }
+
+    @include respond(lg) {
+        padding: 1.6rem 0;
+    }
+
+    @include respond(xl) {
         padding: 1.6rem 0;
     }
 }
@@ -96,18 +118,22 @@
     }
 }
 
+// Images d'illustration
 .cards-restaurant-img {
     display: flex;
-    width: 1120px;
-    padding: 16px 0;
     align-items: center;
-    gap: 8px;
+    width: 886px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-block: 1.6rem;
+    padding-inline: 0;
+    gap: 6px;
 }
 
+// Image principale
 .main-card-restaurant {
-    width: 560px;
-    height: 560px;
-    flex-shrink: 0;
+    width: 440px;
+    height: 440px;
     border-radius: 20px 0 0 20px;
     overflow: hidden;
 
@@ -119,18 +145,21 @@
     }
 }
 
+// Images secondaires
 .other-card-restaurant {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
     gap: 8px;
-    flex: 1 0 0;
+    width: 440px;
+    height: auto;
+
 }
 
 .card-restaurant {
-    width: 272px;
-    height: 276px;
+    width: 216px;
+    height: 216px;
     overflow: hidden;
 
     picture,
@@ -163,4 +192,38 @@
 
 .card-restaurant-down {
     border-radius: 0 0 20px 0;
+}
+
+@include respond(lg) {
+    .cards-restaurant-img {
+        padding: 16px 0;
+        gap: 8px;
+    }
+
+    .main-card-restaurant {
+        width: 560px;
+        height: 560px;
+    }
+
+    .card-restaurant {
+        width: 272px;
+        height: 276px;
+    }
+}
+
+@include respond(xl) {
+    .cards-restaurant-img {
+        padding: 16px 0;
+        gap: 8px;
+    }
+
+    .main-card-restaurant {
+        width: 560px;
+        height: 560px;
+    }
+
+    .card-restaurant {
+        width: 272px;
+        height: 276px;
+    }
 }
