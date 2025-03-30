@@ -1,27 +1,24 @@
-// Ici vous pourrez rajouter l'evenement de votre modal
 document.addEventListener("DOMContentLoaded", function () {
+ // ----- Pop-up concours -----
   const popup = document.getElementById("popup-jeu-concours");
   const closeBtn = document.getElementById("popup-close");
   const popupForm = document.getElementById("popup-form");
+  const popupEmail = document.getElementById("popup-email");
 
-  // N'affiche le popup qu'une seule fois (stockage local)
-  if (!localStorage.getItem("popupShown")) {
+  if (popup && closeBtn && popupForm && popupEmail && !localStorage.getItem("popupShown")) {
     setTimeout(() => {
       popup.classList.remove("hidden");
       localStorage.setItem("popupShown", "true");
-    }, 1000); // délai de 1s pour ne pas gêner
-  }
+    }, 1000);
 
-  closeBtn.addEventListener("click", () => {
-    popup.classList.add("hidden");
+    closeBtn.addEventListener("click", () => {
+      popup.classList.add("hidden");
+    });
+
+    popupForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert(`Merci ! Un e-mail sera envoyé à ${popupEmail.value}.`);
+      popup.classList.add("hidden");
+      });
+    }
   });
-
-  popupForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const email = document.getElementById("popup-email").value;
-
-    // Traitement fictif — en prod on l’enverrait à une API
-    alert(`Merci ! Un e-mail sera envoyé à ${email}.`);
-    popup.classList.add("hidden");
-  });
-});

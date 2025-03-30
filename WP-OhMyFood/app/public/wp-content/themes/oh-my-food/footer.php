@@ -16,15 +16,6 @@
 </div><!-- #primary : Fin de la zone principale (contenu) -->
 </div><!-- #content : Fin du conteneur global du contenu -->
 
-<!-- Newsletters -->
-<section class="newsletter-box">
-	<p class="newsletter-title">TITRE</p>
-	<p class="newsletter-text">
-		TEXTE
-	</p>
-	<!-- Appel via un short code a contact form 7, attention ça doit correspondre a votre newsletter -->
-	<?php echo do_shortcode('[contact-form-7 id="8cccb11" title="Formulaire newsletters"]'); ?>
-</section>
 <?php
 // Inclusion d'un template part pour les widgets du footer.
 // Le fichier 'footer-widgets.php' situé dans le dossier template-parts/footer/
@@ -45,11 +36,7 @@ get_template_part('template-parts/footer/footer-widgets');
 			<p>Offre exceptionnelle : gagnez deux places pour un déjeuner dans un de nos restaurants gastronomiques ! Résultat immédiat dans votre boîte mail.</p>
 			<p class="pop-up-conditions"><strong>Attention :</strong> cette offre est limitée, vous ne pouvez jouer qu’une fois.</p>
 
-			<form id="popup-form">
-				<label for="popup-email" class="sr-only">Votre adresse e-mail</label>
-				<input type="email" id="popup-email" name="email" placeholder="Votre e-mail" required>
-				<button type="submit">Je participe</button>
-			</form>
+			<?php echo do_shortcode('[contact-form-7 id="8cccb11" title="Formulaire pop-up"]'); ?>
 
 			<button id="popup-close" aria-label="Fermer la fenêtre"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 19 19" fill="none">
 					<mask id="mask0_1806_3867" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">

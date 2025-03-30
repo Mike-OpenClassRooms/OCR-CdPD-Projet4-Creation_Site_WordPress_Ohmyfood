@@ -117,3 +117,58 @@ Version: 1.0
         }
     }
 }
+
+// Contact Form Popup
+.wpcf7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin: 0 auto;
+
+    input[type="email"] {
+        padding: 1rem 1.5rem;
+        border-radius: $radius-medium;
+        border: 1px solid $color-text-grey;
+        font-family: $font-body;
+        font-size: $font-size-body;
+        color: $color-black;
+        background-color: $color-white;
+        box-shadow: $shadow-light;
+        transition: border 0.3s ease;
+
+        &:focus {
+            border: 1px solid $color-primary;
+            outline: none;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: $color-primary;
+        color: $color-white;
+        font-weight: $font-weight-bold;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: $radius-medium;
+        font-family: $font-body;
+        font-size: $font-size-body;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: darken($color-primary, 10%);
+        }
+    }
+
+    .wpcf7-response-output {
+        margin-top: 1rem;
+        font-size: $font-size-sm;
+        color: $color-accent-red;
+        text-align: center;
+    }
+}
