@@ -10,6 +10,7 @@ Version: 1.0
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
 @use 'abstracts/functions' as *;
+@use 'utils/breakpoints';
 
 // 2. Base
 @use 'base/reset';
@@ -32,9 +33,6 @@ Version: 1.0
 @use 'pages/home';
 @use 'pages/about';
 @use 'pages/restaurant';
-
-// 6. Utils
-@use 'utils/breakpoints';
 
 //Pop-up
 

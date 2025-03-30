@@ -62,7 +62,7 @@ h6 {
 
 body {
   font-family: "Poppins", sans-serif !important;
-  font-size: 16px !important;
+  font-size: 10px !important;
   line-height: 1.6 !important;
 }
 
@@ -229,6 +229,13 @@ section {
   display: none !important;
 }
 
+/*! 
+Theme Name: OhMyFood
+Description: Thème enfant développé pour le site de réservation de restaurants OhMyFood.
+Author URI: https://omegastudio.tech
+Template: twentytwentyone
+Version: 1.0
+*/
 header {
   display: flex;
   flex-direction: column;
@@ -241,7 +248,7 @@ header {
 }
 @media (min-width: 1024px) {
   header {
-    padding-bottom: 24px;
+    padding-bottom: 24px !important;
   }
 }
 
@@ -447,58 +454,78 @@ header {
 /* Partie basse : barre de recherche */
 .header-bottom {
   display: none !important;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100% !important;
-}
-
-.search-bar {
-  display: flex;
-  display: none;
-  flex-direction: column;
-  background-color: #FFFFFF !important;
-  border-radius: 40px !important;
-  padding: 12px !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
-  align-items: center;
-  gap: 8px;
 }
 @media (min-width: 1024px) {
-  .search-bar {
-    flex-direction: row;
-    padding: 16px 24px !important;
-    gap: 16px;
+  .header-bottom {
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100% !important;
   }
 }
 
-.search-field {
-  display: flex;
-  flex-direction: column;
+.search-bar {
+  display: none;
 }
-.search-field span {
-  font-weight: 700;
-  font-size: 14px;
-}
-.search-field input {
-  border: none;
-  outline: none;
-  font-size: 1.6rem !important;
-  padding: 5px;
-  width: 100%;
-}
-
-.search-button {
-  background-color: #D4AF37 !important;
-  border: none;
-  padding: 10px !important;
-  border-radius: 50% !important;
-  cursor: pointer;
-}
-.search-button svg {
-  width: 20px;
-  height: 20px;
-  fill: #FFFFFF;
+@media (min-width: 1024px) {
+  .search-bar {
+    display: flex !important;
+    gap: 16px;
+    background-color: #FFFFFF !important;
+    border-radius: 40px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px !important;
+    height: 50px !important;
+    padding: 0 !important;
+  }
+  .search-bar .search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem !important;
+  }
+  .search-bar .search-field span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .search-bar .search-field input {
+    border: none;
+    outline: none;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    color: #B0B0B0 !important;
+    width: 100%;
+    padding: 0 !important;
+  }
+  .search-bar .search-field input input[type=text i] {
+    padding-block: 0 !important;
+    padding-inline: 0 !important;
+  }
+  .search-bar .search-field-location {
+    padding-left: 2.4rem !important;
+  }
+  .search-bar .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4AF37 !important;
+    border: none;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+  }
+  .search-bar .search-button svg {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+  }
+  .search-bar .search-divider {
+    width: 1px !important;
+    height: 32px !important;
+    background-color: var(--Border-Default, #DDD) !important;
+  }
 }
 
 footer {

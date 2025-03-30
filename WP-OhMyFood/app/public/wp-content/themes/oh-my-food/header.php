@@ -97,18 +97,21 @@
 			<!-- Partie recherche du header -->
 			<section class="header-bottom">
 				<div class="search-bar">
-					<div class="search-field">
+					<div class="search-field search-field-location">
 						<span>Où ?</span>
 						<input type="text" placeholder="Rechercher un lieu">
 					</div>
+					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Quand ?</span>
-						<input type="date">
+						<input type="text" placeholder="Choisir date">
 					</div>
+					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Service</span>
 						<input type="text" placeholder="Midi ou soir ?">
 					</div>
+					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Personnes</span>
 						<input type="number" placeholder="Combien de personnes ?">

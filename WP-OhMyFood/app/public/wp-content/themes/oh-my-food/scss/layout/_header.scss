@@ -1,8 +1,9 @@
 @use '../abstracts/variables' as *;
 @use '../utils/breakpoints' as *;
+@use '../base/typography' as *;
+@use '../base/base' as *;
 
 // HEADER 
-
 header {
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@ header {
     width: 100% !important;
 
     @include respond(md-up) {
-        padding-bottom: 24px;
+        padding-bottom: 24px !important;
     }
 }
 
@@ -220,58 +221,84 @@ header {
 /* Partie basse : barre de recherche */
 .header-bottom {
     display: none !important;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100% !important;
+
+    @include respond(md-up) {
+        display: flex !important;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100% !important;
+    }
 }
 
 .search-bar {
-    display: flex;
     display: none;
-    flex-direction: column;
-    background-color: $color-white !important;
-    border-radius: $radius-xlarge !important;
-    padding: 12px !important;
-    box-shadow: $shadow-light !important;
-    align-items: center;
-    gap: 8px;
 
     @include respond(md-up) {
-        flex-direction: row;
-        padding: 16px 24px !important;
+        display: flex !important;
         gap: $spacing-sm;
-    }
-}
+        background-color: $color-white !important;
+        border-radius: $radius-xlarge !important;
+        box-shadow: $shadow-light !important;
+        align-items: center;
+        justify-content: space-around;
+        width: 800px !important;
+        height: 50px !important;
+        padding: 0 !important;
 
-.search-field {
-    display: flex;
-    flex-direction: column;
+        .search-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem !important;
 
-    span {
-        font-weight: $font-weight-bold;
-        font-size: $font-size-sm;
-    }
+            span {
+                font-weight: $font-weight-regular;
+                font-size: $font-size-sm;
+            }
 
-    input {
-        border: none;
-        outline: none;
-        font-size: 1.6rem !important;
-        padding: 5px;
-        width: 100%;
-    }
-}
+            input {
+                border: none;
+                outline: none;
+                font-size: $font-size-xs !important;
+                font-weight: $font-weight-light !important;
+                color: $color-text-grey !important;
+                width: 100%;
+                padding: 0 !important;
 
-.search-button {
-    background-color: $color-secondary !important;
-    border: none;
-    padding: 10px !important;
-    border-radius: $radius-full !important;
-    cursor: pointer;
+                input[type="text" i] {
+                    padding-block: 0 !important;
+                    padding-inline: 0 !important;
+                }
+            }
 
-    svg {
-        width: 20px;
-        height: 20px;
-        fill: $color-white;
+
+        }
+
+        .search-field-location {
+            padding-left: 2.4rem !important;
+        }
+
+        .search-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-secondary !important;
+            border: none;
+            padding: 10px !important;
+            border-radius: $radius-full !important;
+            cursor: pointer;
+            aspect-ratio: 1/1;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: $color-white;
+            }
+        }
+
+        .search-divider {
+            width: 1px !important;
+            height: 32px !important;
+            background-color: var(--Border-Default, #DDD) !important;
+        }
     }
 }
