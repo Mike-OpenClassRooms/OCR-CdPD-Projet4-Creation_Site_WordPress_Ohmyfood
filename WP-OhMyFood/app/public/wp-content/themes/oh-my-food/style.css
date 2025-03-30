@@ -708,6 +708,35 @@ footer a {
   display: none !important;
 }
 
+.booking-bar-mobile {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-block: 1.9rem !important;
+  padding-inline: clamp(2.3rem, 5.85vw, 5rem) !important;
+}
+.booking-bar-mobile p {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+.booking-bar-mobile button {
+  width: 144px !important;
+  height: 44px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .booking-bar-mobile {
+    padding-inline: clamp(5rem, 7vw, 6rem) !important;
+  }
+}
+@media (min-width: 1024px) {
+  .booking-bar-mobile {
+    display: none !important;
+  }
+}
+
 button {
   background-color: #D4AF37 !important;
   color: #1C1C1C !important;

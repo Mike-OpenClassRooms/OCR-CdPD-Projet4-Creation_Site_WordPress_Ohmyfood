@@ -171,3 +171,34 @@ footer {
 .newsletter-box {
     display: none !important;
 }
+
+//Barre de réservation
+.booking-bar-mobile {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-block: 1.9rem !important;
+    padding-inline: clamp(2.3rem, 5.85vw, 5rem) !important;
+
+    p {
+        font-size: $font-size-sm !important;
+        font-weight: $font-weight-bold !important;
+        text-align: center !important;
+
+    }
+
+    button {
+        width: 144px !important;
+        height: 44px !important;
+        border-radius: $radius-medium !important;
+        box-shadow: $shadow-medium !important;
+    }
+
+    @include respond(sm) {
+        padding-inline: clamp(5rem, 7vw, 6rem) !important;
+    }
+
+    @include respond(md-up) {
+        display: none !important;
+    }
+}

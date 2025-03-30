@@ -88,6 +88,24 @@ get_template_part('template-parts/footer/footer-widgets');
 	</div>
 </footer>
 
+</footer>
+
+<?php if (is_page_template('page-restaurant.php')) : ?>
+	<nav class="booking-bar-mobile" aria-label="Réservation mobile">
+		<p>Menu à partir <br>de 25€</p>
+		<button class="btn-book">Réserver</button>
+	</nav>
+<?php else : ?>
+	<nav class="tab-bar">
+
+	</nav>
+<?php endif; ?>
+
+<?php wp_footer(); ?>
+</body>
+
+</html>
+
 </div><!-- #page : Fin du conteneur principal de la page -->
 
 <?php
