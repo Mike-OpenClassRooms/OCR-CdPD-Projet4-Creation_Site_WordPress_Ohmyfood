@@ -31,7 +31,7 @@
 
 
     @include respond(md-up) {
-        padding: 2rem 16rem 15rem;
+        padding: 2rem 16rem 9.5rem;
         grid-template-columns: 610px 428px;
         row-gap: 1.2rem;
         column-gap: 8.4rem;
@@ -45,7 +45,9 @@
             "presentation  map"
             "divider-4     map"
             "advantages    map"
-            "divider-5     map";
+            "divider-5     map"
+            ".             map"
+            ".             map";
     }
 }
 
