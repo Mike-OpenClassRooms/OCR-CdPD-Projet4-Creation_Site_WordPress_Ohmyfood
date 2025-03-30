@@ -2174,38 +2174,58 @@ button:hover {
   display: none;
 }
 #popup-jeu-concours .popup-content {
-  background: #fff;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #FFFFFF;
+  padding: 4rem 4rem 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   max-width: 500px;
   width: 90%;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   position: relative;
 }
 #popup-jeu-concours .popup-content h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem;
+  color: #1C1C1C !important;
   margin-top: 0;
 }
+#popup-jeu-concours .popup-content p {
+  font-size: 16px !important;
+}
+#popup-jeu-concours .popup-content .pop-up-conditions {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+}
 #popup-jeu-concours .popup-content input[type=email] {
-  padding: 0.8rem;
+  padding: 1rem 0.5rem !important;
   width: 100%;
-  margin: 1rem 0;
+  margin: 3rem 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
 }
 #popup-jeu-concours .popup-content button[type=submit] {
-  background-color: #FF6F61;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  cursor: pointer;
   border-radius: 4px;
 }
 #popup-jeu-concours .popup-content #popup-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: none;
+  background: none !important;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  box-shadow: none !important;
+}
+#popup-jeu-concours .popup-content #popup-close svg {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
 }
