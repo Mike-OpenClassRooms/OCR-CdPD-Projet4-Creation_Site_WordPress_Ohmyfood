@@ -87,8 +87,6 @@ get_template_part('template-parts/footer/footer-widgets');
 	</div>
 </footer>
 
-</footer>
-
 <?php if (is_page_template('page-restaurant.php')) : ?>
 	<nav class="booking-bar-mobile" aria-label="Réservation mobile">
 		<p>Menu à partir <br>de 25€</p>
