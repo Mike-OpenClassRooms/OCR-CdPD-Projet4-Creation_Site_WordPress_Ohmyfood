@@ -787,6 +787,7 @@ button {
 }
 button:hover {
   background-color: #7D2A2A !important;
+  color: #FFFFFF !important;
 }
 
 /* Bouton retour page d’accueil */
@@ -2348,4 +2349,16 @@ button:hover {
   font-size: 14px;
   color: #7D2A2A;
   text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
