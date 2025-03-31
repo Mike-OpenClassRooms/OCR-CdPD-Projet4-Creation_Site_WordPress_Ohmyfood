@@ -43,3 +43,12 @@ OhMyFood-Integration-maquette/style-old copy.css
 /WP-OhMyFood/app/public/wp-content/w3tc-config
 /WP-OhMyFood/app/public/wp-content/cache
 WP-OhMyFood/app/public/wp-content/advanced-cache.php
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/postcss.config.js
+/WP-OhMyFood/app/public/wp-content/themes/oh-my-food/scss/node_modules
+/WP-OhMyFood/app/public/wp-content/themes/oh-my-food/node_modules
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/scss/package.json
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/scss/package-lock.json
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/package.json
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/package-lock.json
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/css/main.css.map
+WP-OhMyFood/app/public/wp-content/themes/oh-my-food/css/main.css

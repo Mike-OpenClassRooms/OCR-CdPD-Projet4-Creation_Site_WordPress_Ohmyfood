@@ -229,6 +229,19 @@ section {
   display: none !important;
 }
 
+/* Visibilité pour les lecteurs d'écran */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /*! 
 Theme Name: OhMyFood
 Description: Thème enfant développé pour le site de réservation de restaurants OhMyFood.
@@ -848,6 +861,127 @@ button:hover {
         background-color: $color-danger-dark;
     }
 }*/
+#popup-jeu-concours {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup-jeu-concours.hidden {
+  display: none;
+}
+#popup-jeu-concours .popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #FFFFFF;
+  padding: 4rem 4rem 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+#popup-jeu-concours .popup-content h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem;
+  color: #1C1C1C !important;
+  margin-top: 0;
+}
+#popup-jeu-concours .popup-content p {
+  font-size: 16px !important;
+}
+#popup-jeu-concours .popup-content .pop-up-conditions {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+}
+#popup-jeu-concours .popup-content input[type=email] {
+  padding: 1rem 0.5rem !important;
+  width: 100%;
+  margin: 3rem 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+#popup-jeu-concours .popup-content button[type=submit] {
+  border-radius: 4px;
+}
+#popup-jeu-concours .popup-content #popup-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none !important;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+#popup-jeu-concours .popup-content #popup-close svg {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+}
+
+.wpcf7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+.wpcf7 input[type=email] {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #B0B0B0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s ease;
+}
+.wpcf7 input[type=email]:focus {
+  border: 1px solid #1C1C1C;
+  outline: none;
+}
+.wpcf7 input[type=submit] {
+  background-color: #D4AF37;
+  color: #0D1B2A;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+.wpcf7 input[type=submit]:hover {
+  background-color: #7D2A2A;
+}
+.wpcf7 .wpcf7-response-output {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #7D2A2A;
+  text-align: center;
+}
+
 .home-recherche-mobile {
   display: flex;
   padding: 2.4rem 0 !important;
@@ -2228,137 +2362,4 @@ button:hover {
   .booking {
     grid-column: 2;
   }
-}
-
-#popup-jeu-concours {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#popup-jeu-concours.hidden {
-  display: none;
-}
-#popup-jeu-concours .popup-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background: #FFFFFF;
-  padding: 4rem 4rem 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  max-width: 500px;
-  width: 90%;
-  border-radius: 20px;
-  text-align: center;
-  position: relative;
-}
-#popup-jeu-concours .popup-content h2 {
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  margin-bottom: 1rem;
-  color: #1C1C1C !important;
-  margin-top: 0;
-}
-#popup-jeu-concours .popup-content p {
-  font-size: 16px !important;
-}
-#popup-jeu-concours .popup-content .pop-up-conditions {
-  font-size: 1rem !important;
-  font-weight: 300 !important;
-}
-#popup-jeu-concours .popup-content input[type=email] {
-  padding: 1rem 0.5rem !important;
-  width: 100%;
-  margin: 3rem 0;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-}
-#popup-jeu-concours .popup-content button[type=submit] {
-  border-radius: 4px;
-}
-#popup-jeu-concours .popup-content #popup-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none !important;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: none !important;
-}
-#popup-jeu-concours .popup-content #popup-close svg {
-  width: 2.4rem !important;
-  height: 2.4rem !important;
-}
-
-.wpcf7 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  margin: 0 auto;
-}
-.wpcf7 input[type=email] {
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #B0B0B0;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: #000000;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: border 0.3s ease;
-}
-.wpcf7 input[type=email]:focus {
-  border: 1px solid #1C1C1C;
-  outline: none;
-}
-.wpcf7 input[type=submit] {
-  background-color: #D4AF37;
-  color: #0D1B2A;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block;
-  margin: 0 auto;
-}
-.wpcf7 input[type=submit]:hover {
-  background-color: #7D2A2A;
-}
-.wpcf7 .wpcf7-response-output {
-  margin-top: 1rem;
-  font-size: 14px;
-  color: #7D2A2A;
-  text-align: center;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
