@@ -170,3 +170,9 @@
         font-weight: $font-weight-light !important;
     }
 }
+
+.required-note {
+    font-size: 0.9rem !important;
+    color: $color-accent-red !important;
+    margin-top: 0.5em !important;
+}

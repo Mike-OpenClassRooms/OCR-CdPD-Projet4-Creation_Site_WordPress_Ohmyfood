@@ -334,6 +334,7 @@ get_header();
 		</button>
 		<h2 id="modal-title-reservation">Réservez votre table</h2>
 		<?php echo do_shortcode('[contact-form-7 id="3f739c8" title="Formulaire de réservation"]'); ?>
+		<p class="required-note">* Champs obligatoires</p>
 	</div>
 </div>
 
