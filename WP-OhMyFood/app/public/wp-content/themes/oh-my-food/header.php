@@ -44,7 +44,7 @@
 		</a>
 
 		<!-- Nouveau header -->
-		<header>
+		<header role="banner" aria-label="En-tête principal">
 			<!-- Partie logo & menu du header -->
 			<section class="header-top">
 				<div class="logo-container">
@@ -52,7 +52,7 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/logo-ohmyfood-header.svg" alt="Logo OhMyFood" class="site-logo">
 					</a>
 				</div>
-				<nav class="main-navigation">
+				<nav class="main-navigation" aria-label="Menu principal">
 					<?php
 					wp_nav_menu(
 						array(
@@ -65,7 +65,7 @@
 					);
 					?>
 				</nav>
-				<nav class="mobile-navigation">
+				<nav class="mobile-navigation" aria-label="Menu mobile">
 					<?php
 					wp_nav_menu(
 						array(
@@ -82,8 +82,8 @@
 					<button class="hamburger-menu" aria-label="Menu">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/Menu.svg" alt="Menu" class="menu-icon">
 					</button>
-					<a href="#" class="profile-link">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/Profile.svg" alt="Profil" class="profile-avatar">
+					<a href="#" class="profile-link" aria-label="Lien vers le profil">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/Profile.svg" alt="" class="profile-avatar">
 					</a>
 				</div>
 
@@ -99,25 +99,25 @@
 				<div class="search-bar">
 					<div class="search-field search-field-location">
 						<span>Où ?</span>
-						<input type="text" placeholder="Rechercher un lieu">
+						<input type="text" placeholder="Rechercher un lieu" aria-label="Lieu">
 					</div>
 					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Quand ?</span>
-						<input type="text" placeholder="Choisir date">
+						<input type="text" placeholder="Choisir date" aria-label="Date">
 					</div>
 					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Service</span>
-						<input type="text" placeholder="Midi ou soir ?">
+						<input type="text" placeholder="Midi ou soir ?" aria-label="Service">
 					</div>
 					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Personnes</span>
-						<input type="number" placeholder="Combien de personnes ?">
+						<input type="number" placeholder="Combien de personnes ?" aria-label="Nombre de personnes">
 					</div>
 					<button class="search-button">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
 							<path d="M505 442.7l-99.7-99.7c28.4-35.3 45.4-80 45.4-128.8C450.7 98.9 351.8 0 225.3 0S0 98.9 0 225.3s98.9 225.3 225.3 225.3c48.8 0 93.5-17 128.8-45.4l99.7 99.7c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 .1-33.9zM225.3 384c-87.9 0-159.3-71.4-159.3-159.3S137.4 65.3 225.3 65.3 384.7 136.7 384.7 224.7 313.2 384 225.3 384z" />
 						</svg>
 					</button>
