@@ -114,7 +114,7 @@
 					<div class="search-divider"></div>
 					<div class="search-field">
 						<span>Personnes</span>
-						<input type="number" placeholder="Combien de personnes ?" aria-label="Nombre de personnes">
+						<input type="text" placeholder="Combien de personnes ?" aria-label="Nombre de personnes">
 					</div>
 					<button class="search-button">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">

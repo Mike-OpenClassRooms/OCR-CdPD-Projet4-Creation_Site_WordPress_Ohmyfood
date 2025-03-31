@@ -54,3 +54,6 @@ WP-OhMyFood/app/public/wp-content/themes/oh-my-food/css/main.css.map
 WP-OhMyFood/app/public/wp-content/themes/oh-my-food/css/main.css
 Documentation-projet-OhMyFood.pages
 Modèle+-+Documentation+projet copie.docx
+/node_modules
+package.json
+package-lock.json
