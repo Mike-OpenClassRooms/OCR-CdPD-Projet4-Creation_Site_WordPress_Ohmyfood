@@ -65,6 +65,8 @@
 					);
 					?>
 				</nav>
+
+				<!-- Menu secondaire pour les appareils mobiles — pour plus tard -->
 				<nav class="mobile-navigation" aria-label="Menu mobile">
 					<?php
 					wp_nav_menu(
